@@ -98,12 +98,6 @@ function Menu(): React.ReactElement {
             <NavMenuItem href="/about">About</NavMenuItem>
             <NavMenuItem href="/contact">Contact</NavMenuItem>
             <NavMenuItem href="/support">Support</NavMenuItem>
-            <NavMenuItem
-              href="https://nyomansunima.lemonsqueezy.com?ref=nyomansunima"
-              target="_blank"
-            >
-              Goodies
-            </NavMenuItem>
           </ul>
         </div>
       )}

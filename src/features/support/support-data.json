@@ -1,18 +1,14 @@
 {
   "supports": [
     {
-      "icon": "fi fi-rr-mug-hot-alt",
-      "title": "Donate coding projects",
+      "title": "Donate Coding Projects",
       "description": "Help me to create better open source projects.",
-      "url": "https://github.com/sponsors/nyomansunima?ref=nyomansunima",
-      "publisher": "Github Sponsors"
+      "url": "https://github.com/sponsors/nyomansunima?ref=nyomansunima"
     },
     {
-      "icon": "fi fi-rr-coffee-heart",
-      "title": "Donate produce content",
+      "title": "Donate Produce Content",
       "description": "Support me to produce more great content for free.",
-      "url": "https://ko-fi.com/nyomansunima?ref=nyomansunima",
-      "publisher": "Ko-fi"
+      "url": "https://ko-fi.com/nyomansunima?ref=nyomansunima"
     }
   ]
 }

@@ -16,9 +16,9 @@ function OpenWorkBadge(): React.ReactElement {
         <TooltipTrigger asChild>
           <Link
             href={'/contact'}
-            className="flex justify-center items-center px-3 h-9 rounded-xl bg-fuchsia-100 dark:bg-fuchsia-400/10 border border-fuchsia-200 dark:border-fuchsia-200/20 text-fuchsia-800 dark:text-fuchsia-400 text-xs gap-2 font-medium transition-all duration-300 hover:-translate-y-1 cursor-pointer select-none"
+            className="flex items-center gap-2 text-sm text-foreground/60 transition-all duration-300 hover:-translate-y-1 hover:text-foreground"
           >
-            <i className="fi fi-rr-coffee-heart" />
+            <i className="fi fi-rr-circle-small" />
             Open to work
           </Link>
         </TooltipTrigger>
@@ -36,11 +36,10 @@ function NewBadge(): React.ReactElement {
           <Link
             href={'https://devcrates.site?ref=nyomansunima'}
             target="_blank"
-            className="flex gap-5 justify-between h-9 px-4 items-center rounded-xl bg-orange-100 text-orange-700 text-xs font-medium border border-orange-200
-     dark:bg-orange-400/10 dark:text-orange-400 dark:border-orange-200/20 transition-all duration-300 hover:-translate-y-1 select-none"
+            className="flex items-center gap-2 text-sm text-foreground/60 transition-all duration-300 hover:-translate-y-1 hover:text-foreground"
           >
-            <span>New craft: Developer Resources</span>
-            <i className="fi fi-rr-broken-chain-link-wrong" />
+            <i className="fi fi-rr-circle-small" />
+            New craft: Developer Resources
           </Link>
         </TooltipTrigger>
         <TooltipContent>Something new in this week</TooltipContent>
@@ -52,7 +51,7 @@ function NewBadge(): React.ReactElement {
 export function HeroSection(): React.ReactElement {
   return (
     <section className="flex flex-col">
-      <div className="flex items-center gap-2 flex-wrap">
+      <div className="flex items-center gap-4 flex-wrap">
         <OpenWorkBadge />
         <NewBadge />
       </div>
@@ -60,20 +59,26 @@ export function HeroSection(): React.ReactElement {
       <div className="flex flex-col gap-6 text-base !leading-7 text-pretty mt-10">
         <p>
           Hello, I am a{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-fuchsia-500 dark:text-fuchsia-300">
+          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-fuchsia-600 dark:text-fuchsia-400">
             product designer
           </span>
           ,{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-red-500 dark:text-red-300">
+          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-red-600 dark:text-red-400">
             software engineer
           </span>{' '}
           &{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-blue-500 dark:text-blue-300">
+          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-blue-600 dark:text-blue-400">
             creator
           </span>{' '}
-          that loves to craft solutions for global audiences. Focus to shipping
-          great, effective & impactful products, services, saas, goodies, sites
-          & contents. Talks about indie hacking, product shipping, and business.
+          loves to craft solutions for global audiences. Shipping great,
+          effective & impactful products or services through simplicity, better
+          user experience, and target specific.
+        </p>
+        <p>
+          Focus on shipping design, saas, goodies, sites, contents and other
+          good things to help business moving forward and solve more problems.
+          Also love to craft idea into a real product. Talks about indie
+          hacking, product shipping, and business.
         </p>
         <p>
           Currently working as product designer, and developer to craft a
@@ -81,7 +86,7 @@ export function HeroSection(): React.ReactElement {
           <Link
             href={'https://www.tryweebo.one'}
             target="_blank"
-            className="text-blue-500 dark:text-blue-300 cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
+            className="text-blue-600 dark:text-blue-400 cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
           >
             weebo
           </Link>
@@ -89,7 +94,7 @@ export function HeroSection(): React.ReactElement {
           <Link
             href={'https://www.moono.space'}
             target="_blank"
-            className="text-blue-500 dark:text-blue-300 cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
+            className="text-blue-600 dark:text-blue-400 cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
           >
             moono
           </Link>
@@ -97,7 +102,7 @@ export function HeroSection(): React.ReactElement {
           <Link
             href={'https://www.weecraft.club'}
             target="_blank"
-            className="text-blue-500 dark:text-blue-300 cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
+            className="text-blue-600 dark:text-blue-400 cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
           >
             weecraft
           </Link>{' '}

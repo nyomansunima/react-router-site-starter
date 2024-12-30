@@ -8,11 +8,11 @@ export function SupportSection(): React.ReactElement {
   return (
     <section className="flex">
       <div className="flex flex-col">
-        <h3 className="text-lg font-medium !leading-tight">
+        <h2 className="text-lg tablet:text-xl font-medium">
           Support me to create
           <br />
           good things.
-        </h3>
+        </h2>
 
         <div className="flex mt-10">
           <div className="grid grid-cols-1 tablet:grid-cols-2 gap-3">

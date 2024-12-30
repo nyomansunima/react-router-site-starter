@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { FAQListSection, AskSection } from '@features/faqs'
+import { FAQListSection } from '@features/faqs'
 
 export const metadata: Metadata = {
   title: 'FAQs',
@@ -22,7 +22,6 @@ export default function FAQsPage(): React.ReactElement {
   return (
     <div className="flex flex-col gap-20 tablet:gap-36">
       <FAQListSection />
-      <AskSection />
     </div>
   )
 }

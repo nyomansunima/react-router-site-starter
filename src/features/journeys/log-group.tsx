@@ -1,5 +1,3 @@
-'use client'
-
 import * as React from 'react'
 import { LogItem, LogItemData } from './log-item'
 import {
@@ -8,7 +6,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@shared/components'
-import { motion } from 'motion/react'
 
 export interface LogGroupData {
   title: string
@@ -25,19 +22,11 @@ export function LogGroup({ group }: LogGroupProps): React.ReactElement {
   const reorderList = [...list].reverse()
 
   return (
-    <motion.div
-      initial={{ y: 200, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ type: 'spring', duration: '1.2', delay: 0.1 }}
-      viewport={{
-        once: true,
-      }}
-      className="flex flex-col gap-4"
-    >
+    <div className="flex flex-col gap-4">
       <div className="flex items-center w-full gap-4">
-        <h3 className="text-lg font-medium flex-grow tablet:flex-grow-0">
+        <h2 className="text-lg tablet:text-xl font-medium flex-grow tablet:flex-grow-0">
           {title}
-        </h3>
+        </h2>
         <span className="hidden tablet:flex flex-grow border-t border-border border-dashed"></span>
         <TooltipProvider>
           <Tooltip>
@@ -58,6 +47,6 @@ export function LogGroup({ group }: LogGroupProps): React.ReactElement {
           <LogItem log={log} key={i} />
         ))}
       </div>
-    </motion.div>
+    </div>
   )
 }

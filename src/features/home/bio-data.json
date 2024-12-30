@@ -21,30 +21,25 @@
     },
     {
       "type": "link",
-      "url": "https://nyomansunima.lemonsqueezy.com?ref=nyomansunima",
-      "label": "Check my goodies"
-    },
-    {
-      "type": "link",
       "url": "https://tryweebo.one?ref=nyomansunima",
       "label": "My web design business (NEW)",
-      "className": "tablet:row-span-2"
+      "className": "tablet:row-span-3"
     },
     {
       "type": "link",
       "url": "/support",
-      "label": "Suport me by donation"
+      "label": "Suport me"
     },
     {
       "type": "link",
       "url": "/stories",
-      "label": "Learn together with me"
+      "label": "Learn together with me",
+      "className": "tablet:col-span-2"
     },
     {
       "type": "link",
       "url": "https://moono.space?ref=nyomansunima",
-      "label": "My apps collection (NEW)",
-      "className": "tablet:col-span-2"
+      "label": "My apps (NEW)"
     },
     {
       "type": "link",
