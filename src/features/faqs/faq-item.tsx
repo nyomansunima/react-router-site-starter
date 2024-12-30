@@ -21,7 +21,7 @@ export function FAQItem({ faq, position }: FAQItemProps) {
   return (
     <AccordionItem
       value={`item-${position}`}
-      className="col-span-1 transition-all duration-300 hover:-translate-y-1"
+      className="transition-all duration-300 hover:-translate-y-1"
     >
       <AccordionTrigger>{question}</AccordionTrigger>
       <AccordionContent>{answer}</AccordionContent>

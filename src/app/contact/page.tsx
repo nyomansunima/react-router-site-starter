@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 export default function ContactPage(): React.ReactElement {
   return (
     <div className="flex flex-col">
-      <h3 className="text-lg font-medium !leading-tight">
+      <h2 className="text-lg tablet:text-xl font-medium">
         Get in touch & build
         <br />
         things together.
-      </h3>
+      </h2>
 
       <div className="flex flex-col mt-10">
         <ContactList />

@@ -85,7 +85,7 @@ export async function WorkDetailContent({
 
   return (
     <div className="flex flex-col">
-      <h1 className="text-xl font-medium !leading-tight text-balance">
+      <h1 className="text-lg tablet:text-xl font-medium text-balance">
         {meta.title}
       </h1>
 

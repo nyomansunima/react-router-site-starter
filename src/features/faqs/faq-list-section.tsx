@@ -7,9 +7,19 @@ const faqs = faqsData.faqs as FAQData[]
 
 export function FAQListSection(): React.ReactElement {
   return (
-    <section className="flex w-full laptop:w-10/12 mx-auto">
-      <div className="w-full">
-        <Accordion type="single" collapsible className="grid grid-cols-1 gap-2">
+    <section className="flex flex-col">
+      <h2 className="text-xl font-medium">
+        The most asked
+        <br />
+        questions.
+      </h2>
+
+      <div className="w-full flex mt-10">
+        <Accordion
+          type="single"
+          collapsible
+          className="flex flex-col gap-2 w-full"
+        >
           {faqs.map((faq, index) => (
             <FAQItem faq={faq} position={index + 1} key={index} />
           ))}
