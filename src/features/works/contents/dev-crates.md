@@ -1,14 +1,14 @@
 ---
-title: 'Brook Code Theme'
-description: 'The best simple and elegant code editor theme with minimal looks and simple styles code editor themes for light & dark environments for perfect developer productivity'
-image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1733491606862/875c0d92-370d-4dd2-84e4-dbe2f6a89d1b.png'
+title: 'Dev Crates'
+description: 'Helping developers to find the best resources, sites, and tools to build their projects. Also featuring a curated list of the best resources for developers to learn and grow'
+image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1733990991229/49886a53-896d-4b9c-9146-dad03454f1dd.png'
 
-date: '2024-11-28'
+date: '2023-08-31'
 status: 'Completed'
 isFeatured: false
 
 type: 'Hacking'
-category: 'Code Editor Theme'
+category: 'Tools'
 
 roles: ['Product Designer', 'Developer', 'UI/UX Designer', 'Frontend Developer']
 responsibilities:
@@ -19,12 +19,8 @@ responsibilities:
 
 Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user interface. They needed a complete redesign to improve usability and enhance their customer experience.
 
-**Client:** Acme Corp
-**Industry:** Retail
-**Services Provided:** UI/UX Design, Frontend Development
-**Outcome:** 25% Increase in Conversion Rates
-
-[Launch](https://brookcodetheme.vercel.app)
+[Repository](https://github.com/weecraft/boola?ref=nyomansunima)
+[Launch](https://marketplace.visualstudio.com/items?itemName=nyomansunima.boola)
 
 <br/>
 

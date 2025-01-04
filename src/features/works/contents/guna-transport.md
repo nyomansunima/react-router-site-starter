@@ -1,30 +1,36 @@
 ---
-title: 'Brook Code Theme'
-description: 'The best simple and elegant code editor theme with minimal looks and simple styles code editor themes for light & dark environments for perfect developer productivity'
-image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1733491606862/875c0d92-370d-4dd2-84e4-dbe2f6a89d1b.png'
+title: 'Guna Transport Website'
+description: 'Create website for transportation business that allow to generate more client and convert up to 30% audiences'
+image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1733393555028/63b0c290-955c-4b73-8466-314758b61182.png'
 
-date: '2024-11-28'
+date: '2024-12-05'
 status: 'Completed'
 isFeatured: false
 
 type: 'Hacking'
-category: 'Code Editor Theme'
+category: 'Branding'
 
-roles: ['Product Designer', 'Developer', 'UI/UX Designer', 'Frontend Developer']
+client:
+  name: 'Guna Transport'
+  url: 'https://gunatransport.com'
+
+roles: ['Product Designer', 'Web Designer', 'UI/UX Designer', 'Web Developer']
 responsibilities:
-  ['System Design', 'UI Design', 'UX Design', 'Frontend Development']
+  [
+    'Website Design',
+    'UI Design',
+    'UX Design',
+    'Frontend Development',
+    'Branding',
+    'SEO',
+  ]
 ---
 
 ## Challenges
 
 Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user interface. They needed a complete redesign to improve usability and enhance their customer experience.
 
-**Client:** Acme Corp
-**Industry:** Retail
-**Services Provided:** UI/UX Design, Frontend Development
-**Outcome:** 25% Increase in Conversion Rates
-
-[Launch](https://brookcodetheme.vercel.app)
+[Launch](https://gunatransport.com)
 
 <br/>
 

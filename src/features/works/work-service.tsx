@@ -2,10 +2,13 @@
 
 import fs from 'fs/promises'
 import path from 'path'
-import { evaluate } from 'next-mdx-remote-client/rsc'
 import * as React from 'react'
 import { ContentImage } from '@shared/components'
 import Link from 'next/link'
+import { evaluate } from 'next-mdx-remote-client/rsc'
+import { getFrontmatter } from 'next-mdx-remote-client/utils'
+import dayjs from 'dayjs'
+import { SP } from 'next/dist/shared/lib/utils'
 
 const WORK_CONTENT_PATH = '/src/features/works/contents'
 
@@ -14,14 +17,17 @@ export type WorkFrontMatter = {
   description: string
   image: string
   date: string
-  status: string
-  client: {
+  status: 'Completed' | 'In Progress'
+  isFeatured: boolean
+  type: 'Hacking' | 'Work'
+  category: string
+  client?: {
     name: string
     url: string
   }
   roles: string[]
   responsibilities: string[]
-  teams: {
+  teams?: {
     name: string
     url: string
   }[]
@@ -34,15 +40,14 @@ type WorkDetail = {
   content: React.ReactElement
 }
 
+export type WorkData = WorkFrontMatter & {
+  slug: string
+}
+
 export async function getWorkMetadata(slug: string): Promise<WorkMetadata> {
   const workPath = path.join(process.cwd(), WORK_CONTENT_PATH, `${slug}.md`)
   const file = await fs.readFile(workPath, 'utf-8')
-  const { frontmatter: meta } = await evaluate<WorkFrontMatter>({
-    source: file,
-    options: {
-      parseFrontmatter: true,
-    },
-  })
+  const { frontmatter: meta } = getFrontmatter<WorkFrontMatter>(file)
 
   return {
     title: meta.title,
@@ -52,8 +57,8 @@ export async function getWorkMetadata(slug: string): Promise<WorkMetadata> {
 }
 
 export async function getWorkDetail(slug: string): Promise<WorkDetail> {
-  const workPath = path.join(process.cwd(), WORK_CONTENT_PATH, `${slug}.md`)
-  const file = await fs.readFile(workPath, 'utf-8')
+  const filePath = path.join(process.cwd(), WORK_CONTENT_PATH, `${slug}.md`)
+  const file = await fs.readFile(filePath, 'utf-8')
   const { frontmatter: meta, content } = await evaluate<WorkFrontMatter>({
     source: file,
     options: {
@@ -61,7 +66,7 @@ export async function getWorkDetail(slug: string): Promise<WorkDetail> {
     },
     components: {
       img: ContentImage,
-      a: Link,
+      a: (props) => <Link {...props} target="_blank" />,
     },
   })
 
@@ -83,4 +88,33 @@ export async function getWorkPaths(): Promise<string[]> {
     }) as string[]
 
   return slugs
+}
+
+export async function getWorks(): Promise<WorkData[]> {
+  const workDirPath = path.join(process.cwd(), WORK_CONTENT_PATH)
+  const files = await fs.readdir(workDirPath)
+
+  const contentFiles = files.filter(
+    (file) => file.endsWith('.md') || file.endsWith('.mdx'),
+  )
+
+  const works = await Promise.all(
+    contentFiles.map(async (file) => {
+      const filePath = path.join(workDirPath, file)
+
+      const fileContent = await fs.readFile(filePath, 'utf-8')
+      const slug = file.replace(/\.(mdx|md)$/, '')
+      const { frontmatter } = getFrontmatter<WorkFrontMatter>(fileContent)
+
+      return { ...frontmatter, slug }
+    }),
+  )
+
+  const sortedWorks = works.sort((a, b) => {
+    const dateA = dayjs(a.date)
+    const dateB = dayjs(b.date)
+    return dateB.isAfter(dateA) ? 1 : -1
+  })
+
+  return sortedWorks || []
 }

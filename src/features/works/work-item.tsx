@@ -2,36 +2,10 @@ import Image from 'next/image'
 import * as React from 'react'
 import { mergeClass, parseReadableDate } from '@shared/utils'
 import Link from 'next/link'
-
-export interface WorkData {
-  href: string
-  title: string
-  description: string
-  image: string
-  type: string
-  rule: string
-  category: string
-  isFeatured?: boolean
-  isDraft?: boolean
-  timeline: string
-}
+import { WorkData } from './work-service'
 
 interface WorkItemProps {
   work: WorkData
-}
-
-function isValidLink(link: string): boolean {
-  if (link.includes('http://') || link.includes('https://')) {
-    return true
-  }
-
-  return false
-}
-
-function parseLink(link: string): string {
-  const isURL = isValidLink(link)
-
-  return isURL ? link : `/works/${link}`
 }
 
 function ComingSoon(): React.ReactElement {
@@ -43,20 +17,11 @@ function ComingSoon(): React.ReactElement {
 }
 
 export function WorkItem({ work }: WorkItemProps): React.ReactElement {
-  const {
-    href,
-    title,
-    description,
-    rule,
-    type,
-    image,
-    category,
-    timeline,
-    isDraft,
-  } = work
+  const { slug, title, description, type, image, category, date, status } = work
 
-  const readableTimeline = parseReadableDate(timeline)
-  const link = parseLink(href)
+  const readableTimeline = parseReadableDate(date)
+  const link = `/works/${slug}`
+  const isDraft = status === 'In Progress'
 
   return (
     <Link
@@ -78,23 +43,10 @@ export function WorkItem({ work }: WorkItemProps): React.ReactElement {
         </div>
       </div>
 
-      <p className="!leading-relaxed mt-4 text-sm text-foreground/60">
-        {description}
-      </p>
-      <div className="flex flex-wrap text-sm text-foreground/70 mt-6 gap-2">
-        <span className="py-1 px-3 bg-surface border border-border rounded-xl cursor-pointer text-sm">
-          {type}
-        </span>
-        <span className="py-1 px-3 bg-surface border border-border rounded-xl cursor-pointer text-sm">
-          {rule}
-        </span>
-        <span className="py-1 px-3 bg-surface border border-border rounded-xl cursor-pointer text-sm">
-          {category}
-        </span>
-      </div>
+      <p className="mt-4 text-sm text-pretty !leading-6">{description}</p>
 
-      <div className="flex w-full bg-surface p-1 border border-border rounded-xl group col-span-1 mt-5">
-        <picture className="relative overflow-hidden w-full h-[200px] tablet:h-[320px] rounded-xl">
+      <div className="flex w-full bg-surface p-1 border border-border rounded-xl group mt-3">
+        <picture className="relative overflow-hidden w-full h-[200px] tablet:h-[360px] rounded-lg">
           <Image
             src={image}
             alt={title}

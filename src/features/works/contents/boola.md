@@ -1,9 +1,9 @@
 ---
-title: 'Brook Code Theme'
-description: 'The best simple and elegant code editor theme with minimal looks and simple styles code editor themes for light & dark environments for perfect developer productivity'
-image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1733491606862/875c0d92-370d-4dd2-84e4-dbe2f6a89d1b.png'
+title: 'Boola Visual Studio Code Theme'
+description: 'Visually appealing and user-friendly color scheme designed to enhance the coding experience. It incorporates a balanced blend of colors to provide good contrast, readability, and a touch of personality to your code editor'
+image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1728832725989/86e3baf9-dc0d-4fb2-8f39-dc6138bec894.png'
 
-date: '2024-11-28'
+date: '2023-08-31'
 status: 'Completed'
 isFeatured: false
 
@@ -19,12 +19,8 @@ responsibilities:
 
 Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user interface. They needed a complete redesign to improve usability and enhance their customer experience.
 
-**Client:** Acme Corp
-**Industry:** Retail
-**Services Provided:** UI/UX Design, Frontend Development
-**Outcome:** 25% Increase in Conversion Rates
-
-[Launch](https://brookcodetheme.vercel.app)
+[Repository](https://github.com/weecraft/boola?ref=nyomansunima)
+[Launch](https://marketplace.visualstudio.com/items?itemName=nyomansunima.boola)
 
 <br/>
 

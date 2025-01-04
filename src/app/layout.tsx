@@ -3,11 +3,7 @@ import type { Metadata } from 'next'
 import '@shared/styles/globals.css'
 import { config, sharedMetadata } from '@shared/libs'
 import { Analytics as VercelAnalytics } from '@vercel/analytics/react'
-import {
-  ThemeProvider,
-  AnimationProvider,
-  PosthogProvider,
-} from '@shared/providers'
+import { ThemeProvider, PosthogProvider } from '@shared/providers'
 import { Footer, Header, Toaster, CenteredLayout } from '@shared/components'
 import { fonts } from '@shared/fonts'
 
@@ -70,17 +66,15 @@ export default function RootLayout({
             enableSystem={true}
             disableTransitionOnChange
           >
-            <AnimationProvider>
-              <CenteredLayout>
-                <Header />
-                <main className="min-h-screen pb-28 tablet:pb-56">
-                  {children}
-                </main>
-                <Footer />
-              </CenteredLayout>
+            <CenteredLayout>
+              <Header />
+              <main className="min-h-screen pb-28 tablet:pb-56">
+                {children}
+              </main>
+              <Footer />
+            </CenteredLayout>
 
-              <Toaster />
-            </AnimationProvider>
+            <Toaster />
           </ThemeProvider>
 
           <VercelAnalytics />

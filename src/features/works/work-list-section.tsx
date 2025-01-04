@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { WorkData, WorkItem } from './work-item'
-import worksData from './works-data.json'
+import * as workService from './work-service'
 
-const works = [...worksData.works].reverse() as WorkData[]
+export async function WorksListSection(): Promise<React.ReactElement> {
+  const works = await workService.getWorks()
 
-export function WorksListSection(): React.ReactElement {
   return (
     <section className="flex flex-col">
       <h2 className="text-lg tablet:text-xl font-medium">
