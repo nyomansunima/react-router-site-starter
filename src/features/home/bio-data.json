@@ -8,33 +8,27 @@
     },
     {
       "type": "link",
-      "url": "/contact",
-      "label": "Become partner (business)",
-      "className": "tablet:row-span-2"
-    },
-    {
-      "type": "link",
       "url": "/works",
       "label": " See my works",
-      "isFeatured": true,
-      "className": "tablet:row-span-2"
+      "isFeatured": true
     },
     {
       "type": "link",
       "url": "https://tryweebo.one?ref=nyomansunima",
       "label": "My web design business (NEW)",
-      "className": "tablet:row-span-3"
+      "className": "tablet:row-span-2"
     },
     {
       "type": "link",
       "url": "/support",
-      "label": "Suport me"
+      "label": "Suport me",
+      "className": "tablet:row-span-2"
     },
     {
       "type": "link",
       "url": "/stories",
       "label": "Learn together with me",
-      "className": "tablet:col-span-2"
+      "className": "tablet:row-span-2"
     },
     {
       "type": "link",
@@ -50,15 +44,8 @@
     {
       "type": "link",
       "url": "/crafts",
-      "label": "See all of my crafts",
-      "className": "tablet:col-span-2"
-    },
-    {
-      "type": "link",
-      "url": "/journeys",
-      "label": "See what's new this week",
-      "isFeatured": true,
-      "className": "tablet:col-span-3"
+      "label": "See products",
+      "className": "tablet:row-span-2"
     }
   ]
 }
