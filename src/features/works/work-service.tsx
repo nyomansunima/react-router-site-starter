@@ -8,7 +8,6 @@ import Link from 'next/link'
 import { evaluate } from 'next-mdx-remote-client/rsc'
 import { getFrontmatter } from 'next-mdx-remote-client/utils'
 import dayjs from 'dayjs'
-import { SP } from 'next/dist/shared/lib/utils'
 
 const WORK_CONTENT_PATH = '/src/features/works/contents'
 
