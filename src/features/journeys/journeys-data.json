@@ -4,14 +4,21 @@
       "team": "Dimata",
       "teamLabel": "Software house in Bali",
       "position": "Frontend Developer",
-      "timeline": "Jul 2019 - Dec 2020",
+      "timeline": "Jul 2019 - Feb 2020",
+      "teamUrl": "https://dimata.com?ref=nyomansunima"
+    },
+    {
+      "team": "Dimata",
+      "teamLabel": "Software house in Bali",
+      "position": "Full-stack Engineer",
+      "timeline": "Feb 2020 - Apr 2022",
       "teamUrl": "https://dimata.com?ref=nyomansunima"
     },
     {
       "team": "Dimata",
       "teamLabel": "Software house in Bali",
       "position": "Senior Software Engineer",
-      "timeline": "Dec 2020 - Feb 2023",
+      "timeline": "Apr 2022 - Feb 2023",
       "teamUrl": "https://dimata.com?ref=nyomansunima"
     },
     {
@@ -24,15 +31,29 @@
     {
       "team": "Weebo",
       "teamLabel": "Web design agency",
-      "position": "Founder",
+      "position": "Founder & CEO",
       "timeline": "Feb 2024 - Present",
       "teamUrl": "https://tryweebo.one/?ref=nyomansunima"
     },
     {
+      "team": "Weecraft",
+      "teamLabel": "Open source teams",
+      "position": "Founder & Creative",
+      "timeline": "Mar 2024 - Present",
+      "teamUrl": "https://weecraft.club/?ref=nyomansunima"
+    },
+    {
+      "team": "Sonibble",
+      "teamLabel": "Creative & marketing agency",
+      "position": "Founder, CEO & Creative",
+      "timeline": "Mar 2024 - Present",
+      "teamUrl": "https://wearesonibble.online/?ref=nyomansunima"
+    },
+    {
       "team": "Moono",
       "teamLabel": "Indie hacking for saas",
-      "position": "Founder",
-      "timeline": "May 2024 - Present",
+      "position": "Founder & Solo Creative",
+      "timeline": "Nov 2024 - Present",
       "teamUrl": "https://moono.space/?ref=nyomansunima"
     }
   ],
@@ -139,6 +160,10 @@
           "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1733990991229/49886a53-896d-4b9c-9146-dad03454f1dd.png"
         }
       ]
+    },
+    {
+      "title": "2025: Everything is starting to change",
+      "list": []
     }
   ]
 }
