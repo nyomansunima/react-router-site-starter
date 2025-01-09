@@ -40,7 +40,9 @@ export function CraftItem({ craft }: CraftItemProps): React.ReactElement {
         </div>
       </div>
 
-      <p className="text-sm mt-3 text-foreground/60">{description}</p>
+      <p className="text-sm mt-3 text-foreground/60 line-clamp-2">
+        {description}
+      </p>
 
       <div className="hidden w-7 h-7 rounded-lg bg-secondary/30 border border-border group-hover:flex justify-center items-center absolute top-3 right-3">
         <i className="fi fi-rr-arrow-small-right -rotate-45" />
