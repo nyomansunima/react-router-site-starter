@@ -4,6 +4,11 @@
       "title": "Favorite tools",
       "list": [
         {
+          "title": "1.1.1.1 Warp",
+          "description": "Best free vpn and proxy services for the internet. Allow to use the 1.1.1.1 dns for free.",
+          "url": "https://one.one.one.one/?ref=nyomansunima"
+        },
+        {
           "title": "Zed",
           "description": "My favorite code editor for building apps, websites, and more.",
           "url": "https://zed.dev/?ref=nyomansunima"
