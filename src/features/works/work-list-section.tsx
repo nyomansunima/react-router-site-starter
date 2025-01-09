@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { WorkData, WorkItem } from './work-item'
+import { WorkItem } from './work-item'
 import * as workService from './work-service'
 
 export async function WorksListSection(): Promise<React.ReactElement> {

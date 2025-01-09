@@ -1,7 +1,6 @@
 'use client'
 
 import * as React from 'react'
-import Link from 'next/link'
 import { Button, toast } from '@shared/components'
 
 export type ContactItemData = {

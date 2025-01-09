@@ -17,7 +17,7 @@ function ComingSoon(): React.ReactElement {
 }
 
 export function WorkItem({ work }: WorkItemProps): React.ReactElement {
-  const { slug, title, description, type, image, category, date, status } = work
+  const { slug, title, description, image, date, status } = work
 
   const readableTimeline = parseReadableDate(date)
   const link = `/works/${slug}`
