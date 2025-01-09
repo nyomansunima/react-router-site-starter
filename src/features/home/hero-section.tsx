@@ -16,9 +16,9 @@ function OpenWorkBadge(): React.ReactElement {
         <TooltipTrigger asChild>
           <Link
             href={'/contact'}
-            className="flex items-center gap-2 text-sm text-foreground/60 transition-all duration-300 hover:-translate-y-1 hover:text-foreground"
+            className="flex items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1 hover:text-foreground/70"
           >
-            <i className="fi fi-rr-circle-small" />
+            <i className="fi fi-rr-heart" />
             Open to work
           </Link>
         </TooltipTrigger>
@@ -36,9 +36,9 @@ function NewBadge(): React.ReactElement {
           <Link
             href={'https://devcrates.site?ref=nyomansunima'}
             target="_blank"
-            className="flex items-center gap-2 text-sm text-foreground/60 transition-all duration-300 hover:-translate-y-1 hover:text-foreground"
+            className="flex items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1 hover:text-foreground/70"
           >
-            <i className="fi fi-rr-circle-small" />
+            <i className="fi fi-rr-bell-ring" />
             New craft: Developer Resources
           </Link>
         </TooltipTrigger>
