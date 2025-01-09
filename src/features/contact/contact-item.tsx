@@ -4,21 +4,18 @@ import * as React from 'react'
 import Link from 'next/link'
 import { Button, toast } from '@shared/components'
 
-export interface ContactItemData {
+export type ContactItemData = {
   href: string
   label: string
 }
 
-interface ContactItemProps {
+type ContactItemProps = {
   contact: ContactItemData
   children: React.ReactNode
 }
 
 export function ContactItem({ contact, children }: ContactItemProps) {
   const { href } = contact
-
-  // check the link is email, would like to
-  // use different method to contact
   const isEmail = href.includes('@gmail.com')
 
   function copyEmailToClipboard(): void {
@@ -34,25 +31,19 @@ export function ContactItem({ contact, children }: ContactItemProps) {
       })
   }
 
+  function handleOnClick(): void {
+    if (isEmail) copyEmailToClipboard()
+    else window.open(href)
+  }
+
   return (
     <Button
-      asChild={!isEmail}
       variant={'outline'}
-      size={'lg'}
+      size={'base'}
       className="transition-all duration-300 hover:-translate-y-1 bg-surface"
-      onClick={() => {
-        if (isEmail) {
-          copyEmailToClipboard()
-        }
-      }}
+      onClick={handleOnClick}
     >
-      {isEmail ? (
-        children
-      ) : (
-        <Link href={href} target="_blank">
-          {children}
-        </Link>
-      )}
+      {children}
     </Button>
   )
 }
