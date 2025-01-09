@@ -59,7 +59,6 @@ export function ContentImage({
 }: ContentImageProps): React.ReactElement {
   return (
     <div
-      suppressHydrationWarning
       className={`${mergeClass(
         'flex rounded-2xl p-1 border border-border bg-surface cursor-pointer my-4',
         className,
