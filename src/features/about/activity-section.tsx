@@ -53,7 +53,7 @@ export function ActivitySection(): React.ReactElement {
 
       <p>
         Design is where the magic happens. With a keen eye for aesthetics and an
-        understanding of user experience, I create captivating interfaces that
+        understanding of user experience, I create captivating types tha=t
         strike a perfect balance between beauty and functionality. Every pixel
         is carefully considered to ensure a seamless and engaging user
         experience. Once the design is complete, I roll up my sleeves and delve

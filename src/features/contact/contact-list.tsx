@@ -8,9 +8,7 @@ export function ContactList() {
   return (
     <div className="flex flex-wrap items-center gap-2">
       {contacts.map((con, index) => (
-        <ContactItem contact={con} key={index}>
-          {con.label}
-        </ContactItem>
+        <ContactItem contact={con} key={index} />
       ))}
     </div>
   )

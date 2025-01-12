@@ -9,14 +9,14 @@ import {
 } from '@shared/components'
 import { mergeClass } from '@shared/utils'
 
-export interface SocialData {
+export type SocialData = {
   label: string
   href: string
   icon: string
   className?: string
 }
 
-interface SocialItemProps {
+type SocialItemProps = {
   social: SocialData
 }
 
@@ -33,7 +33,7 @@ export function SocialItem({ social }: SocialItemProps): React.ReactElement {
               size={'icon'}
               asChild
               className={mergeClass(
-                `text-sm h-12 w-12 rounded-2xl transition-all duration-300 hover:-translate-y-1 bg-surface`,
+                `h-12 w-12 transition-all duration-300 hover:-translate-y-1`,
                 className,
               )}
             >

@@ -47,7 +47,7 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm text-foreground/70 !leading-6 transition-all duration-700"
+    className="overflow-hidden text-sm text-foreground/60 !leading-6 transition-all duration-700"
     {...props}
   >
     <div className={mergeClass('py-4', className)}>{children}</div>

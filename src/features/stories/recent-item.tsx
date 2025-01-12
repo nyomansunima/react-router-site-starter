@@ -1,13 +1,13 @@
 import * as React from 'react'
 import Link from 'next/link'
 
-export interface RecentData {
+export type RecentData = {
   title: string
   timeline: string
   url: string
 }
 
-interface RecentItemProps {
+type RecentItemProps = {
   recent: RecentData
 }
 

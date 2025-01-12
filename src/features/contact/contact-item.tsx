@@ -10,11 +10,10 @@ export type ContactItemData = {
 
 type ContactItemProps = {
   contact: ContactItemData
-  children: React.ReactNode
 }
 
-export function ContactItem({ contact, children }: ContactItemProps) {
-  const { href } = contact
+export function ContactItem({ contact }: ContactItemProps) {
+  const { href, label } = contact
   const isEmail = href.includes('@gmail.com')
 
   function copyEmailToClipboard(): void {
@@ -39,10 +38,10 @@ export function ContactItem({ contact, children }: ContactItemProps) {
     <Button
       variant={'outline'}
       size={'base'}
-      className="transition-all duration-300 hover:-translate-y-1 bg-surface"
+      className="h-12 transition-all duration-300 hover:-translate-y-1 bg-surface text-[.8125rem]"
       onClick={handleOnClick}
     >
-      {children}
+      {label}
     </Button>
   )
 }

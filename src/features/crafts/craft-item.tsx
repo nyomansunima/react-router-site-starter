@@ -1,21 +1,18 @@
 import * as React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 
-export interface CraftData {
+export type CraftData = {
   title: string
   description: string
-  publisher: string
-  image: string
   link: string
 }
 
-interface CraftItemProps {
+type CraftItemProps = {
   craft: CraftData
 }
 
 export function CraftItem({ craft }: CraftItemProps): React.ReactElement {
-  const { title, description, publisher, image, link } = craft
+  const { title, description, link } = craft
 
   return (
     <Link
@@ -23,21 +20,9 @@ export function CraftItem({ craft }: CraftItemProps): React.ReactElement {
       target="_blank"
       className="flex flex-col h-full p-3 rounded-2xl border border-border bg-surface relative group transition-all duration-300 hover:-translate-y-1"
     >
-      <div className="flex gap-3">
-        <div className="block">
-          <Image
-            src={image}
-            height={36}
-            width={36}
-            alt={title}
-            className="rounded-xl overflow-hidden"
-          />
-        </div>
-
-        <div className="flex flex-col flex-grow">
-          <h3 className="text-sm font-medium">{title}</h3>
-          <span className="text-sm text-foreground/60">{publisher}</span>
-        </div>
+      <div className="flex gap-2">
+        <i className="fi fi-rr-circle-small" />
+        <h3 className="text-sm font-medium">{title}</h3>
       </div>
 
       <p className="text-sm mt-3 text-foreground/60 line-clamp-2">

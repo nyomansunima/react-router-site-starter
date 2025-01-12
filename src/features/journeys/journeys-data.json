@@ -109,7 +109,7 @@
         },
         {
           "title": "Create tiny resource for developer",
-          "description": "A collection tools, library, or resources for developers that i have created to support the workflows and development process. Also a place to create another librray, ui, interfaces and so on. Explore your utils at <a href='https://weecraft.club' target='_blank'>Weecraft</a>.",
+          "description": "A collection tools, library, or resources for developers that i have created to support the workflows and development process. Also a place to create another librray, ui, types and so on. Explore your utils at <a href='https://weecraft.club' target='_blank'>Weecraft</a>.",
           "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1731664500548/71978cc6-c770-4700-8f98-76540702e1af.png",
           "date": "Oct 2024",
           "category": "Work"
@@ -156,7 +156,15 @@
     },
     {
       "title": "2025: Everything is starting to change",
-      "list": []
+      "list": [
+        {
+          "title": "Launch Creevoo",
+          "description": "Just craft and launch my new projects called 'Creevoo', a web design templates projects to store and building a good business website templates that support multiple platforms.",
+          "date": "Jan, 12 2025",
+          "category": "Hacking",
+          "url": "https://www.creevoo.store?ref=nyomansunima"
+        }
+      ]
     }
   ]
 }

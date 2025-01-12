@@ -8,8 +8,8 @@
   :root {
     --color-background: 0 0 98%;
     --color-foreground: 0 0 4%;
-    --color-surface: 0 0 100%;
-    --color-border: 0 0 94%;
+    --color-surface: 0 0 98%;
+    --color-border: 0 0 93%;
     --color-input: 0 0 94%;
     --color-primary: 0 0 0%;
     --color-primary-foreground: 0 0 98%;
@@ -21,8 +21,8 @@
 .dark {
   --color-background: 0 0 0%;
   --color-foreground: 0 0 75%;
-  --color-surface: 0 0 6%;
-  --color-border: 0 0 15%;
+  --color-surface: 0 0 0%;
+  --color-border: 0 0 12%;
   --color-input: 0 0 10%;
   --color-primary: 0 0 90%;
   --color-primary-foreground: 0 0 90%;
@@ -36,11 +36,7 @@
   }
 
   body {
-    @apply !text-sm tablet:!text-base font-normal text-foreground bg-background leading-normal !font-sans antialiased selection:bg-blue-100/90 selection:text-blue-950;
-    font-variation-settings: normal;
-    font-feature-settings:
-      'rlig' 1,
-      'calt' 1;
+    @apply text-sm tablet:text-sm font-normal text-foreground bg-background leading-normal font-sans antialiased selection:bg-blue-100/90 selection:text-blue-950;
   }
 
   .fi {

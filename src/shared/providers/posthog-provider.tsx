@@ -5,7 +5,7 @@ import posthog from 'posthog-js'
 import { PostHogProvider } from 'posthog-js/react'
 import { config } from '@shared/libs'
 
-interface PosthogProviderProps {
+type PosthogProviderProps = {
   children: React.ReactNode
 }
 

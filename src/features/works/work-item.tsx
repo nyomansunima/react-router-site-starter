@@ -4,49 +4,42 @@ import { mergeClass, parseReadableDate } from '@shared/utils'
 import Link from 'next/link'
 import { WorkData } from './work-service'
 
-interface WorkItemProps {
+type WorkItemProps = {
   work: WorkData
 }
 
-function ComingSoon(): React.ReactElement {
-  return (
-    <span className="flex items-center gap-2 text-xs font-medium text-rose-600 dark:text-rose-400">
-      COMING SOON
-    </span>
-  )
-}
-
 export function WorkItem({ work }: WorkItemProps): React.ReactElement {
-  const { slug, title, description, image, date, status } = work
+  const { slug, title, description, image, date, type } = work
 
   const readableTimeline = parseReadableDate(date)
   const link = `/works/${slug}`
-  const isDraft = status === 'In Progress'
 
   return (
     <Link
-      href={isDraft ? '#' : link}
+      href={link}
       className={mergeClass(
-        'flex flex-col group border border-border rounded-2xl bg-surface p-3 transition-all duration-300 hover:-translate-y-1',
-        isDraft && 'cursor-default',
+        'flex flex-col group border border-border rounded-2xl bg-surface p-3 transition-all duration-300 hover:-translate-y-1 relative',
       )}
     >
       <div className="flex flex-col tablet:flex-row tablet:items-center justify-between">
-        <h3 className="text-base font-medium !leading-tight">{title}</h3>
+        <h3 className="text-sm font-medium flex-1">{title}</h3>
 
         <div className="flex items-center gap-3">
-          {isDraft && <ComingSoon />}
-
-          <span className="text-sm text-foreground/50 group-hover:text-foreground">
+          <span className="text-sm text-foreground/60 group-hover:text-foreground">
+            {type}
+          </span>
+          <span className="text-sm text-foreground/60 group-hover:text-foreground">
             {readableTimeline}
           </span>
         </div>
       </div>
 
-      <p className="mt-4 text-sm text-pretty !leading-6">{description}</p>
+      <p className="text-sm !leading-relaxed text-pretty text-foreground/60 mt-3">
+        {description}
+      </p>
 
-      <div className="flex w-full bg-surface p-1 border border-border rounded-xl group mt-3">
-        <picture className="relative overflow-hidden w-full h-[200px] tablet:h-[360px] rounded-lg">
+      <div className="flex w-full border border-border rounded-2xl p-1 mt-6">
+        <picture className="relative overflow-hidden w-full h-[180px] tablet:h-[300px] rounded-xl">
           <Image
             src={image}
             alt={title}

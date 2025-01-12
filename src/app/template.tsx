@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { PageTransition } from '@shared/components'
 
-interface RootTemplateProps {
+type RootTemplateProps = {
   children: React.ReactNode
 }
 

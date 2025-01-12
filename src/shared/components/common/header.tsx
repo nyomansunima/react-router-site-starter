@@ -11,7 +11,7 @@ import {
 import { useClickOutside, useKeyEvent, usePathChange } from '@shared/hooks'
 import { Button } from '../ui/button'
 
-interface NavMenuItemProps {
+type NavMenuItemProps = {
   children: React.ReactNode
   href: string
   target?: React.HTMLAttributeAnchorTarget

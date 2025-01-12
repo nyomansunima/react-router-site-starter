@@ -7,7 +7,7 @@ const publications = storiesData.publications as PublicationData[]
 export function PublicationSection(): React.ReactElement {
   return (
     <section className="flex flex-col gap-4">
-      <h2 className="text-lg tablet:text-xl font-medium">Publications:</h2>
+      <h2 className="font-medium">Publications</h2>
 
       <div className="grid grid-cols-2 tablet:grid-cols-3 gap-2 w-full">
         {publications.map((pub, index) => (

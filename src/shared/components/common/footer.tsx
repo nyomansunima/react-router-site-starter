@@ -8,7 +8,7 @@ const footerMenus = [
   { label: 'FAQs', href: '/faqs' },
 ]
 
-interface MenuItemProps {
+type MenuItemProps = {
   href: string
   children?: React.ReactNode
   className?: string

@@ -20,16 +20,10 @@ export type WorkFrontMatter = {
   isFeatured: boolean
   type: 'Hacking' | 'Work'
   category: string
-  client?: {
+  team: {
     name: string
     url: string
   }
-  roles: string[]
-  responsibilities: string[]
-  teams?: {
-    name: string
-    url: string
-  }[]
 }
 
 type WorkMetadata = Pick<WorkFrontMatter, 'title' | 'description' | 'image'>

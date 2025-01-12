@@ -1,6 +1,6 @@
 import { ArticleContent } from '@shared/components'
 import * as React from 'react'
-import { getWorkDetail, WorkFrontMatter } from './work-service'
+import { getWorkDetail } from './work-service'
 import Link from 'next/link'
 import { parseReadableDate } from '@shared/utils'
 
@@ -8,105 +8,46 @@ type WorkDetailContentProps = {
   slug: string
 }
 
-type OverviewProps = {
-  meta: WorkFrontMatter
-}
-
-function Overview({ meta }: OverviewProps): React.ReactElement {
-  const { roles, responsibilities, teams } = meta
-
-  return (
-    <div className="flex border border-border rounded-2xl p-1 mt-8">
-      <div className="flex border border-border rounded-xl p-6 w-full">
-        <div className="grid grid-cols-1 tablet:grid-cols-2 gap-x-3 gap-y-12 w-full">
-          <div className="flex flex-col gap-3 col-span-1">
-            <h3 className="text-foreground/60 font-medium text-sm">ROLES</h3>
-            <ul className="flex flex-col gap-3 text-sm">
-              {roles.map((role, index) => (
-                <li
-                  className="flex items-center gap-2 cursor-pointer transition-all duration-300 hover:-translate-y-1"
-                  key={index}
-                >
-                  <i className="fi fi-rr-circle-small text-xs" />
-                  {role}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-3 col-span-1">
-            <h3 className="text-foreground/60 font-medium text-sm">
-              RESPONSIBILITIES
-            </h3>
-            <ul className="flex flex-col gap-3 text-sm">
-              {responsibilities.map((responsibility, index) => (
-                <li
-                  className="flex items-center gap-2 cursor-pointer transition-all duration-300 hover:-translate-y-1"
-                  key={index}
-                >
-                  <i className="fi fi-rr-circle-small text-xs" />
-                  {responsibility}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {teams && (
-            <div className="flex flex-col gap-3 col-span-1">
-              <h3 className="text-foreground/60 font-medium text-sm">TEAMS</h3>
-              <ul className="flex flex-col gap-3 text-sm">
-                {teams.map((team, index) => (
-                  <li
-                    className="flex items-center gap-2 cursor-pointer transition-all duration-300 hover:-translate-y-1"
-                    key={index}
-                  >
-                    <Link
-                      href={team.url}
-                      target="_blank"
-                      className="flex items-center gap-2"
-                    >
-                      <i className="fi fi-rr-circle-small text-xs" />
-                      {team.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export async function WorkDetailContent({
   slug,
 }: WorkDetailContentProps): Promise<React.ReactElement> {
   const { content, meta } = await getWorkDetail(slug)
-  const date = parseReadableDate(meta.date)
+  const { category, date, status, team, title } = meta
+  const parsedDate = parseReadableDate(date)
 
   return (
     <div className="flex flex-col">
       <h1 className="text-lg tablet:text-xl font-medium text-balance">
-        {meta.title}
+        {title}
       </h1>
 
-      <div className="flex items-center gap-4 mt-4">
-        {meta.client && (
+      <div className="flex items-center gap-4 mt-3">
+        <span className="flex items-center gap-2 !leading-none cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
+          <i className="fi fi-rr-circle-small" />
+          {status}
+        </span>
+
+        {team && (
           <Link
-            href={meta.client.url}
+            href={meta.team.url}
             target="_blank"
-            className="!leading-none transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60"
+            className="flex items-center gap-2 !leading-none transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60"
           >
-            {meta.client.name}
+            <i className="fi fi-rr-circle-small" />
+            {team.name}
           </Link>
         )}
-        <span className="!leading-none cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
-          {date}
+
+        <span className="flex items-center gap-2 !leading-none cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
+          <i className="fi fi-rr-circle-small" />
+          {category}
+        </span>
+
+        <span className="flex items-center gap-2 !leading-none cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
+          <i className="fi fi-rr-circle-small" />
+          {parsedDate}
         </span>
       </div>
-
-      <Overview meta={meta} />
 
       <ArticleContent className="mt-16">{content}</ArticleContent>
     </div>
