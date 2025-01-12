@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-interface PageTransitionProps {
+type PageTransitionProps = {
   children: React.ReactNode
 }
 

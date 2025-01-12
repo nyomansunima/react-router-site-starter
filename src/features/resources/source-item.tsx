@@ -3,13 +3,13 @@
 import Link from 'next/link'
 import * as React from 'react'
 
-export interface SourceData {
+export type SourceData = {
   title: string
   description: string
   url: string
 }
 
-interface SourceItemProps {
+type SourceItemProps = {
   source: SourceData
 }
 

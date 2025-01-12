@@ -3,7 +3,7 @@ title: 'Dev Crates'
 description: 'Helping developers to find the best resources, sites, and tools to build their projects. Also featuring a curated list of the best resources for developers to learn and grow'
 image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1733990991229/49886a53-896d-4b9c-9146-dad03454f1dd.png'
 
-date: '2023-08-31'
+date: '2024-12-12'
 status: 'Completed'
 isFeatured: false
 
@@ -17,7 +17,7 @@ responsibilities:
 
 ## Challenges
 
-Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user interface. They needed a complete redesign to improve usability and enhance their customer experience.
+Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user type. They needed a complet=e redesign to improve usability and enhance their customer experience.
 
 [Repository](https://github.com/weecraft/boola?ref=nyomansunima)
 [Launch](https://marketplace.visualstudio.com/items?itemName=nyomansunima.boola)
@@ -28,7 +28,7 @@ Acme Corp faced challenges with their outdated e-commerce platform. Key issues i
 
 ## Problem Statement
 
-Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user interface. They needed a complete redesign to improve usability and enhance their customer experience.
+Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user type. They needed a complet=e redesign to improve usability and enhance their customer experience.
 
 ## Goals
 
@@ -52,7 +52,7 @@ We conducted detailed research to understand user pain points and competitive la
 ### Design and Development Strategy
 
 1. **User-Centric Design**:
-   Crafted a visually engaging and intuitive interface with clear navigation pathways.
+   Crafted a visually engaging and intuitive type with clear navigation pathways=.
 
 2. **Mobile-First Development**:
    Implemented responsive designs to ensure usability across devices.

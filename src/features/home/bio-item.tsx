@@ -2,7 +2,7 @@ import * as React from 'react'
 import Link from 'next/link'
 import { mergeClass } from '@shared/utils'
 
-export interface BioItemData {
+export type BioItemData = {
   type: string
   url: string
   label: string
@@ -10,14 +10,14 @@ export interface BioItemData {
   isFeatured?: boolean
 }
 
-interface LinkItemProps {
+type LinkItemProps = {
   className?: string
   children?: React.ReactNode
   href: string
   showBadge?: boolean
 }
 
-interface BioItemProps {
+type BioItemProps = {
   data: BioItemData
 }
 

@@ -1,5 +1,5 @@
 ---
-title: 'Guna Transport Website'
+title: 'Guna Transport'
 description: 'Create website for transportation business that allow to generate more client and convert up to 30% audiences'
 image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1733393555028/63b0c290-955c-4b73-8466-314758b61182.png'
 
@@ -28,7 +28,7 @@ responsibilities:
 
 ## Challenges
 
-Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user interface. They needed a complete redesign to improve usability and enhance their customer experience.
+Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user type. They needed a complet=e redesign to improve usability and enhance their customer experience.
 
 [Launch](https://gunatransport.com)
 
@@ -38,7 +38,7 @@ Acme Corp faced challenges with their outdated e-commerce platform. Key issues i
 
 ## Problem Statement
 
-Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user interface. They needed a complete redesign to improve usability and enhance their customer experience.
+Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user type. They needed a complet=e redesign to improve usability and enhance their customer experience.
 
 ## Goals
 
@@ -62,7 +62,7 @@ We conducted detailed research to understand user pain points and competitive la
 ### Design and Development Strategy
 
 1. **User-Centric Design**:
-   Crafted a visually engaging and intuitive interface with clear navigation pathways.
+   Crafted a visually engaging and intuitive type with clear navigation pathways=.
 
 2. **Mobile-First Development**:
    Implemented responsive designs to ensure usability across devices.

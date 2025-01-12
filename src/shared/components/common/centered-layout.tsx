@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-interface CenteredLayoutProps {
+type CenteredLayoutProps = {
   children: React.ReactNode
 }
 

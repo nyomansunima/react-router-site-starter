@@ -25,7 +25,7 @@
         },
         {
           "title": "Figma",
-          "description": "Figma is a collaborative web application for interface design.",
+          "description": "Figma is a collaborative web application for type design.",
           "url": "https://figma.com/signup?ref=nyomansunima"
         },
         {
@@ -97,6 +97,11 @@
           "title": "Waitlist",
           "description": "I love this stacks, useful when building waiting list for product that embed in a beta sites.",
           "url": "https://getwaitlist.com?ref=nyomansunima"
+        },
+        {
+          "title": "Airtable",
+          "description": "Help me to manage the simple database for the projects.",
+          "url": "https://airtable.com?ref=nyomansunima"
         }
       ]
     },
@@ -146,7 +151,62 @@
         {
           "title": "Flaticon Interface Icon",
           "description": "My favorite free icons for start website and design projects.",
-          "url": "https://www.flaticon.com/uicons/interface-icons?ref=nyomansunima"
+          "url": "https://www.flaticon.com/uicons/type-icons?ref=nyomansunima="
+        }
+      ]
+    },
+    {
+      "title": "Web design tools",
+      "list": [
+        {
+          "title": "Next.js",
+          "description": "Most used framework to work on custom websites.",
+          "url": "https://nextjs.org?ref=nyomansunima"
+        },
+        {
+          "title": "Framer",
+          "description": "To create simple design webiste and client needs.",
+          "url": "https://framer.com?ref=nyomansunima"
+        },
+        {
+          "title": "Wix Studio",
+          "description": "Better for create custom and collaborative websites across teams.",
+          "url": "https://framer.com?ref=nyomansunima"
+        },
+        {
+          "title": "Shopify",
+          "description": "Help me to use the templates and API to create marketplace store",
+          "url": "https://shopify.com?ref=nyomansunima"
+        }
+      ]
+    },
+    {
+      "title": "Business tools",
+      "list": [
+        {
+          "title": "Cal.com",
+          "description": "Best for create and manage your business calendar.",
+          "url": "https://cal.com?ref=nyomansunima"
+        }
+      ]
+    },
+    {
+      "title": "Best payment tools",
+      "list": [
+        {
+          "title": "Lemon Squeezy",
+          "description": "Useful when create digital goods and products.",
+          "url": "https://lemonsqueezy.com?ref=nyomansunima"
+        },
+        {
+          "title": "Polar",
+          "description": "Easy to access and use the payment gateway.",
+          "url": "https://polar.sh?ref=nyomansunima"
+        },
+        {
+          "title": "Paddle",
+          "description": "Best for create and manage the subscriptions.",
+          "url": "https://paddle.com?ref=nyomansunima"
         }
       ]
     }

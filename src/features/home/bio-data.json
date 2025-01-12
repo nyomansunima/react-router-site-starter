@@ -15,7 +15,7 @@
     {
       "type": "link",
       "url": "https://tryweebo.one?ref=nyomansunima",
-      "label": "My web design business (NEW)",
+      "label": "My web design business",
       "className": "tablet:row-span-2"
     },
     {
@@ -33,12 +33,12 @@
     {
       "type": "link",
       "url": "https://moono.space?ref=nyomansunima",
-      "label": "My apps (NEW)"
+      "label": "My apps"
     },
     {
       "type": "link",
       "url": "https://weecraft.club?ref=nyomansunima",
-      "label": "See tiny dev resources (NEW)",
+      "label": "Open source projects",
       "className": "tablet:col-span-2"
     },
     {
@@ -46,6 +46,12 @@
       "url": "/crafts",
       "label": "See products",
       "className": "tablet:row-span-2"
+    },
+    {
+      "type": "link",
+      "url": "https://creevoo.store?ref=nyomansunima",
+      "label": "Website templates",
+      "className": "tablet:col-span-2"
     }
   ]
 }

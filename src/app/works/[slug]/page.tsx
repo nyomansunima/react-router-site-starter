@@ -3,11 +3,11 @@ import { Metadata, ResolvingMetadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
 import { WorkDetailContent, workService } from '@features/works'
 
-interface Params {
+type Params = {
   slug: string
 }
 
-interface WorkDetailPageProps {
+type WorkDetailPageProps = {
   params: Promise<Params>
 }
 

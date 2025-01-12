@@ -2,20 +2,20 @@ import Image from 'next/image'
 import * as React from 'react'
 import { mergeClass } from '@shared/utils'
 
-interface ArticleContentProps {
+type ArticleContentProps = {
   children: React.ReactNode
   className?: string
 }
 
-interface ProtectedHtmlContentProps {
+type ProtectedHtmlContentProps = {
   children: string
 }
 
-interface GalleryItemProps {
+type GalleryItemProps = {
   image: string
 }
 
-interface GalleryListImageProps {
+type GalleryListImageProps = {
   images: string[]
 }
 
@@ -44,7 +44,7 @@ export function ProtectedHtmlContent({
   return <div dangerouslySetInnerHTML={content}></div>
 }
 
-interface ContentImageProps {
+type ContentImageProps = {
   src: string
   alt: string
   height?: number

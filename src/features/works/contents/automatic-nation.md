@@ -1,34 +1,48 @@
 ---
-title: 'Blaze Theme'
-description: 'Modern, minimal visual studio code theme for better experience code. With less and minimal look, combine with simple color pallete for the day and night use'
-image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1728833361672/6bd157c4-a153-4846-8627-5ac10611aaa2.png'
+title: 'Automatic Nation'
+description: 'Led the design and developement of a brand new website for Automatic Nation that convert visitors into audiences and bring them to the newsletter integrations'
+image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1736426452167/8f446f34-d892-4c6a-ba66-02e6d323c90f.png'
 
-date: '2024-10-11'
-status: 'Completed'
+date: '2023-07-12'
+status: 'In Progress'
 isFeatured: false
 
-type: 'Hacking'
-category: 'Code Editor Theme'
+type: 'Work'
+category: 'Branding'
 
-roles: ['Product Designer', 'Developer', 'UI/UX Designer', 'Frontend Developer']
-responsibilities:
-  ['System Design', 'UI Design', 'UX Design', 'Frontend Development']
+team:
+  name: 'Weebo'
+  url: 'https://www.tryweebo.one'
 ---
 
 ## Challenges
 
-Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user interface. They needed a complete redesign to improve usability and enhance their customer experience.
+Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user type. They needed a complet=e redesign to improve usability and enhance their customer experience.
 
-[Repository](https://github.com/weecraft/blaze-theme?ref=nyomansunima)
-[Launch](https://marketplace.visualstudio.com/items?itemName=weecraft.blaze-theme)
+[Repository](https://github.com/weecraft/boola?ref=nyomansunima)
+[Launch](https://marketplace.visualstudio.com/items?itemName=nyomansunima.boola)
 
 <br/>
 
 ![Banner](https://cdn.hashnode.com/res/hashnode/image/upload/v1732079951931/3ac2d9b4-d790-4b31-8855-4f6a909811b2.png)
 
+## Product Overview
+
+ROLES:
+
+- Web Designer
+- Web Developer
+
+RESPONSIBILITIES:
+
+- Web Design
+- Web Development
+- SEO
+- Branding
+
 ## Problem Statement
 
-Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user interface. They needed a complete redesign to improve usability and enhance their customer experience.
+Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user type. They needed a complet=e redesign to improve usability and enhance their customer experience.
 
 ## Goals
 
@@ -52,7 +66,7 @@ We conducted detailed research to understand user pain points and competitive la
 ### Design and Development Strategy
 
 1. **User-Centric Design**:
-   Crafted a visually engaging and intuitive interface with clear navigation pathways.
+   Crafted a visually engaging and intuitive type with clear navigation pathways=.
 
 2. **Mobile-First Development**:
    Implemented responsive designs to ensure usability across devices.

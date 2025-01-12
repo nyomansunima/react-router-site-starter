@@ -7,7 +7,7 @@ import {
 import Link from 'next/link'
 import * as React from 'react'
 
-export interface ExperienceItemData {
+export type ExperienceItemData = {
   team: string
   teamLabel?: string
   position: string
@@ -15,7 +15,7 @@ export interface ExperienceItemData {
   teamUrl: string
 }
 
-interface ExperienceItemProps {
+type ExperienceItemProps = {
   experience: ExperienceItemData
 }
 
@@ -28,7 +28,7 @@ export function ExperienceItem({
     <Link
       href={teamUrl}
       target="_blank"
-      className="flex flex-col tablet:flex-row items-start tablet:items-center text-sm gap-2 py-2 group"
+      className="flex flex-col tablet:flex-row items-start tablet:items-center text-sm gap-2 py-1 group"
     >
       <div className="flex items-center font-medium flex-grow gap-2">
         <i className="fi fi-rr-circle-small" />
@@ -44,10 +44,10 @@ export function ExperienceItem({
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
-        <span className="text-foreground/40 transition-all duration-300 group-hover:text-foreground">
+        <span className="text-foreground/60 transition-all duration-300 group-hover:text-foreground">
           {position}
         </span>
-        <span className="text-foreground/40 transition-all duration-300 group-hover:text-foreground">
+        <span className="text-foreground/60 transition-all duration-300 group-hover:text-foreground">
           {timeline}
         </span>
       </div>

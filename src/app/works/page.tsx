@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { WorksListSection, ComingSoonSection } from '@features/works'
+import { WorksListSection } from '@features/works'
 
 export const metadata: Metadata = {
   title: 'Works',
@@ -25,7 +25,6 @@ export default function WorksPage(): React.ReactElement {
   return (
     <div className="flex flex-col gap-20 tablet:gap-36">
       <WorksListSection />
-      <ComingSoonSection />
     </div>
   )
 }

@@ -1,12 +1,12 @@
 import * as React from 'react'
 import Link from 'next/link'
 
-export interface PublicationData {
+export type PublicationData = {
   title: string
   url: string
 }
 
-interface PublicationItemProps {
+type PublicationItemProps = {
   publication: PublicationData
 }
 
