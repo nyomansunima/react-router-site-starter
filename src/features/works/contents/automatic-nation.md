@@ -15,12 +15,14 @@ team:
   url: 'https://www.tryweebo.one'
 ---
 
-## Challenges
-
 Acme Corp faced challenges with their outdated e-commerce platform. Key issues included a high bounce rate, low conversion rates, and an unappealing user type. They needed a complet=e redesign to improve usability and enhance their customer experience.
 
-[Repository](https://github.com/weecraft/boola?ref=nyomansunima)
-[Launch](https://marketplace.visualstudio.com/items?itemName=nyomansunima.boola)
+<span className="text-foreground/60">Good to know:</span>
+
+You can find the project on GitHub:
+
+- [Repository](https://github.com/weecraft/boola?ref=nyomansunima)
+- [Launch](https://marketplace.visualstudio.com/items?itemName=nyomansunima.boola)
 
 <br/>
 
