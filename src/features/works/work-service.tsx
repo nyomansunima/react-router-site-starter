@@ -17,7 +17,7 @@ export type WorkFrontMatter = {
   image: string
   date: string
   status: 'Completed' | 'In Progress'
-  isFeatured: boolean
+  isFeatured?: boolean
   type: 'Hacking' | 'Work'
   category: string
   team: {
