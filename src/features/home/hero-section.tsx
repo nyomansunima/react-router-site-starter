@@ -16,9 +16,9 @@ function OpenWorkBadge(): React.ReactElement {
         <TooltipTrigger asChild>
           <Link
             href={'/contact'}
-            className="flex items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1 hover:text-foreground/60"
+            className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 text-link"
           >
-            <i className="fi fi-rr-circle-small" />
+            <i className="fi fi-rr-circle-dashed" />
             Open to work
           </Link>
         </TooltipTrigger>
@@ -36,9 +36,9 @@ function NewBadge(): React.ReactElement {
           <Link
             href={'https://creevoo.store?ref=nyomansunima'}
             target="_blank"
-            className="flex items-center gap-2 text-sm transition-all duration-300 hover:-translate-y-1 hover:text-foreground/60"
+            className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 text-link"
           >
-            <i className="fi fi-rr-circle-small" />
+            <i className="fi fi-rr-circle-dashed" />
             New craft: Creevoo web design templates
           </Link>
         </TooltipTrigger>
@@ -67,7 +67,7 @@ export function HeroSection(): React.ReactElement {
             software engineer
           </span>{' '}
           &{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-blue-600 dark:text-blue-400">
+          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-link">
             creator
           </span>{' '}
           loves to craft solutions for global audiences. Shipping great,
@@ -86,7 +86,7 @@ export function HeroSection(): React.ReactElement {
           <Link
             href={'https://www.tryweebo.one'}
             target="_blank"
-            className="text-blue-600 dark:text-blue-400 cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
+            className="text-link cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
           >
             weebo
           </Link>
@@ -94,7 +94,7 @@ export function HeroSection(): React.ReactElement {
           <Link
             href={'https://www.moono.space'}
             target="_blank"
-            className="text-blue-600 dark:text-blue-400 cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
+            className="text-link cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
           >
             moono
           </Link>
@@ -102,7 +102,7 @@ export function HeroSection(): React.ReactElement {
           <Link
             href={'https://www.weecraft.club'}
             target="_blank"
-            className="text-blue-600 dark:text-blue-400 cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
+            className="text-link cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
           >
             weecraft
           </Link>{' '}
