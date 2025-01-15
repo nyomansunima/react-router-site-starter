@@ -15,6 +15,8 @@
     --color-primary-foreground: 0 0 98%;
     --color-secondary: 0 0 94%;
     --color-secondary-foreground: 0 0 10%;
+    --color-link: 221 83 53%;
+    --color-accent: 0 0 40%;
   }
 }
 
@@ -28,6 +30,8 @@
   --color-primary-foreground: 0 0 90%;
   --color-secondary: 0 0 19%;
   --color-secondary-foreground: 0 0 65%;
+  --color-link: 213 94 68%;
+  --color-accent: 0 0 60%;
 }
 
 @layer base {
@@ -35,15 +39,16 @@
     @apply box-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply text-sm tablet:text-sm font-normal text-foreground bg-background leading-normal font-sans antialiased selection:bg-blue-100/90 selection:text-blue-950;
+    @apply text-base font-normal !leading-normal text-foreground bg-background font-sans antialiased selection:bg-blue-100/90 selection:text-blue-950;
+    font-style: normal;
   }
 
   .fi {
     @apply flex justify-center items-center text-sm;
   }
-}
-
-html {
-  scroll-behavior: smooth;
 }
