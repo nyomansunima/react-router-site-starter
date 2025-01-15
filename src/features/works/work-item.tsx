@@ -9,7 +9,7 @@ type WorkItemProps = {
 }
 
 export function WorkItem({ work }: WorkItemProps): React.ReactElement {
-  const { slug, title, description, image, date, type } = work
+  const { slug, title, description, image, date, type, category, status } = work
 
   const readableTimeline = parseReadableDate(date)
   const link = `/works/${slug}`
@@ -21,22 +21,35 @@ export function WorkItem({ work }: WorkItemProps): React.ReactElement {
         'flex flex-col group border border-border rounded-2xl bg-surface p-3 transition-all duration-300 hover:-translate-y-1 relative',
       )}
     >
-      <div className="flex flex-col tablet:flex-row tablet:items-center justify-between">
-        <h3 className="text-sm font-medium flex-1">{title}</h3>
+      <div className="flex flex-col tablet:flex-row tablet:items-center gap-2 justify-between">
+        <h3 className="flex items-center gap-2 text-sm font-medium flex-1 !leading-tight">
+          <i className="fi fi-rr-circle-small" />
+          {title}
+        </h3>
 
-        <div className="flex items-center gap-3">
-          <span className="text-sm text-foreground/60 group-hover:text-foreground">
-            {type}
-          </span>
-          <span className="text-sm text-foreground/60 group-hover:text-foreground">
-            {readableTimeline}
-          </span>
-        </div>
+        <span className="text-sm text-foreground/60">{readableTimeline}</span>
       </div>
 
-      <p className="text-sm !leading-relaxed text-pretty text-foreground/60 mt-3">
+      <p className="text-foreground/60 text-sm line-clamp-2 text-pretty mt-3">
         {description}
       </p>
+
+      <div className="flex flex-wrap items-center gap-2 mt-4">
+        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 !pl-2 py-1 hover:-translate-y-1 text-sm">
+          <i className="fi fi-rr-circle-dashed" />
+          {status}
+        </span>
+
+        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 !pl-2 py-1 hover:-translate-y-1 text-sm">
+          <i className="fi fi-rr-circle-dashed" />
+          {type}
+        </span>
+
+        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 !pl-2 py-1 hover:-translate-y-1 text-sm">
+          <i className="fi fi-rr-circle-dashed" />
+          {category}
+        </span>
+      </div>
 
       <div className="flex w-full border border-border rounded-2xl p-1 mt-6">
         <picture className="relative overflow-hidden w-full h-[180px] tablet:h-[300px] rounded-xl">
