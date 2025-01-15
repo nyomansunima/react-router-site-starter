@@ -6,17 +6,12 @@
         {
           "title": "1.1.1.1 Warp",
           "description": "Best free vpn and proxy services for the internet. Allow to use the 1.1.1.1 dns for free.",
-          "url": "https://one.one.one.one/?ref=nyomansunima"
+          "url": "https://one.one.one.one?ref=nyomansunima"
         },
         {
           "title": "Zed",
           "description": "My favorite code editor for building apps, websites, and more.",
-          "url": "https://zed.dev/?ref=nyomansunima"
-        },
-        {
-          "title": "Visual Studio Code",
-          "description": "Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux and macOS.",
-          "url": "https://code.visualstudio.com/?ref=nyomansunima"
+          "url": "https://zed.dev?ref=nyomansunima"
         },
         {
           "title": "Notion",
@@ -34,11 +29,6 @@
           "url": "https://chat.openai.com/signup?ref=nyomansunima"
         },
         {
-          "title": "Warp.dev",
-          "description": "Warp is a terminal for the 21st century.",
-          "url": "https://warp.dev/signup?ref=nyomansunima"
-        },
-        {
           "title": "Notion Calendar",
           "description": "Notion Calendar is a calendar for Notion.",
           "url": "https://notion.so/signup?ref=nyomansunima"
@@ -47,6 +37,26 @@
           "title": "Spark Email",
           "description": "Spark Email is a fast and beautiful email client.",
           "url": "https://sparkmailapp.com/signup?ref=nyomansunima"
+        },
+        {
+          "title": "Brave",
+          "description": "Main browser to explore, code and doing all of the works.",
+          "url": "https://brave.com?ref=nyomansunignup?ref=nyomansunima"
+        },
+        {
+          "title": "Ghostty",
+          "description": "My favorite terminal apps for daily driver as developer.",
+          "url": "https://ghostty.org?ref=nyomansunima"
+        },
+        {
+          "title": "Bitwarden",
+          "description": "Open source password manager to save password for free.",
+          "url": "https://bitwarden.com?ref=nyomansunima"
+        },
+        {
+          "title": "Github",
+          "description": "Best for manage the code and collaborate with team.",
+          "url": "https://.com?ref=nyomansunima"
         }
       ]
     },
@@ -102,6 +112,21 @@
           "title": "Airtable",
           "description": "Help me to manage the simple database for the projects.",
           "url": "https://airtable.com?ref=nyomansunima"
+        },
+        {
+          "title": "Cloudflare",
+          "description": "Best for deploy and manage projects like website, api, and more.",
+          "url": "https://cloudflare.com?ref=nyomansunima"
+        },
+        {
+          "title": "Godaddy",
+          "description": "My favorite to find unique and worth domain name.",
+          "url": "https://godaddy.com?ref=nyomansunima"
+        },
+        {
+          "title": "Posthog",
+          "description": "My favorite tool to track the user behavior, analytics and manage project feature.",
+          "url": "https://posthog.com?ref=nyomansunima"
         }
       ]
     },
@@ -152,6 +177,11 @@
           "title": "Flaticon Interface Icon",
           "description": "My favorite free icons for start website and design projects.",
           "url": "https://www.flaticon.com/uicons/type-icons?ref=nyomansunima="
+        },
+        {
+          "title": "Lazygit",
+          "description": "My favorite git client to working on terminal.",
+          "url": "https://github.com/jesseduffield/lazygit?ref=nyomansunima"
         }
       ]
     },
@@ -177,6 +207,16 @@
           "title": "Shopify",
           "description": "Help me to use the templates and API to create marketplace store",
           "url": "https://shopify.com?ref=nyomansunima"
+        },
+        {
+          "title": "Prismic",
+          "description": "Help me create a custom website with teams collaboration feature.",
+          "url": "https://prismic.io?ref=nyomansunima"
+        },
+        {
+          "title": "Sanity",
+          "description": "Best way to start website with custom CMS.",
+          "url": "https://sanity.io?ref=nyomansunima"
         }
       ]
     },
@@ -187,11 +227,16 @@
           "title": "Cal.com",
           "description": "Best for create and manage your business calendar.",
           "url": "https://cal.com?ref=nyomansunima"
+        },
+        {
+          "title": "Loom",
+          "description": "Create a video for the project and share with the team.",
+          "url": "https://loom.com?ref=nyomansunima"
         }
       ]
     },
     {
-      "title": "Best payment tools",
+      "title": "Payment tools",
       "list": [
         {
           "title": "Lemon Squeezy",
