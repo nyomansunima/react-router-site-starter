@@ -6,7 +6,7 @@ const bios = bioData.links as BioItemData[]
 
 export function BioSection(): React.ReactElement {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col mt-10">
       <div className="flex w-full">
         <div className="grid grid-cols-2 tablet:grid-cols-4 gap-2 w-full">
           {bios.map((data, index) => (

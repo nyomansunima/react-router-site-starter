@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { BioSection, HeroSection } from '@features/home'
+import { BioSection, CurrentStatusSection, HeroSection } from '@features/home'
 
 export const metadata: Metadata = {
   title: 'Nyoman Sunima',
@@ -23,8 +23,9 @@ export const metadata: Metadata = {
 
 export default function HomePage(): React.ReactElement {
   return (
-    <div className="flex flex-col gap-20">
+    <div className="flex flex-col gap-10">
       <HeroSection />
+      <CurrentStatusSection />
       <BioSection />
     </div>
   )

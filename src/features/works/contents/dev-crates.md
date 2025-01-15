@@ -5,10 +5,9 @@ image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1733990991229/49886a
 
 date: '2024-12-12'
 status: 'Completed'
-isFeatured: false
 
 type: 'Hacking'
-category: 'Tools'
+category: 'Branding, product design & development'
 
 roles: ['Product Designer', 'Developer', 'UI/UX Designer', 'Frontend Developer']
 responsibilities:

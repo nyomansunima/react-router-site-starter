@@ -22,13 +22,11 @@ export function DetailSection(): React.ReactElement {
 
       <p>
         It's all start when i'am in a vocational high school (2016) at{' '}
-        <Link href="https://smknbalimandara.sch.id" className="font-medium">
-          Bali Mandara
-        </Link>
-        , i'am had a lot of interest of design, especially in website. I take
-        the computer and networking class, but also learning design &
-        development alone with the tutorials. It's bring me a big impact and
-        also guide my life into tech industries.
+        <Link href="https://smknbalimandara.sch.id">Bali Mandara</Link>, i'am
+        had a lot of interest of design, especially in website. I take the
+        computer and networking class, but also learning design & development
+        alone with the tutorials. It's bring me a big impact and also guide my
+        life into tech industries.
       </p>
 
       <ContentImage

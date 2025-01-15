@@ -36,7 +36,7 @@ export function ExperienceItem({
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger className="text-left flex-1 text-pretty">
-              {team}
+              {position}
             </TooltipTrigger>
             <TooltipContent>{teamLabel}</TooltipContent>
           </Tooltip>
@@ -45,10 +45,7 @@ export function ExperienceItem({
 
       <div className="flex flex-wrap items-center gap-2">
         <span className="text-foreground/60 transition-all duration-300 group-hover:text-foreground">
-          {position}
-        </span>
-        <span className="text-foreground/60 transition-all duration-300 group-hover:text-foreground">
-          {timeline}
+          {team} ({timeline})
         </span>
       </div>
     </Link>

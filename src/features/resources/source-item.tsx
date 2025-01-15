@@ -26,9 +26,11 @@ export function SourceItem({ source }: SourceItemProps): React.ReactElement {
         <i className="fi fi-rr-circle-small" />
         <h3 className="text-sm font-medium">{title}</h3>
       </div>
-      <p className="text-sm text-foreground/60 mt-3 line-clamp-2">
+
+      <p className="text-sm text-foreground/60 mt-3 line-clamp-2 text-pretty">
         {description}
       </p>
+
       <div className="hidden w-7 h-7 rounded-lg bg-secondary/30 border border-border group-hover:flex justify-center items-center absolute top-3 right-3">
         <i className="fi fi-rr-arrow-small-right -rotate-45" />
       </div>
