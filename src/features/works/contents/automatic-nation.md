@@ -1,5 +1,5 @@
 ---
-title: 'Automatic Nation'
+title: 'Automatic nation'
 description: 'Led the design and developement of a brand new website for Automatic Nation that convert visitors into audiences and bring them to the newsletter integrations'
 image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1736426452167/8f446f34-d892-4c6a-ba66-02e6d323c90f.png'
 
