@@ -51,7 +51,7 @@ export function Footer(): React.ReactElement {
   return (
     <footer className="flex flex-col" id="footer">
       <div className="flex flex-col tablet:flex-row tablet:items-center py-7 tablet:justify-between mt-8">
-        <span className="text-sm">
+        <span className="text-sm cursor-pointer">
           Copyright &copy; 2024 - Alright Reserved
         </span>
         <FooterMenuList />
