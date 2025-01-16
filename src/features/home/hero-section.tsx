@@ -16,7 +16,7 @@ function OpenWorkBadge(): React.ReactElement {
         <TooltipTrigger asChild>
           <Link
             href={'/contact'}
-            className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 text-link"
+            className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 text-link text-sm"
           >
             <i className="fi fi-rr-circle-dashed" />
             Open to work
@@ -36,7 +36,7 @@ function NewBadge(): React.ReactElement {
           <Link
             href={'https://creevoo.store?ref=nyomansunima'}
             target="_blank"
-            className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 text-link"
+            className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 text-link text-sm"
           >
             <i className="fi fi-rr-circle-dashed" />
             New craft: Creevoo web design templates
@@ -59,15 +59,15 @@ export function HeroSection(): React.ReactElement {
       <div className="flex flex-col gap-6 text-base !leading-7 text-pretty mt-10">
         <p>
           Hello, I am a{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-fuchsia-600 dark:text-fuchsia-400">
+          <span className="cursor-pointer inline-flex transition-all duration-300 text-fuchsia-600 dark:text-fuchsia-400">
             product designer
           </span>
           ,{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-red-600 dark:text-red-400">
+          <span className="cursor-pointer inline-flex transition-all duration-300 text-red-600 dark:text-red-400">
             software engineer
           </span>{' '}
           &{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 hover:text-foreground text-link">
+          <span className="cursor-pointer inline-flex transition-all duration-300 text-link">
             creator
           </span>{' '}
           loves to craft solutions for global audiences. Shipping great,
@@ -75,10 +75,16 @@ export function HeroSection(): React.ReactElement {
           user experience, and target specific.
         </p>
         <p>
-          Focus on shipping design, saas, goodies, sites, contents and other
-          good things to help business moving forward and solve more problems.
-          Also love to craft idea into a real product. Talks about indie
-          hacking, product shipping, and business.
+          Focus on{' '}
+          <Link href={'/crafts'} className="text-link">
+            crafting
+          </Link>{' '}
+          design, saas, goodies, sites, contents and other good things to help
+          business moving forward and solve problems.{' '}
+          <Link href={'/stories'} className="text-link">
+            Talks
+          </Link>{' '}
+          about indie hacking, product shipping, and business.
         </p>
         <p>
           Currently working as product designer, and developer to craft a
@@ -86,7 +92,7 @@ export function HeroSection(): React.ReactElement {
           <Link
             href={'https://www.tryweebo.one'}
             target="_blank"
-            className="text-link cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
+            className="text-link cursor-pointer inline-flex transition-all duration-300"
           >
             weebo
           </Link>
@@ -94,7 +100,7 @@ export function HeroSection(): React.ReactElement {
           <Link
             href={'https://www.moono.space'}
             target="_blank"
-            className="text-link cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
+            className="text-link cursor-pointer inline-flex transition-all duration-300"
           >
             moono
           </Link>
@@ -102,7 +108,7 @@ export function HeroSection(): React.ReactElement {
           <Link
             href={'https://www.weecraft.club'}
             target="_blank"
-            className="text-link cursor-pointer inline-flex transition-all duration-300 hover:text-foreground"
+            className="text-link cursor-pointer inline-flex transition-all duration-300"
           >
             weecraft
           </Link>{' '}
