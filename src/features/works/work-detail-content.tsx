@@ -40,7 +40,7 @@ export async function WorkDetailContent({
                   {team.name}
                 </Link>
               </TooltipTrigger>
-              <TooltipContent>Currently working team</TooltipContent>
+              <TooltipContent>Teams</TooltipContent>
             </Tooltip>
           </TooltipProvider>
         )}
