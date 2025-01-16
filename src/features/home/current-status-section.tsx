@@ -10,7 +10,7 @@ export function CurrentStatusSection(): React.ReactElement {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col text-base !leading-7 text-pretty">
-        <p>On working progress and latest updates:</p>
+        <p>Progress and latest updates:</p>
 
         <ul className="flex flex-col mt-2 gap-1">
           {statuses.map((status, i) => (
