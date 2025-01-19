@@ -14,6 +14,11 @@
           "url": "https://zed.dev?ref=nyomansunima"
         },
         {
+          "title": "Helix",
+          "description": "Other favorite terminal code editor that ilove to use.",
+          "url": "https://helix-editor.com?ref=nyomansunima"
+        },
+        {
           "title": "Notion",
           "description": "Notion is a workspace where you can create, organize, and share anything you want.",
           "url": "https://notion.so/signup?ref=nyomansunima"
@@ -252,6 +257,16 @@
           "title": "Paddle",
           "description": "Best for create and manage the subscriptions.",
           "url": "https://paddle.com?ref=nyomansunima"
+        },
+        {
+          "title": "Paypal",
+          "description": "Another payment gateway for the business.",
+          "url": "https://paypal.com?ref=nyomansunima"
+        },
+        {
+          "title": "Stripe",
+          "description": "Best for create and manage the subscriptions.",
+          "url": "https://stripe.com?ref=nyomansunima"
         }
       ]
     }
