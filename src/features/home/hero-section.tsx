@@ -56,7 +56,7 @@ export function HeroSection(): React.ReactElement {
         <NewBadge />
       </div>
 
-      <div className="flex flex-col gap-6 text-base !leading-7 text-pretty mt-10">
+      <div className="flex flex-col gap-6 text-base leading-7! text-pretty mt-10">
         <p>
           Hello, I am a{' '}
           <span className="cursor-pointer inline-flex transition-all duration-300 text-fuchsia-600 dark:text-fuchsia-400">

@@ -30,7 +30,7 @@ export function ExperienceItem({
       target="_blank"
       className="flex flex-col tablet:flex-row items-start tablet:items-center text-sm gap-2 py-1 group"
     >
-      <div className="flex items-center font-medium flex-grow gap-2">
+      <div className="flex items-center font-medium grow gap-2">
         <i className="fi fi-rr-circle-small" />
 
         <TooltipProvider>
