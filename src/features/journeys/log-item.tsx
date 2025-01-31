@@ -24,7 +24,7 @@ export function LogItem({ log }: LogItemProps): React.ReactElement {
   return (
     <div className="flex flex-col bg-surface border border-border p-3 rounded-2xl cursor-pointer group transition-all duration-300 hover:-translate-y-1">
       <div className="flex flex-col tablet:flex-row gap-2 tablet:items-center">
-        <h3 className="flex items-center gap-2 font-medium text-sm !leading-tight text-pretty flex-grow flex-1">
+        <h3 className="flex items-center gap-2 font-medium text-sm leading-tight! text-pretty grow flex-1">
           <i className="fi fi-rr-circle-small" />
           {title}
         </h3>
@@ -41,7 +41,7 @@ export function LogItem({ log }: LogItemProps): React.ReactElement {
       </p>
 
       <div className="flex items-center gap-2 mt-4">
-        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 !pl-2 py-1 hover:-translate-y-1 text-sm">
+        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
           <i className="fi fi-rr-circle-dashed" />
           {category}
         </span>

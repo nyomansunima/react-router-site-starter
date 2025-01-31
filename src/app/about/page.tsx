@@ -12,17 +12,17 @@ import {
 import { ArticleContent } from '@shared/components'
 
 export const metadata: Metadata = {
-  title: 'About',
+  title: 'About | Nyoman Sunima',
   description: 'The whole story about me, nyoman sunima and all of the journey',
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'About',
+    title: 'About | Nyoman Sunima',
     description:
       'The whole story about me, nyoman sunima and all of the journey',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'About',
+    title: 'About | Nyoman Sunima',
     description:
       'The whole story about me, nyoman sunima and all of the journey',
   },

@@ -4,16 +4,16 @@ import { sharedMetadata } from '@shared/libs'
 import { ContactList, SocialMediaList } from '@features/contact'
 
 export const metadata: Metadata = {
-  title: 'Contact',
+  title: 'Contact | Nyoman Sunima',
   description: 'Get in touch with me right now, start your idea',
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'Contact',
+    title: 'Contact | Nyoman Sunima',
     description: 'Get in touch with me right now, start your idea',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'Contact',
+    title: 'Contact | Nyoman Sunima',
     description: 'Get in touch with me right now, start your idea',
   },
 }

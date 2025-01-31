@@ -35,7 +35,7 @@ export async function WorkDetailContent({
                 <Link
                   href={meta.team.url}
                   target="_blank"
-                  className="flex items-center gap-2 !leading-none text-sm text-link"
+                  className="flex items-center gap-2 leading-none! text-sm text-link"
                 >
                   {team.name}
                 </Link>
@@ -47,17 +47,17 @@ export async function WorkDetailContent({
       </div>
 
       <div className="flex flex-wrap items-center gap-4 mt-6">
-        <span className="flex items-center gap-2 !leading-none cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
+        <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
           <i className="fi fi-rr-circle-dashed" />
           {status}
         </span>
 
-        <span className="flex items-center gap-2 !leading-none cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
+        <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
           <i className="fi fi-rr-circle-dashed" />
           {type}
         </span>
 
-        <span className="flex items-center gap-2 !leading-none cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
+        <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
           <i className="fi fi-rr-circle-dashed" />
           {category}
         </span>

@@ -4,16 +4,16 @@ import { sharedMetadata } from '@shared/libs'
 import { FAQListSection } from '@features/faqs'
 
 export const metadata: Metadata = {
-  title: 'FAQs',
+  title: 'FAQs | Nyoman Sunima',
   description: 'Most asked questions by people around the world',
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'FAQs',
+    title: 'FAQs | Nyoman Sunima',
     description: 'Most asked questions by people around the world',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'FAQs',
+    title: 'FAQs | Nyoman Sunima',
     description: 'Most asked questions by people around the world',
   },
 }

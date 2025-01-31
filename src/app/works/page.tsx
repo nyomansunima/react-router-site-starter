@@ -4,18 +4,18 @@ import { sharedMetadata } from '@shared/libs'
 import { WorksListSection } from '@features/works'
 
 export const metadata: Metadata = {
-  title: 'Works',
+  title: 'Works | Nyoman Sunima',
   description:
     'See all of my works including projects, apps, products, case studies, idea and playground',
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'Works',
+    title: 'Works | Nyoman Sunima',
     description:
       'See all of my works including projects, apps, products, case studies, idea and playground',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'Works',
+    title: 'Works | Nyoman Sunima',
     description:
       'See all of my works including projects, apps, products, case studies, idea and playground',
   },

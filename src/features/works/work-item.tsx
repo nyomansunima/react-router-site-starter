@@ -22,7 +22,7 @@ export function WorkItem({ work }: WorkItemProps): React.ReactElement {
       )}
     >
       <div className="flex flex-col tablet:flex-row tablet:items-center gap-2 justify-between">
-        <h3 className="flex items-center gap-2 text-sm font-medium flex-1 !leading-tight">
+        <h3 className="flex items-center gap-2 text-sm font-medium flex-1 leading-tight!">
           <i className="fi fi-rr-circle-small" />
           {title}
         </h3>
@@ -35,17 +35,17 @@ export function WorkItem({ work }: WorkItemProps): React.ReactElement {
       </p>
 
       <div className="flex flex-wrap items-center gap-2 mt-4">
-        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 !pl-2 py-1 hover:-translate-y-1 text-sm">
+        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
           <i className="fi fi-rr-circle-dashed" />
           {status}
         </span>
 
-        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 !pl-2 py-1 hover:-translate-y-1 text-sm">
+        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
           <i className="fi fi-rr-circle-dashed" />
           {type}
         </span>
 
-        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 !pl-2 py-1 hover:-translate-y-1 text-sm">
+        <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
           <i className="fi fi-rr-circle-dashed" />
           {category}
         </span>
