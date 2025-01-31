@@ -4,16 +4,16 @@ import { sharedMetadata } from '@shared/libs'
 import { SupportSection } from '@features/support'
 
 export const metadata: Metadata = {
-  title: 'Support Me (Donate)',
+  title: 'Support Me (Donate) | Nyoman Sunima',
   description: 'Support me by donating for projects and contents or goodies',
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'Support me (Donate)',
+    title: 'Support Me (Donate) | Nyoman Sunima',
     description: 'Support me by donating for projects and contents or goodies',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'Support me (Donate)',
+    title: 'Support Me (Donate) | Nyoman Sunima',
     description: 'Support me by donating for projects and contents or goodies',
   },
 }

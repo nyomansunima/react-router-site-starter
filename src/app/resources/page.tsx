@@ -4,16 +4,16 @@ import { sharedMetadata } from '@shared/libs'
 import { SourcesSection } from '@features/resources'
 
 export const metadata: Metadata = {
-  title: 'Resources',
+  title: 'Resources | Nyoman Sunima',
   description: 'Get free resources and things that help your works',
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'Resources',
+    title: 'Resources | Nyoman Sunima',
     description: 'Get free resources and things that help your works',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'Resources',
+    title: 'Resources | Nyoman Sunima',
     description: 'Get free resources and things that help your works',
   },
 }

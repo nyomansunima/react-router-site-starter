@@ -21,17 +21,17 @@ export async function generateMetadata(
   const previousTwitterImages = (await parent).twitter?.images || []
 
   return {
-    title: meta.title,
+    title: `${meta.title} | Nyoman Sunima`,
     description: meta.description,
     openGraph: {
       ...sharedMetadata.openGraph,
-      title: meta.title,
+      title: `${meta.title} | Nyoman Sunima`,
       description: meta.description,
       images: [meta.image, ...previousOgImages],
     },
     twitter: {
       ...sharedMetadata.twitter,
-      title: meta.title,
+      title: `${meta.title} | Nyoman Sunima`,
       description: meta.description,
       images: [meta.image, ...previousTwitterImages],
     },
