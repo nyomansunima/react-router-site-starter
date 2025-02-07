@@ -18,7 +18,7 @@ export function StatusItem({ status }: StatusItemProps): React.ReactElement {
       <Link
         href={url}
         target="_blank"
-        className="flex items-center gap-2 text-link"
+        className="flex items-center gap-2 text-foreground/60 hover:text-foreground"
       >
         <i className="fi fi-rr-circle-small" />
         <span>{title}</span>
