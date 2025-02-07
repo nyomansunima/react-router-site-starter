@@ -36,7 +36,7 @@ export function LogItem({ log }: LogItemProps): React.ReactElement {
         </div>
       </div>
 
-      <p className="text-sm mt-3 text-foreground/60 text-pretty">
+      <p className="text-sm mt-3 text-foreground/60 text-pretty leading-relaxed">
         {description}
       </p>
 
