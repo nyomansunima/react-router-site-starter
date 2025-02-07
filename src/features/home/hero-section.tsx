@@ -16,7 +16,7 @@ function OpenWorkBadge(): React.ReactElement {
         <TooltipTrigger asChild>
           <Link
             href={'/contact'}
-            className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 text-link text-sm"
+            className="flex items-center gap-2 transition-all duration-300 text-foreground/60 hover:text-foreground text-sm"
           >
             <i className="fi fi-rr-circle-dashed" />
             Open to work
@@ -34,12 +34,12 @@ function NewBadge(): React.ReactElement {
       <Tooltip>
         <TooltipTrigger asChild>
           <Link
-            href={'https://creevoo.store?ref=nyomansunima'}
+            href={'https://usesonibble.site?ref=nyomansunima'}
             target="_blank"
-            className="flex items-center gap-2 transition-all duration-300 hover:-translate-y-1 text-link text-sm"
+            className="flex items-center gap-2 transition-all duration-300 text-foreground/60 hover:text-foreground text-sm"
           >
             <i className="fi fi-rr-circle-dashed" />
-            New craft: Creevoo web design templates
+            New craft: Sonibble
           </Link>
         </TooltipTrigger>
         <TooltipContent>Something new in this week</TooltipContent>
