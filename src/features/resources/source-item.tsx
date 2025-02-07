@@ -27,7 +27,7 @@ export function SourceItem({ source }: SourceItemProps): React.ReactElement {
         <h3 className="text-sm font-medium">{title}</h3>
       </div>
 
-      <p className="text-sm text-foreground/60 mt-3 line-clamp-2 text-pretty">
+      <p className="text-sm text-foreground/60 mt-3 line-clamp-2 text-pretty leading-relaxed">
         {description}
       </p>
 

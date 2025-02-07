@@ -30,7 +30,7 @@ export function WorkItem({ work }: WorkItemProps): React.ReactElement {
         <span className="text-sm text-foreground/60">{readableTimeline}</span>
       </div>
 
-      <p className="text-foreground/60 text-sm line-clamp-2 text-pretty mt-3">
+      <p className="text-foreground/60 text-sm line-clamp-2 text-pretty mt-3 leading-relaxed">
         {description}
       </p>
 

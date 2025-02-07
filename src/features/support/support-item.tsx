@@ -25,7 +25,7 @@ export function SupportItem({ data }: SupportItemProps): React.ReactElement {
         <h3 className="text-sm font-medium text-wrap">{title}</h3>
       </div>
 
-      <p className="text-sm text-foreground/60 mt-3 text-pretty line-clamp-2">
+      <p className="text-sm text-foreground/60 mt-3 text-pretty line-clamp-2 leading-relaxed">
         {description}
       </p>
 
