@@ -1,7 +1,5 @@
 @import 'tailwindcss';
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 @plugin 'tailwindcss-animate';
@@ -46,22 +44,6 @@
     --color-secondary-foreground: hsl(0 0 10%);
     --color-link: hsl(221 83 53%);
     --color-accent: hsl(0 0 40%);
-  }
-}
-
-@layer utilities {
-  .dark {
-    --color-background: hsl(0 0 0%);
-    --color-foreground: hsl(0 0 75%);
-    --color-surface: hsl(0 0 0%);
-    --color-border: hsl(0 0 12%);
-    --color-input: hsl(0 0 10%);
-    --color-primary: hsl(0 0 90%);
-    --color-primary-foreground: hsl(0 0 90%);
-    --color-secondary: hsl(0 0 19%);
-    --color-secondary-foreground: hsl(0 0 65%);
-    --color-link: hsl(213 94 68%);
-    --color-accent: hsl(0 0 60%);
   }
 }
 
