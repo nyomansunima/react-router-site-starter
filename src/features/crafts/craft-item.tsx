@@ -25,7 +25,7 @@ export function CraftItem({ craft }: CraftItemProps): React.ReactElement {
         <h3 className="text-sm font-medium">{title}</h3>
       </div>
 
-      <p className="text-sm mt-3 text-foreground/60 line-clamp-2 text-pretty">
+      <p className="text-sm mt-3 text-foreground/60 line-clamp-2 text-pretty leading-relaxed">
         {description}
       </p>
 
