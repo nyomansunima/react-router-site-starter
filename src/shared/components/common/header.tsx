@@ -24,7 +24,7 @@ export function Brand(): React.ReactElement {
         href={'/'}
         className="transition-all duration-300 hover:-translate-x-1"
       >
-        <span className="font-medium">nyomansunima.one</span>
+        <span className="font-medium text-foreground/60">nyomansunima.one</span>
       </Link>
     </div>
   )
@@ -91,6 +91,7 @@ function Menu(): React.ReactElement {
         >
           <ul className="grid grid-cols-2 w-full gap-x-4 gap-y-4">
             <NavMenuItem href="/works">Works</NavMenuItem>
+            <NavMenuItem href="/collabs">Collabs</NavMenuItem>
             <NavMenuItem href="/crafts">Crafts</NavMenuItem>
             <NavMenuItem href="/stories">Stories</NavMenuItem>
             <NavMenuItem href="/journeys">Journeys</NavMenuItem>
