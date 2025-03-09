@@ -15,7 +15,7 @@ function OpenWorkBadge(): React.ReactElement {
       <Tooltip>
         <TooltipTrigger asChild>
           <Link
-            href={'/contact'}
+            href={'/collabs'}
             className="flex items-center gap-2 transition-all duration-300 text-foreground/60 hover:text-foreground text-sm"
           >
             <i className="fi fi-rr-circle-dashed" />
