@@ -15,7 +15,7 @@ export default function GlobalError({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${fonts.inter.variable}`}
+      className={`${fonts.inter.variable} ${fonts.jetbrainsMono.variable}`}
     >
       <body suppressHydrationWarning>
         <CenteredLayout>
