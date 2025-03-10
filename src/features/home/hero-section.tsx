@@ -2,61 +2,19 @@
 
 import Link from 'next/link'
 import * as React from 'react'
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@shared/components'
-
-function OpenWorkBadge(): React.ReactElement {
-  return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Link
-            href={'/collabs'}
-            className="flex items-center gap-2 transition-all duration-300 text-foreground/60 hover:text-foreground text-sm"
-          >
-            <i className="fi fi-rr-circle-dashed" />
-            Open to work
-          </Link>
-        </TooltipTrigger>
-        <TooltipContent>Looking for solid works & teams</TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
-  )
-}
-
-function NewBadge(): React.ReactElement {
-  return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Link
-            href={'https://usesonibble.site?ref=nyomansunima'}
-            target="_blank"
-            className="flex items-center gap-2 transition-all duration-300 text-foreground/60 hover:text-foreground text-sm"
-          >
-            <i className="fi fi-rr-circle-dashed" />
-            New craft: Sonibble
-          </Link>
-        </TooltipTrigger>
-        <TooltipContent>Something new in this week</TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
-  )
-}
 
 export function HeroSection(): React.ReactElement {
   return (
     <section className="flex flex-col">
-      <div className="flex items-center gap-4 flex-wrap">
-        <OpenWorkBadge />
-        <NewBadge />
+      <div className="flex flex-col gap-2">
+        <span className="text-sm text-foreground/60 font-mono">
+          Shipping journey.
+        </span>
+        <h2 className="text-lg font-medium">Creating digital solutions.</h2>
+        <hr className="border-dashed !mt-3" />
       </div>
 
-      <div className="flex flex-col gap-6 text-base leading-7! text-pretty mt-10">
+      <div className="flex flex-col gap-6 text-base leading-7! text-pretty mt-6">
         <p>
           Hello, I am a{' '}
           <span className="cursor-pointer inline-flex transition-all duration-300 text-fuchsia-600 dark:text-fuchsia-400">
@@ -74,6 +32,7 @@ export function HeroSection(): React.ReactElement {
           effective & impactful products or services through simplicity, better
           user experience, and target specific.
         </p>
+
         <p>
           Focus on{' '}
           <Link href={'/crafts'} className="text-link">
@@ -86,9 +45,9 @@ export function HeroSection(): React.ReactElement {
           </Link>{' '}
           about indie hacking, product shipping, and business.
         </p>
+
         <p>
-          Currently working as product designer, and developer to craft a
-          product, services at{' '}
+          Currently craft a product and services at{' '}
           <Link
             href={'https://www.tryweebo.one'}
             target="_blank"
@@ -112,7 +71,8 @@ export function HeroSection(): React.ReactElement {
           >
             weecraft
           </Link>{' '}
-          also building the brands. Open for collaborations and contributions.
+          also building the brands. My next plans is building high valueable
+          business that bring bigger impact to the world.
         </p>
       </div>
     </section>

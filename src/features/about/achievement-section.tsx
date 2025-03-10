@@ -5,7 +5,13 @@ export function AchievementSection(): React.ReactElement {
     <section>
       <br />
 
-      <h2>Best moment, journey and milestones of hard time</h2>
+      <div className="flex flex-col gap-2 not-prose mt-10">
+        <span className="text-sm text-foreground/60 font-mono">
+          Achievements.
+        </span>
+        <h2>Best moment, journey and milestones of hard time</h2>
+        <hr className="border-dashed !mt-3" />
+      </div>
 
       <p>
         Every professional journey has its defining moments—the ones that test

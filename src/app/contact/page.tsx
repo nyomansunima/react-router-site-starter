@@ -21,6 +21,12 @@ export const metadata: Metadata = {
 export default function ContactPage(): React.ReactElement {
   return (
     <div className="flex flex-col">
+      <div className="flex flex-col gap-2 mb-10">
+        <span className="text-sm text-foreground/60 font-mono">Contact.</span>
+        <h2 className="text-lg font-medium">Connect & collabs.</h2>
+        <hr className="border-dashed !mt-3" />
+      </div>
+
       <ContactList />
       <SocialMediaList />
     </div>

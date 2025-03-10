@@ -1,57 +1,40 @@
 {
   "links": [
     {
-      "type": "link",
       "url": "/collabs",
-      "label": "Hire me",
-      "isFeatured": true
+      "label": "Hire me"
     },
     {
-      "type": "link",
       "url": "/works",
-      "label": " See my works",
-      "isFeatured": true
+      "label": " See my works"
     },
     {
-      "type": "link",
       "url": "https://tryweebo.one?ref=nyomansunima",
-      "label": "My web design business",
-      "className": "tablet:row-span-2"
+      "label": "My web design business"
     },
     {
-      "type": "link",
       "url": "/support",
-      "label": "Suport me",
-      "className": "tablet:row-span-2"
+      "label": "Suport me"
     },
     {
-      "type": "link",
       "url": "/stories",
-      "label": "Learn together with me",
-      "className": "tablet:row-span-2"
+      "label": "Learn together with me"
     },
     {
-      "type": "link",
       "url": "https://moono.space?ref=nyomansunima",
       "label": "My apps"
     },
     {
-      "type": "link",
       "url": "https://weecraft.club?ref=nyomansunima",
-      "label": "Open source projects",
-      "className": "tablet:col-span-2"
+      "label": "Open source projects"
     },
     {
-      "type": "link",
       "url": "/crafts",
-      "label": "See products",
-      "className": "tablet:row-span-2"
+      "label": "See products"
     },
     {
-      "type": "link",
       "url": "https://creevoo.store?ref=nyomansunima",
-      "label": "Website templates",
-      "className": "tablet:col-span-2"
+      "label": "Website templates"
     }
   ]
 }

@@ -11,7 +11,11 @@ const images = [
 export function DetailSection(): React.ReactElement {
   return (
     <section>
-      <h1>Hey, we're good friends</h1>
+      <div className="flex flex-col gap-2 not-prose">
+        <span className="text-sm text-foreground/60 font-mono">Hello.</span>
+        <h1>Hey, we're good friends</h1>
+        <hr className="border-dashed !mt-3" />
+      </div>
 
       <p>
         Hello, my name is Nyoman Sunima, a product designer, software engineer &

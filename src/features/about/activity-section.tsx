@@ -6,11 +6,17 @@ export function ActivitySection(): React.ReactElement {
     <section>
       <br />
 
-      <h2>
-        From ideation, research, planning, design, code
-        <br />
-        to ship the best product
-      </h2>
+      <div className="flex flex-col gap-2 not-prose mt-10">
+        <span className="text-sm text-foreground/60 font-mono">
+          Activities.
+        </span>
+        <h2>
+          From ideation, research, planning, design, code
+          <br />
+          to ship the best product
+        </h2>
+        <hr className="border-dashed !mt-3" />
+      </div>
 
       <p>
         My daily activities revolve around the exciting process of transforming

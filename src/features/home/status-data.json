@@ -1,10 +1,12 @@
 {
   "statuses": [
-    { "title": "Crafting sonibble website", "url": "https://usesonibble.site" },
     {
-      "title": "Create fresh creevo design and business model",
-      "url": "https://creevoo.store"
+      "title": "Building sonibble services",
+      "url": "https://usesonibble.site"
     },
-    { "title": "Working on dev crates", "url": "https://devcrates.site" }
+    {
+      "title": "Redesign weebo business model",
+      "url": "https://usesonibble.site"
+    }
   ]
 }

@@ -5,8 +5,11 @@ export function EndWordSection(): React.ReactElement {
   return (
     <section>
       <br />
-
-      <h2>Last word to say, thanks</h2>
+      <div className="flex flex-col gap-2 not-prose mt-10">
+        <span className="text-sm text-foreground/60 font-mono">Endword.</span>
+        <h2>Last word to say, thanks</h2>
+        <hr className="border-dashed !mt-3" />
+      </div>
 
       <p>
         Through every success, collaboration, and challenge, these moments have

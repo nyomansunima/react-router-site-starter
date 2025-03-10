@@ -5,11 +5,17 @@ export function IndieSection(): React.ReactElement {
     <section>
       <br />
 
-      <h2>
-        Playing with concept and bring into a real
-        <br />
-        product or proven business
-      </h2>
+      <div className="flex flex-col gap-2 not-prose mt-10">
+        <span className="text-sm text-foreground/60 font-mono">
+          Indie hacking.
+        </span>
+        <h2>
+          Playing with concept and bring into a real
+          <br />
+          product or proven business
+        </h2>
+        <hr className="border-dashed !mt-3" />
+      </div>
 
       <p>
         As an indie maker, I embrace the entrepreneurial spirit, taking on the

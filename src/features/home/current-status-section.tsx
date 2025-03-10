@@ -10,9 +10,15 @@ export function CurrentStatusSection(): React.ReactElement {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col text-base leading-7! text-pretty">
-        <p>Progress and latest updates:</p>
+        <div className="flex flex-col">
+          <span className="text-sm font-mono text-foreground/60">
+            Progress & updates.
+          </span>
+          <h2 className="py-2 text-lg font-medium">What's going on?</h2>
+          <hr className="mt-2 border-dashed" />
+        </div>
 
-        <ul className="flex flex-col mt-2 gap-1">
+        <ul className="flex flex-col mt-6 gap-1">
           {statuses.map((status, i) => (
             <StatusItem key={i} status={status} />
           ))}
