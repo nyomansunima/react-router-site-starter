@@ -36,6 +36,13 @@ export function EndWordSection(): React.ReactElement {
       </p>
 
       <p>Thanks for all of your support and attention.</p>
+
+      <div className="flex flex-col not-prose mt-16 gap-3">
+        <p className="text-foreground/60">Nyoman Sunima</p>
+        <span className="text-sm text-foreground/60 font-mono italic">
+          Your business & work best partner.
+        </span>
+      </div>
     </section>
   )
 }
