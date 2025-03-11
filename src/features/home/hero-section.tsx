@@ -71,9 +71,13 @@ export function HeroSection(): React.ReactElement {
           >
             weecraft
           </Link>{' '}
-          also building the brands. My next plans is building high valueable
+          also building the brands. The next plans is building high value
           business that bring bigger impact to the world.
         </p>
+
+        <span className="text-sm text-foreground/60 font-mono italic">
+          Thanks so much...
+        </span>
       </div>
     </section>
   )
