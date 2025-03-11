@@ -36,17 +36,17 @@ export function WorkItem({ work }: WorkItemProps): React.ReactElement {
 
       <div className="flex flex-wrap items-center gap-2 mt-4">
         <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
-          <i className="fi fi-rr-circle-dashed" />
+          <i className="fi fi-rr-circle-dashed text-xs" />
           {status}
         </span>
 
         <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
-          <i className="fi fi-rr-circle-dashed" />
+          <i className="fi fi-rr-circle-dashed text-xs" />
           {type}
         </span>
 
         <span className="flex items-center gap-1 text-foreground/60 hover:text-foreground transition-all duration-300 border border-border rounded-full px-3 pl-2! py-1 hover:-translate-y-1 text-sm">
-          <i className="fi fi-rr-circle-dashed" />
+          <i className="fi fi-rr-circle-dashed text-xs" />
           {category}
         </span>
       </div>
