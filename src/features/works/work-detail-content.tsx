@@ -48,20 +48,22 @@ export async function WorkDetailContent({
 
       <div className="flex flex-wrap items-center gap-4 mt-6">
         <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
-          <i className="fi fi-rr-circle-dashed" />
+          <i className="fi fi-rr-circle-small" />
           {status}
         </span>
 
         <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
-          <i className="fi fi-rr-circle-dashed" />
+          <i className="fi fi-rr-circle-small" />
           {type}
         </span>
 
         <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
-          <i className="fi fi-rr-circle-dashed" />
+          <i className="fi fi-rr-circle-small" />
           {category}
         </span>
       </div>
+
+      <hr className="border-dashed mt-6" />
 
       <ArticleContent className="mt-10">{content}</ArticleContent>
     </div>
