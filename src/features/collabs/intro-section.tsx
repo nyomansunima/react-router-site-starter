@@ -48,8 +48,8 @@ export function IntroSection(): React.ReactElement {
 
       <div className="flex flex-col not-prose">
         <h4 className="py-2">Nyoman Sunima</h4>
-        <span className="text-xs font-mono text-foreground/60 italic">
-          Your best partner.
+        <span className="text-sm font-mono text-foreground/60 italic">
+          Trusted business & work partner.
         </span>
       </div>
     </section>
