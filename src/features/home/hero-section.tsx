@@ -17,11 +17,11 @@ export function HeroSection(): React.ReactElement {
       <div className="flex flex-col gap-6 text-base leading-7! text-pretty mt-6">
         <p>
           Hello, I am a{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 text-fuchsia-600 dark:text-fuchsia-400">
+          <span className="cursor-pointer inline-flex transition-all duration-300 text-fuchsia-600">
             product designer
           </span>
           ,{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 text-red-600 dark:text-red-400">
+          <span className="cursor-pointer inline-flex transition-all duration-300 text-red-600">
             software engineer
           </span>{' '}
           &{' '}
@@ -76,7 +76,7 @@ export function HeroSection(): React.ReactElement {
         </p>
 
         <span className="text-sm text-foreground/60 font-mono italic">
-          Thanks so much...
+          Thanks for coming...
         </span>
       </div>
     </section>
