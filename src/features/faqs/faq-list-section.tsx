@@ -8,7 +8,13 @@ const faqs = faqsData.faqs as FAQData[]
 export function FAQListSection(): React.ReactElement {
   return (
     <section className="flex flex-col">
-      <div className="w-full flex">
+      <div className="flex flex-col gap-2">
+        <span className="text-sm text-foreground/60 font-mono">FAQs.</span>
+        <h2 className="text-lg font-medium">Most asked questions.</h2>
+        <hr className="border-dashed !mt-3" />
+      </div>
+
+      <div className="w-full flex mt-10">
         <Accordion
           type="single"
           collapsible
