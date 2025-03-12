@@ -127,4 +127,10 @@
     font-size: var(--text-base);
     font-weight: var(--font-weight-medium);
   }
+
+  p,
+  li,
+  span {
+    font-size: var(--text-base);
+  }
 }
