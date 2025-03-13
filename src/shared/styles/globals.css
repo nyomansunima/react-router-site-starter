@@ -19,33 +19,17 @@
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 80rem;
 
-  --color-background: var(--color-background);
-  --color-foreground: var(--color-foreground);
-  --color-surface: var(--color-surface);
-  --color-border: var(--color-border);
-  --color-input: var(--color-input);
-  --color-primary: var(--color-primary);
-  --color-primary-foreground: var(--color-primary-foreground);
-  --color-secondary: var(--color-secondary);
-  --color-secondary-foreground: var(--color-secondary-foreground);
-  --color-link: var(--color-link);
-  --color-accent: var(--color-accent);
-}
-
-@layer base {
-  :root {
-    --color-background: hsl(0 0 98%);
-    --color-foreground: hsl(0 0 4%);
-    --color-surface: hsl(0 0 98%);
-    --color-border: hsl(0 0 93%);
-    --color-input: hsl(0 0 94%);
-    --color-primary: hsl(0 0 0%);
-    --color-primary-foreground: hsl(0 0 98%);
-    --color-secondary: hsl(0 0 94%);
-    --color-secondary-foreground: hsl(0 0 10%);
-    --color-link: hsl(221 83 53%);
-    --color-accent: hsl(0 0 40%);
-  }
+  --color-background: hsl(0 0 98%);
+  --color-foreground: hsl(0 0 4%);
+  --color-surface: hsl(0 0 98%);
+  --color-border: hsl(0 0 93%);
+  --color-input: hsl(0 0 94%);
+  --color-primary: hsl(0 0 0%);
+  --color-primary-foreground: hsl(0 0 98%);
+  --color-secondary: hsl(0 0 94%);
+  --color-secondary-foreground: hsl(0 0 10%);
+  --color-link: hsl(221 83 53%);
+  --color-accent: hsl(0 0 40%);
 }
 
 @layer base {
