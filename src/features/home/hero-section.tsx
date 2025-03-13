@@ -14,23 +14,17 @@ export function HeroSection(): React.ReactElement {
         <hr className="border-dashed !mt-3" />
       </div>
 
-      <div className="flex flex-col gap-6 text-base leading-7! text-pretty mt-6">
+      <div className="flex flex-col gap-6 text-base leading-7! text-pretty mt-6 text-foreground/60">
         <p>
           Hello, I am a{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 text-fuchsia-600">
-            product designer
+          <span className="text-foreground">
+            product designer, software engineer & creator{' '}
           </span>
-          ,{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 text-red-600">
-            software engineer
+          loves to craft solutions for global audiences.{' '}
+          <span className="text-foreground">
+            Shipping great, effective & impactful products or services
           </span>{' '}
-          &{' '}
-          <span className="cursor-pointer inline-flex transition-all duration-300 text-link">
-            creator
-          </span>{' '}
-          loves to craft solutions for global audiences. Shipping great,
-          effective & impactful products or services through simplicity, better
-          user experience, and target specific.
+          through simplicity, better user experience, and target specific.
         </p>
 
         <p>
@@ -38,8 +32,10 @@ export function HeroSection(): React.ReactElement {
           <Link href={'/crafts'} className="text-link">
             crafting
           </Link>{' '}
-          design, saas, goodies, sites, contents and other good things to help
-          business moving forward and solve problems.{' '}
+          design, saas, goodies, sites, contents and other good things{' '}
+          <span className="text-foreground">
+            to help business moving forward and solve problems.
+          </span>{' '}
           <Link href={'/stories'} className="text-link">
             Talks
           </Link>{' '}
@@ -71,8 +67,12 @@ export function HeroSection(): React.ReactElement {
           >
             weecraft
           </Link>{' '}
-          also building the brands. The next plans is building high value
-          business that bring bigger impact to the world.
+          also building the brands.{' '}
+          <span className="text-foreground">
+            The next plans is building high value business that bring bigger
+            impact to the world
+          </span>
+          .
         </p>
 
         <span className="text-sm text-foreground/60 font-mono italic">
