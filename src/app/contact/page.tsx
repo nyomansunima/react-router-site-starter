@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { ContactList, SocialMediaList } from '@features/contact'
+import { ContactList } from './contact-list'
+import { SocialMediaList } from './social-list'
 
 export const metadata: Metadata = {
   title: 'Contact | Nyoman Sunima',

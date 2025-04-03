@@ -25,7 +25,7 @@ export function TeamSection(): React.ReactElement {
             target="_blank"
             className="text-foreground !font-normal no-underline"
           >
-            Weebo (Web Design & Development Specialize)
+            Weebo.
           </Link>
         </li>
         <li>
@@ -34,7 +34,16 @@ export function TeamSection(): React.ReactElement {
             target="_blank"
             className="text-foreground !font-normal no-underline"
           >
-            Sonibble (All In Web Business)
+            Sonibble.
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://roastto.site"
+            target="_blank"
+            className="text-foreground !font-normal no-underline"
+          >
+            Roast to site.
           </Link>
         </li>
         <li>Coming more.</li>

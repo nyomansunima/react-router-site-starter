@@ -9,7 +9,7 @@ import { evaluate } from 'next-mdx-remote-client/rsc'
 import { getFrontmatter } from 'next-mdx-remote-client/utils'
 import dayjs from 'dayjs'
 
-const WORK_CONTENT_PATH = '/src/features/works/contents'
+const WORK_CONTENT_PATH = '/src/app/works/contents'
 
 export type WorkFrontMatter = {
   title: string

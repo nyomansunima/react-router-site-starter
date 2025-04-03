@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { ExperienceSection, LogListSection } from '@features/journeys'
+import { ExperienceSection } from './experience-section'
+import { LogListSection } from './log-list'
 
 export const metadata: Metadata = {
   title: 'Journeys | Nyoman Sunima',

@@ -1,6 +1,0 @@
-export * from './activity-section'
-export * from './detail-section'
-export * from './sharing-section'
-export * from './indie-section'
-export * from './achievement-section'
-export * from './endword-section'

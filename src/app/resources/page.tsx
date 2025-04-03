@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { SourcesSection } from '@features/resources'
+import { SourcesSection } from './source-section'
 
 export const metadata: Metadata = {
   title: 'Resources | Nyoman Sunima',

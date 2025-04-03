@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { Metadata, ResolvingMetadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { WorkDetailContent, workService } from '@features/works'
+import * as workService from '../work-service'
+import { WorkDetailContent } from '../work-detail-content'
 
 type Params = {
   slug: string

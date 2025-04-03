@@ -14,7 +14,7 @@ export function StatusItem({ status }: StatusItemProps): React.ReactElement {
   const { title, url } = status
 
   return (
-    <li className="flex items-center transition-all duration-300 hover:-translate-x-1 ml-2">
+    <li className="flex items-center transition-all duration-300 ml-2">
       <Link
         href={url}
         target="_blank"

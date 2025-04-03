@@ -1,7 +1,9 @@
 import * as React from 'react'
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { BioSection, CurrentStatusSection, HeroSection } from '@features/home'
+import { HeroSection } from './hero-section'
+import { CurrentStatusSection } from './current-status-section'
+import { BioSection } from './bio-section'
 
 export const metadata: Metadata = {
   title: 'Product Designer, Software Developer & Creator | Nyoman Sunima',

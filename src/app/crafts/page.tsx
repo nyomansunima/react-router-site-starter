@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { CraftListSection } from '@features/crafts'
+import { CraftListSection } from './craft-list-section'
 
 export const metadata: Metadata = {
   title: 'Crafts | Nyoman Sunima',

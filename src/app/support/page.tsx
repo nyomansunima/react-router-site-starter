@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { SupportSection } from '@features/support'
+import { SupportSection } from './support-section'
 
 export const metadata: Metadata = {
   title: 'Support Me (Donate) | Nyoman Sunima',

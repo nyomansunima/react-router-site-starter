@@ -43,41 +43,13 @@ export function HeroSection(): React.ReactElement {
         </p>
 
         <p>
-          Currently craft a product and services at{' '}
-          <Link
-            href={'https://www.tryweebo.one'}
-            target="_blank"
-            className="text-link cursor-pointer inline-flex transition-all duration-300"
-          >
-            weebo
-          </Link>
-          {', '}
-          <Link
-            href={'https://www.moono.space'}
-            target="_blank"
-            className="text-link cursor-pointer inline-flex transition-all duration-300"
-          >
-            moono
-          </Link>
-          {' & '}
-          <Link
-            href={'https://www.weecraft.club'}
-            target="_blank"
-            className="text-link cursor-pointer inline-flex transition-all duration-300"
-          >
-            weecraft
-          </Link>{' '}
-          also building the brands.{' '}
+          Currently craft a product, services and building the brands.{' '}
           <span className="text-foreground">
             The next plans is building high value business that bring bigger
             impact to the world
           </span>
           .
         </p>
-
-        <span className="text-sm text-foreground/60 font-mono italic">
-          Thanks for coming...
-        </span>
       </div>
     </section>
   )

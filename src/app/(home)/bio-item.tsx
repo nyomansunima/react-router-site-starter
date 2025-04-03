@@ -14,11 +14,11 @@ export function BioItem({ data }: BioItemProps): React.ReactElement {
   const { label, url } = data
 
   return (
-    <li className="flex items-center transition-all duration-300 hover:-translate-x-1 ml-2">
+    <li className="flex items-center transition-all duration-300 ml-2">
       <Link
         href={url}
         target="_blank"
-        className="flex items-center gap-2 text-foreground/60 hover:text-link"
+        className="flex items-center gap-2 text-foreground/60 hover:text-foreground"
       >
         <i className="fi fi-rr-circle-small" />
         <span>{label}</span>

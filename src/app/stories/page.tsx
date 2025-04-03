@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { Metadata } from 'next'
 import { sharedMetadata } from '@shared/libs'
-import { PublicationSection, RecentlySection } from '@features/stories'
+import { PublicationSection } from './publication-section'
+import { RecentlySection } from './recent-section'
 
 export const metadata: Metadata = {
   title: 'Stories | Nyoman Sunima',
