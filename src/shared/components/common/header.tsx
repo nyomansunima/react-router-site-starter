@@ -75,7 +75,7 @@ function Menu(): React.ReactElement {
               onClick={() => setShow(true)}
               className="hover:-translate-y-1"
             >
-              <i className="fi text-xs fi-rr-bookmark" />
+              <i className="fi text-xs fi-br-flame" />
             </Button>
           </TooltipTrigger>
           <TooltipContent>
