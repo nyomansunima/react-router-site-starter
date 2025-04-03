@@ -24,7 +24,7 @@
     "next-mdx-remote-client": "^2.0.1",
     "posthog-js": "^1.231.0",
     "react": "19.1.0",
-    "react-dom": "19.0.0",
+    "react-dom": "19.1.0",
     "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
