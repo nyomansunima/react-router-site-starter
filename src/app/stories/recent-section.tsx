@@ -2,7 +2,7 @@ import * as React from 'react'
 import { RecentData, RecentItem } from './recent-item'
 import storiesData from './stories-data.json'
 
-const recents = [...storiesData.recents].reverse() as RecentData[]
+const recents = [...storiesData].reverse() as RecentData[]
 
 export function RecentlySection(): React.ReactElement {
   return (

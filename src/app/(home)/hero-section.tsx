@@ -1,6 +1,3 @@
-'use client'
-
-import Link from 'next/link'
 import * as React from 'react'
 
 export function HeroSection(): React.ReactElement {
@@ -14,12 +11,12 @@ export function HeroSection(): React.ReactElement {
         <hr className="border-dashed !mt-3" />
       </div>
 
-      <div className="flex flex-col gap-6 text-base leading-7! text-pretty mt-6 text-foreground/60">
+      <div className="flex flex-col gap-6 text-base leading-7 text-pretty mt-6 text-foreground/60">
         <p>
           Hello, I am a{' '}
           <span className="text-foreground">
-            product designer, software engineer & creator{' '}
-          </span>
+            product designer, software engineer & creator
+          </span>{' '}
           loves to craft solutions for global audiences.{' '}
           <span className="text-foreground">
             Shipping great, effective & impactful products or services
@@ -28,27 +25,25 @@ export function HeroSection(): React.ReactElement {
         </p>
 
         <p>
-          Focus on{' '}
-          <Link href={'/crafts'} className="text-link">
-            crafting
-          </Link>{' '}
-          design, saas, goodies, sites, contents and other good things{' '}
+          Focus on crafting
           <span className="text-foreground">
-            to help business moving forward and solve problems.
+            design, saas, goodies, sites, contents and other good things
           </span>{' '}
-          <Link href={'/stories'} className="text-link">
-            Talks
-          </Link>{' '}
-          about indie hacking, product shipping, and business.
+          to help business{' '}
+          <span className="text-foreground">
+            moving forward and solve problems
+          </span>
+          . Talks about indie hacking, product shipping, and business.
         </p>
 
         <p>
-          Currently craft a product, services and building the brands.{' '}
+          Currently craft a{' '}
           <span className="text-foreground">
-            The next plans is building high value business that bring bigger
-            impact to the world
+            product, services and building the brands
           </span>
-          .
+          . The next plans is{' '}
+          <span className="text-foreground">building high value business</span>{' '}
+          that bring bigger impact to the world .
         </p>
       </div>
     </section>

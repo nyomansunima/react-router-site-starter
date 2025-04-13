@@ -2,7 +2,7 @@ import * as React from 'react'
 import { SupportData, SupportItem } from './support-item'
 import data from './support-data.json'
 
-const supports = data.supports as SupportData[]
+const supports = data as SupportData[]
 
 export function SupportSection(): React.ReactElement {
   return (

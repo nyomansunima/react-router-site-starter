@@ -1,10 +1,8 @@
 import * as React from 'react'
 import { ExperienceItem, ExperienceItemData } from './experience-item'
-import journeysData from './journeys-data.json'
+import experienceData from './experiences-data.json'
 
-const experiences = [
-  ...journeysData.experiences,
-].reverse() as ExperienceItemData[]
+const experiences = [...experienceData].reverse() as ExperienceItemData[]
 
 export function ExperienceSection(): React.ReactElement {
   return (
@@ -18,7 +16,7 @@ export function ExperienceSection(): React.ReactElement {
           <hr className="border-dashed !mt-3" />
         </div>
 
-        <div className="flex flex-col gap-3 bg-surface p-3 border border-border rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+        <div className="flex flex-col gap-3 bg-surface p-5 border border-border border-dashed rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
           {experiences.map((exp, index) => (
             <ExperienceItem experience={exp} key={index} />
           ))}

@@ -18,12 +18,12 @@ export function WorkItem({ work }: WorkItemProps): React.ReactElement {
     <Link
       href={link}
       className={mergeClass(
-        'flex flex-col group border border-border rounded-2xl bg-surface p-3 transition-all duration-300 hover:-translate-y-1 relative',
+        'flex flex-col group border border-border border-dashed rounded-2xl bg-surface p-3 transition-all duration-300 hover:-translate-y-1 relative',
       )}
     >
       <div className="flex flex-col tablet:flex-row tablet:items-center gap-2 justify-between">
         <h3 className="flex items-center gap-2 text-sm font-medium flex-1 leading-tight!">
-          <i className="fi fi-rr-circle-small" />
+          <i className="fi fi-br-circle-small text-foreground/60" />
           {title}
         </h3>
 

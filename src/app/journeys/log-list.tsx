@@ -2,7 +2,7 @@ import * as React from 'react'
 import { LogGroup, LogGroupData } from './log-group'
 import journeysData from './journeys-data.json'
 
-const logGroups = [...journeysData.logs].reverse() as LogGroupData[]
+const logGroups = [...journeysData].reverse() as LogGroupData[]
 
 export function LogListSection(): React.ReactElement {
   return (

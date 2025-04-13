@@ -2,7 +2,7 @@ import * as React from 'react'
 import { BioItem, BioItemData } from './bio-item'
 import bioData from './bio-data.json'
 
-const bios = bioData.links as BioItemData[]
+const bios = bioData as BioItemData[]
 
 export function BioSection(): React.ReactElement {
   return (
@@ -15,13 +15,16 @@ export function BioSection(): React.ReactElement {
         <hr className="mt-2 border-dashed" />
       </div>
 
-      <div className="flex w-full mt-6">
-        <ul className="flex flex-col gap-2">
-          {bios.map((data, index) => (
-            <BioItem data={data} key={index} />
-          ))}
-        </ul>
-      </div>
+      <p className="mt-6 text-pretty leading-7 text-foreground/60">
+        Check something that make you feel better or see what's i have built for
+        you. Check it now.
+      </p>
+
+      <ul className="flex flex-col mt-6 gap-3">
+        {bios.map((data, index) => (
+          <BioItem data={data} key={index} />
+        ))}
+      </ul>
     </section>
   )
 }

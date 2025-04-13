@@ -1,28 +1,34 @@
-{
-  "links": [
-    {
-      "url": "/collabs",
-      "label": "Hire me"
-    },
-    {
-      "url": "https://tryweebo.one?ref=nyomansunima",
-      "label": "White label agencies"
-    },
-    {
-      "url": "https://moono.space?ref=nyomansunima",
-      "label": "Saas products"
-    },
-    {
-      "url": "https://weecraft.club?ref=nyomansunima",
-      "label": "Open sources"
-    },
-    {
-      "url": "/crafts",
-      "label": "Portfolios"
-    },
-    {
-      "url": "https://creevoo.store?ref=nyomansunima",
-      "label": "Website templates"
-    }
-  ]
-}
+[
+  {
+    "url": "/collabs",
+    "label": "Hire me now"
+  },
+  {
+    "url": "https://tryweebo.one?ref=nyomansunima",
+    "label": "Join unlimited web design partner"
+  },
+  {
+    "url": "https://tryweebo.one?ref=nyomansunima",
+    "label": "Get your business website"
+  },
+  {
+    "url": "https://tryweebo.one?ref=nyomansunima",
+    "label": "Roasting your website"
+  },
+  {
+    "url": "https://moono.space?ref=nyomansunima",
+    "label": "Use saas products"
+  },
+  {
+    "url": "https://weecraft.club?ref=nyomansunima",
+    "label": "Join open sources"
+  },
+  {
+    "url": "/crafts",
+    "label": "See portfolios"
+  },
+  {
+    "url": "https://creevoo.store?ref=nyomansunima",
+    "label": "Download website templates"
+  }
+]

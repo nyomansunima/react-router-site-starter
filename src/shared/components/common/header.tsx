@@ -1,33 +1,23 @@
-'use client'
 import * as React from 'react'
 
 import Link from 'next/link'
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '../ui/tooltip'
-import { useClickOutside, useKeyEvent, usePathChange } from '@shared/hooks'
-import { Button } from '../ui/button'
+import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
+
+export function Brand(): React.ReactElement {
+  return (
+    <Link
+      href={'/'}
+      className="flex items-center text-sm transition-all duration-300 hover:text-foreground/60"
+    >
+      nyomansunima.one
+    </Link>
+  )
+}
 
 type NavMenuItemProps = {
   children: React.ReactNode
   href: string
   target?: React.HTMLAttributeAnchorTarget
-}
-
-export function Brand(): React.ReactElement {
-  return (
-    <div className="text-sm gap-3 flex relative z-10">
-      <Link
-        href={'/'}
-        className="transition-all duration-300 hover:-translate-x-1"
-      >
-        <span className="font-medium text-foreground/60">nyomansunima.one</span>
-      </Link>
-    </div>
-  )
 }
 
 export function NavMenuItem({
@@ -40,7 +30,7 @@ export function NavMenuItem({
       <Link
         href={href}
         target={target}
-        className="flex justify-center items-center text-sm transition-all duration-300 hover:-translate-x-1"
+        className="flex justify-center items-center text-sm transition-all duration-300 text-foreground hover:-translate-x-1"
       >
         {children}
       </Link>
@@ -49,76 +39,40 @@ export function NavMenuItem({
 }
 
 function Menu(): React.ReactElement {
-  const modalRef = React.useRef<HTMLDivElement>(null)
-  const [isShow, setShow] = React.useState<boolean>(false)
-
-  useClickOutside(modalRef, () => {
-    setShow(false)
-  })
-
-  usePathChange(() => {
-    setShow(false)
-  })
-
-  useKeyEvent('keydown', 'Escape', () => {
-    setShow(false)
-  })
-
   return (
-    <div className="relative">
-      <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Button
-              variant={'outline'}
-              size={'icon'}
-              onClick={() => setShow(true)}
-              className="hover:-translate-y-1"
-            >
-              <i className="fi text-xs fi-br-flame" />
-            </Button>
-          </TooltipTrigger>
-          <TooltipContent>
-            Explore all of the menus, support & contact
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-
-      {isShow && (
-        <div
-          className="flex px-6 py-5 rounded-xl border border-border bg-surface w-[300px] absolute z-20 top-12 right-0"
-          ref={modalRef}
-        >
-          <ul className="grid grid-cols-2 w-full gap-x-4 gap-y-4">
-            <NavMenuItem href="/works">Works</NavMenuItem>
-            <NavMenuItem href="/collabs">Collabs</NavMenuItem>
-            <NavMenuItem href="/crafts">Crafts</NavMenuItem>
-            <NavMenuItem href="/stories">Stories</NavMenuItem>
-            <NavMenuItem href="/journeys">Journeys</NavMenuItem>
-            <NavMenuItem href="/resources">Resources</NavMenuItem>
-            <NavMenuItem href="/about">About</NavMenuItem>
-            <NavMenuItem href="/contact">Contact</NavMenuItem>
-            <NavMenuItem href="/support">Support</NavMenuItem>
-          </ul>
-        </div>
-      )}
-    </div>
-  )
-}
-
-export function Actions(): React.ReactElement {
-  return (
-    <div className="flex relative z-10 gap-2">
-      <Menu />
-    </div>
+    <Popover>
+      <PopoverTrigger
+        className="flex justify-center items-center cursor-pointer group relative h-10 w-10"
+        aria-label="Menu Button"
+      >
+        <span className="h-10 w-10 flex justify-center items-center border border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 group-hover:-rotate-12 group-hover:-translate-x-2" />
+        <span className="h-10 w-10 flex justify-center items-center border border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 group-hover:rotate-12 group-hover:translate-x-2" />
+        <span className="h-10 w-10 flex justify-center items-center border border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 group-hover:translate-y-2">
+          <i className="fi text-xs fi-br-flame" />
+        </span>
+      </PopoverTrigger>
+      <PopoverContent>
+        <ul className="grid grid-cols-2 w-full gap-x-4 gap-y-4">
+          <NavMenuItem href="/works">Works</NavMenuItem>
+          <NavMenuItem href="/collabs">Collabs</NavMenuItem>
+          <NavMenuItem href="/crafts">Crafts</NavMenuItem>
+          <NavMenuItem href="/stories">Stories</NavMenuItem>
+          <NavMenuItem href="/journeys">Journeys</NavMenuItem>
+          <NavMenuItem href="/resources">Resources</NavMenuItem>
+          <NavMenuItem href="/about">About</NavMenuItem>
+          <NavMenuItem href="/contact">Contact</NavMenuItem>
+          <NavMenuItem href="/support">Support</NavMenuItem>
+        </ul>
+      </PopoverContent>
+    </Popover>
   )
 }
 
 export function Header(): React.ReactElement {
   return (
-    <header className="flex items-center justify-between h-24 tablet:h-36">
+    <header className="flex items-center justify-between h-24 tablet:h-28">
       <Brand />
-      <Actions />
+      <Menu />
     </header>
   )
 }

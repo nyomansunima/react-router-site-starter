@@ -2,7 +2,7 @@ import * as React from 'react'
 import { CraftData, CraftItem } from './craft-item'
 import craftsData from './crafts-data.json'
 
-const crafts = craftsData.crafts as CraftData[]
+const crafts = craftsData as CraftData[]
 
 export function CraftListSection(): React.ReactElement {
   return (

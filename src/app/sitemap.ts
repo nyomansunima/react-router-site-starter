@@ -18,14 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date().toISOString(),
     },
     {
-      url: `${BASE_URL}/terms`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/privacy`,
-      lastModified: new Date().toISOString(),
-    },
-    {
       url: `${BASE_URL}/crafts`,
       lastModified: new Date().toISOString(),
     },

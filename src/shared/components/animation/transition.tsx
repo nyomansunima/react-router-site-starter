@@ -10,7 +10,7 @@ export function PageTransition({
   children,
 }: PageTransitionProps): React.ReactElement {
   return (
-    <div className="animate-in fade-in-0 slide-in-from-bottom-36 duration-700">
+    <div className="animate-in fade-in-0 slide-in-from-bottom-36 duration-500">
       {children}
     </div>
   )

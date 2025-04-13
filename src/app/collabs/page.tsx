@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function HomePage(): React.ReactElement {
   return (
     <div className="flex flex-col gap-10">
-      <ArticleContent className="prose-p:text-foreground/60">
+      <ArticleContent>
         <IntroSection />
         <ServiceSection />
         <TeamSection />

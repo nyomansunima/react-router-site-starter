@@ -65,7 +65,9 @@ export async function WorkDetailContent({
 
       <hr className="border-dashed mt-6" />
 
-      <ArticleContent className="mt-10">{content}</ArticleContent>
+      <ArticleContent className="mt-10 prose-p:text-foreground/70 prose-ul:text-foreground/70">
+        {content}
+      </ArticleContent>
     </div>
   )
 }

@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 import * as React from 'react'
 
@@ -20,10 +18,10 @@ export function SourceItem({ source }: SourceItemProps): React.ReactElement {
     <Link
       href={url}
       target="_blank"
-      className="flex flex-col bg-surface border border-border p-3 rounded-2xl col-span-1 transition-all duration-300 hover:-translate-y-1 group relative"
+      className="flex flex-col bg-surface border border-border border-dashed p-3 rounded-2xl col-span-1 transition-all duration-300 hover:-translate-y-1 group relative"
     >
       <div className="flex items-center gap-2">
-        <i className="fi fi-rr-circle-small" />
+        <i className="fi fi-br-circle-small text-foreground/60" />
         <h3 className="text-sm font-medium">{title}</h3>
       </div>
 
@@ -31,8 +29,8 @@ export function SourceItem({ source }: SourceItemProps): React.ReactElement {
         {description}
       </p>
 
-      <div className="hidden w-7 h-7 rounded-lg bg-secondary/30 border border-border group-hover:flex justify-center items-center absolute top-3 right-3">
-        <i className="fi fi-rr-arrow-small-right -rotate-45" />
+      <div className="hidden w-7 h-7 rounded-lg bg-secondary/30 text-foreground/60 border border-border group-hover:flex justify-center items-center absolute top-3 right-3">
+        <i className="fi fi-br-arrow-small-right -rotate-45" />
       </div>
     </Link>
   )

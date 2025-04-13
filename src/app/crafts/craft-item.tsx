@@ -18,10 +18,10 @@ export function CraftItem({ craft }: CraftItemProps): React.ReactElement {
     <Link
       href={link}
       target="_blank"
-      className="flex flex-col h-full p-3 rounded-2xl border border-border bg-surface relative group transition-all duration-300 hover:-translate-y-1"
+      className="flex flex-col h-full p-3 rounded-2xl border border-border border-dashed bg-surface relative group transition-all duration-300 hover:-translate-y-1"
     >
       <div className="flex gap-2">
-        <i className="fi fi-rr-circle-small" />
+        <i className="fi fi-br-circle-small text-foreground/60" />
         <h3 className="text-sm font-medium">{title}</h3>
       </div>
 
@@ -29,8 +29,8 @@ export function CraftItem({ craft }: CraftItemProps): React.ReactElement {
         {description}
       </p>
 
-      <div className="hidden w-7 h-7 rounded-lg bg-secondary/30 border border-border group-hover:flex justify-center items-center absolute top-3 right-3">
-        <i className="fi fi-rr-arrow-small-right -rotate-45" />
+      <div className="hidden w-7 h-7 rounded-lg bg-secondary/30 text-foreground/60c border border-border group-hover:flex justify-center items-center absolute top-3 right-3">
+        <i className="fi fi-br-arrow-small-right -rotate-45" />
       </div>
     </Link>
   )

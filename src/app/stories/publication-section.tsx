@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { PublicationData, PublicationItem } from './publication-item'
-import storiesData from './stories-data.json'
+import publicationData from './publication-data.json'
 
-const publications = storiesData.publications as PublicationData[]
+const publications = publicationData as PublicationData[]
 
 export function PublicationSection(): React.ReactElement {
   return (

@@ -22,10 +22,10 @@ export function LogItem({ log }: LogItemProps): React.ReactElement {
   const readableDate = parseReadableDate(date)
 
   return (
-    <div className="flex flex-col bg-surface border border-border p-3 rounded-2xl cursor-pointer group transition-all duration-300 hover:-translate-y-1">
+    <div className="flex flex-col bg-surface border border-border border-dashed p-3 rounded-2xl cursor-pointer group transition-all duration-300 hover:-translate-y-1">
       <div className="flex flex-col tablet:flex-row gap-2 tablet:items-center">
         <h3 className="flex items-center gap-2 font-medium text-sm leading-tight! text-pretty grow flex-1">
-          <i className="fi fi-rr-circle-small" />
+          <i className="fi fi-br-circle-small text-foreground/60" />
           {title}
         </h3>
 

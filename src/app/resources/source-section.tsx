@@ -2,7 +2,7 @@ import * as React from 'react'
 import { SourceGroup, SourceGroupData } from './source-group'
 import resourcesData from './resources-data.json'
 
-const resources = resourcesData.sources as SourceGroupData[]
+const resources = resourcesData as SourceGroupData[]
 
 export function SourcesSection(): React.ReactElement {
   return (
