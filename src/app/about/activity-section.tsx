@@ -15,7 +15,6 @@ export function ActivitySection(): React.ReactElement {
           <br />
           to ship the best product
         </h2>
-        <hr className="border-dashed !mt-3" />
       </div>
 
       <p>

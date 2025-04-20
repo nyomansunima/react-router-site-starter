@@ -15,7 +15,7 @@ export function StatusItem({ status }: StatusItemProps): React.ReactElement {
   const isValidURL = url.includes('https://') || url.includes('http://')
 
   return (
-    <li className="flex items-center transition-all duration-300 ml-2 text-foreground/60 hover:text-foreground">
+    <li className="flex items-center transition-all duration-300 ml-2 hover:text-link">
       <Link
         href={url}
         target={isValidURL ? '_blank' : '_self'}

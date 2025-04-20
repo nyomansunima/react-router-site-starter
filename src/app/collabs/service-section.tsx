@@ -6,7 +6,6 @@ export function ServiceSection(): React.ReactElement {
       <div className="flex flex-col not-prose">
         <span className="text-sm font-mono text-foreground/60">Services.</span>
         <h2 className="py-2">Finding your own way.</h2>
-        <hr className="mt-2 border-dashed" />
       </div>
 
       <p>

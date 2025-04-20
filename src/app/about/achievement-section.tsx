@@ -10,7 +10,6 @@ export function AchievementSection(): React.ReactElement {
           Achievements.
         </span>
         <h2>Best moment, journey and milestones of hard time</h2>
-        <hr className="border-dashed !mt-3" />
       </div>
 
       <p>

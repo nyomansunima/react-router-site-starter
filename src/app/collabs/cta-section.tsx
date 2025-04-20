@@ -10,7 +10,6 @@ export function CTASection(): React.ReactElement {
           Get Started.
         </span>
         <h2 className="py-2">What you're waiting for?</h2>
-        <hr className="mt-2 border-dashed" />
       </div>
 
       <p>

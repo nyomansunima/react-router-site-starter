@@ -6,22 +6,18 @@ export function BenefitSection(): React.ReactElement {
       <div className="flex flex-col not-prose">
         <span className="text-sm font-mono text-foreground/60">Benefits.</span>
         <h2 className="py-2">More than just works, it's a journey.</h2>
-        <hr className="mt-2 border-dashed" />
       </div>
 
       <p>
-        From the beginning to end,{' '}
-        <span className="text-foreground">
-          I will guide you through every step of the process
-        </span>
-        , ensuring that your project is completed on time and within budget.
+        From the beginning to end, I will guide you through every step of the
+        process , ensuring that your project is completed on time and within
+        budget.
       </p>
 
       <p>
         You will get the stunning result and benefits to work with me. Stopping
-        you from{' '}
-        <span className="text-foreground">confussion, anxiety, and stress</span>
-        . Here are some of the benefits you can expect:
+        you from confussion, anxiety, and stress . Here are some of the benefits
+        you can expect:
       </p>
 
       <ul>

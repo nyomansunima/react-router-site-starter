@@ -8,42 +8,28 @@ export function IntroSection(): React.ReactElement {
           Collabs & crafting.
         </span>
         <h2 className="py-2">Crafting for better impact.</h2>
-        <hr className="mt-2 border-dashed" />
       </div>
 
       <p>
-        Hello, you're awesome!. Let's discuss your{' '}
-        <span className="text-foreground">next move and the project </span>
-        that bring you into{' '}
-        <span className="text-foreground">closer dreams and future.</span>
+        Hello, you're awesome!. Let's discuss your next move and the project
+        that bring you into closer dreams and future.
       </p>
 
       <p>
-        For{' '}
-        <span className="text-foreground">
-          more than 5 years working in the software and business industry
-        </span>
-        , I've had the opportunity to work with a diverse range of clients, from
+        For more than 5 years working in the software and business industry ,
+        I've had the opportunity to work with a diverse range of clients, from
         startups to established companies.
       </p>
 
       <p>
-        Bring{' '}
-        <span className="text-foreground">
-          idea into collaborations and build something different
-        </span>{' '}
-        with excellent{' '}
-        <span className="text-foreground">
-          user experiences, design, branding and optimize the resources
-        </span>
+        Bring idea into collaborations and build something different with
+        excellent user experiences, design, branding and optimize the resources
         .
       </p>
 
       <p>
-        Build their own{' '}
-        <span className="text-foreground">dreams & products</span> with better
-        view, success rate and bigger impact for the{' '}
-        <span className="text-foreground">global audiences</span>.
+        Build their own dreams & products with better view, success rate and
+        bigger impact for the global audiences.
       </p>
 
       <div className="flex flex-col not-prose">

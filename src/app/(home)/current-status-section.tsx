@@ -12,10 +12,9 @@ export function CurrentStatusSection(): React.ReactElement {
           Progress & updates.
         </span>
         <h2 className="py-2 text-lg font-medium">What's going on?</h2>
-        <hr className="mt-2 border-dashed" />
       </div>
 
-      <p className="mt-6 text-pretty leading-7 text-foreground/60">
+      <p className="mt-6 text-pretty leading-7">
         Currently working on cool projects and build something that make me
         exciting. That's including saas, products or services.
       </p>

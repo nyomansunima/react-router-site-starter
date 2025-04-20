@@ -14,7 +14,6 @@ export function IndieSection(): React.ReactElement {
           <br />
           product or proven business
         </h2>
-        <hr className="border-dashed !mt-3" />
       </div>
 
       <p>

@@ -9,7 +9,6 @@ export function TeamSection(): React.ReactElement {
           Dedicated Teams.
         </span>
         <h2 className="py-2">For your business scale.</h2>
-        <hr className="mt-2 border-dashed" />
       </div>
 
       <p>
