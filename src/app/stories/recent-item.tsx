@@ -19,7 +19,7 @@ export function RecentItem({ recent }: RecentItemProps): React.ReactElement {
       href={url}
       target="_blank"
       className="
-        flex items-start tablet:items-center flex-col tablet:flex-row px-3 py-3 gap-2 rounded-2xl bg-surface group transition-all duration-300 hover:-translate-y-1"
+        flex items-start tablet:items-center flex-col tablet:flex-row px-3 py-3 gap-2 rounded-2xl group transition-all duration-300 hover:-translate-y-1"
     >
       <div className="flex items-center gap-2 grow">
         <i className="fi fi-br-circle-small text-foreground/60" />
