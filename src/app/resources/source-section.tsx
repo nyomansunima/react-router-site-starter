@@ -10,7 +10,6 @@ export function SourcesSection(): React.ReactElement {
       <div className="flex flex-col gap-2">
         <span className="text-sm text-foreground/60 font-mono">Resources.</span>
         <h2 className="text-lg font-medium">Find goodies & things.</h2>
-        <hr className="border-dashed !mt-3" />
       </div>
 
       <div className="flex flex-col gap-20">
