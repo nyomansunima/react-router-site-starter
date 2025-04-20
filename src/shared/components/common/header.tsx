@@ -7,7 +7,7 @@ export function Brand(): React.ReactElement {
   return (
     <Link
       href={'/'}
-      className="flex items-center text-sm transition-all duration-300 hover:text-foreground/60"
+      className="flex items-center text-sm font-medium transition-all duration-300"
     >
       nyomansunima.one
     </Link>
@@ -45,24 +45,26 @@ function Menu(): React.ReactElement {
         className="flex justify-center items-center cursor-pointer group relative h-10 w-10"
         aria-label="Menu Button"
       >
-        <span className="h-10 w-10 flex justify-center items-center border border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 group-hover:-rotate-12 group-hover:-translate-x-2" />
-        <span className="h-10 w-10 flex justify-center items-center border border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 group-hover:rotate-12 group-hover:translate-x-2" />
-        <span className="h-10 w-10 flex justify-center items-center border border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 group-hover:translate-y-2">
+        <span className="h-10 w-10 flex justify-center items-center border-2 border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 -translate-x-1 -rotate-6 group-hover:-rotate-12 group-hover:-translate-x-2" />
+        <span className="h-10 w-10 flex justify-center items-center border-2 border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 translate-x-1 rotate-6 group-hover:rotate-12 group-hover:translate-x-2" />
+        <span className="h-10 w-10 flex justify-center items-center border-2 border-border border-dashed absolute rounded-2xl text-sm bg-surface transition-all duration-300 group-hover:translate-y-2">
           <i className="fi text-xs fi-br-flame" />
         </span>
       </PopoverTrigger>
       <PopoverContent>
-        <ul className="grid grid-cols-2 w-full gap-x-4 gap-y-4">
-          <NavMenuItem href="/works">Works</NavMenuItem>
-          <NavMenuItem href="/collabs">Collabs</NavMenuItem>
-          <NavMenuItem href="/crafts">Crafts</NavMenuItem>
-          <NavMenuItem href="/stories">Stories</NavMenuItem>
-          <NavMenuItem href="/journeys">Journeys</NavMenuItem>
-          <NavMenuItem href="/resources">Resources</NavMenuItem>
-          <NavMenuItem href="/about">About</NavMenuItem>
-          <NavMenuItem href="/contact">Contact</NavMenuItem>
-          <NavMenuItem href="/support">Support</NavMenuItem>
-        </ul>
+        <div className="flex h-full w-full p-5 border-2 border-border border-dashed rounded-xl">
+          <ul className="grid grid-cols-2 w-full gap-x-4 gap-y-4">
+            <NavMenuItem href="/works">Works</NavMenuItem>
+            <NavMenuItem href="/collabs">Collabs</NavMenuItem>
+            <NavMenuItem href="/crafts">Crafts</NavMenuItem>
+            <NavMenuItem href="/stories">Stories</NavMenuItem>
+            <NavMenuItem href="/journeys">Journeys</NavMenuItem>
+            <NavMenuItem href="/resources">Resources</NavMenuItem>
+            <NavMenuItem href="/about">About</NavMenuItem>
+            <NavMenuItem href="/contact">Contact</NavMenuItem>
+            <NavMenuItem href="/support">Support</NavMenuItem>
+          </ul>
+        </div>
       </PopoverContent>
     </Popover>
   )
