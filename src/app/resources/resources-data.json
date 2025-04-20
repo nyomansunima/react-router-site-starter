@@ -226,6 +226,16 @@
         "title": "Sanity",
         "description": "Best way to start website with custom CMS.",
         "url": "https://sanity.io?ref=nyomansunima"
+      },
+      {
+        "title": "Astro",
+        "description": "Good framework to build marketing sites",
+        "url": "https://astro.build?ref=nyomansunima"
+      },
+      {
+        "title": "Webflow",
+        "description": "Another tool to create stunning websites",
+        "url": "https://webflow.com?ref=nyomansunima"
       }
     ]
   },
