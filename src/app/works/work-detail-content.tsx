@@ -63,8 +63,6 @@ export async function WorkDetailContent({
         </span>
       </div>
 
-      <hr className="border-dashed mt-6" />
-
       <ArticleContent className="mt-10 prose-p:text-foreground/70 prose-ul:text-foreground/70">
         {content}
       </ArticleContent>
