@@ -18,19 +18,21 @@ export function SupportItem({ data }: SupportItemProps): React.ReactElement {
     <Link
       href={url}
       target="_blank"
-      className="flex flex-col bg-surface p-3 border border-dashed border-border rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer relative group"
+      className="flex bg-surface p-1 rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer relative group"
     >
-      <div className="flex items-center gap-2">
-        <i className="fi fi-br-circle-small text-foreground/60" />
-        <h3 className="text-sm font-medium text-wrap">{title}</h3>
-      </div>
+      <div className="flex flex-col h-full w-full border-2 border-border border-dashed rounded-xl p-3">
+        <div className="flex items-center gap-2">
+          <i className="fi fi-br-circle-small text-foreground/60" />
+          <h3 className="text-sm font-medium text-wrap">{title}</h3>
+        </div>
 
-      <p className="text-sm text-foreground/60 mt-3 text-pretty line-clamp-2 leading-relaxed">
-        {description}
-      </p>
+        <p className="text-sm text-foreground/60 mt-3 text-pretty line-clamp-2 leading-relaxed">
+          {description}
+        </p>
 
-      <div className="hidden w-7 h-7 rounded-lg bg-secondary/30 text-foreground/60 border border-border group-hover:flex justify-center items-center absolute top-3 right-3">
-        <i className="fi fi-br-arrow-small-right -rotate-45" />
+        <div className="hidden w-7 h-7 rounded-lg bg-secondary/30 text-foreground/60 border border-border group-hover:flex justify-center items-center absolute top-3 right-3">
+          <i className="fi fi-br-arrow-small-right -rotate-45" />
+        </div>
       </div>
     </Link>
   )
