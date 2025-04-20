@@ -13,13 +13,14 @@ export function ExperienceSection(): React.ReactElement {
             Journeys.
           </span>
           <h2 className="text-lg font-medium">What's going on?</h2>
-          <hr className="border-dashed !mt-3" />
         </div>
 
-        <div className="flex flex-col gap-3 bg-surface p-5 border border-border border-dashed rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
-          {experiences.map((exp, index) => (
-            <ExperienceItem experience={exp} key={index} />
-          ))}
+        <div className="flex bg-surface p-1 rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+          <div className="flex flex-col h-full w-full gap-3 p-5 border-2 border-border border-dashed rounded-xl">
+            {experiences.map((exp, index) => (
+              <ExperienceItem experience={exp} key={index} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
