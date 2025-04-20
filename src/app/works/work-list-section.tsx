@@ -9,8 +9,7 @@ export async function WorksListSection(): Promise<React.ReactElement> {
     <section className="flex flex-col">
       <div className="flex flex-col gap-2">
         <span className="text-sm text-foreground/60 font-mono">Works.</span>
-        <h2 className="text-lg font-medium">Build from scratch.</h2>
-        <hr className="border-dashed !mt-3" />
+        <h2 className="text-lg font-medium">Top built & hacking.</h2>
       </div>
 
       <div className="flex flex-col gap-3 mt-10">
