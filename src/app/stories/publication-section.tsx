@@ -12,7 +12,6 @@ export function PublicationSection(): React.ReactElement {
           Publications.
         </span>
         <h2 className="text-lg font-medium">Where's the stories?</h2>
-        <hr className="border-dashed !mt-3" />
       </div>
 
       <div className="grid grid-cols-2 tablet:grid-cols-3 gap-2 w-full">
