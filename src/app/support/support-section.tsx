@@ -11,7 +11,6 @@ export function SupportSection(): React.ReactElement {
         <div className="flex flex-col gap-2">
           <span className="text-sm text-foreground/60 font-mono">Support.</span>
           <h2 className="text-lg font-medium">Help me out.</h2>
-          <hr className="border-dashed !mt-3" />
         </div>
 
         <div className="grid grid-cols-1 tablet:grid-cols-2 gap-3">
