@@ -25,7 +25,7 @@ export function ArticleContent({
 }: ArticleContentProps): React.ReactElement {
   return (
     <article
-      className={`${mergeClass('prose prose-p:text-foreground/60 prose-ul:text-foreground/60 prose-p:leading-7 prose-li:leading-7', className)}`}
+      className={`${mergeClass('prose prose-p:leading-7 prose-li:leading-7', className)}`}
     >
       {children}
     </article>
