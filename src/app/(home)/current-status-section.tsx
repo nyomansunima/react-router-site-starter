@@ -4,7 +4,7 @@ import jsonData from './status-data.json'
 
 const statuses = jsonData as StatusData[]
 
-export function CurrentStatusSection(): React.ReactElement {
+export function CurrentStatusSection() {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col leading-7! text-pretty">

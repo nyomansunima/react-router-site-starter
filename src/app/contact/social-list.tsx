@@ -4,7 +4,7 @@ import contactData from './contact-data.json'
 
 const socials = contactData.socials as SocialData[]
 
-export function SocialMediaList(): React.ReactElement {
+export function SocialMediaList() {
   return (
     <div className="flex mt-4 tablet:mt-6">
       <ul className="flex flex-wrap items-center gap-2">

@@ -9,20 +9,19 @@ import { Footer, Header, CenteredLayout } from '@shared/components'
 export const metadata: Metadata = {
   title: 'Product Designer, Software Developer & Creator | Nyoman Sunima',
   description:
-    'Focused on crafting digital products, website, web app, mobile app to help business.',
+    'Focused on crafting digital products, website, web app, mobile app to help business',
   openGraph: {
     ...sharedMetadata.openGraph,
     title: 'Product Designer, Software Developer & Creator | Nyoman Sunima',
     description:
-      'Focused on crafting digital products, website, web app, mobile app to help business.',
+      'Focused on crafting digital products, website, web app, mobile app to help business',
   },
   twitter: {
     ...sharedMetadata.twitter,
     title: 'Product Designer, Software Developer & Creator | Nyoman Sunima',
     description:
-      'Focused on crafting digital products, website, web app, mobile app to help business.',
+      'Focused on crafting digital products, website, web app, mobile app to help business',
   },
-  applicationName: 'Nyoman Sunima',
   keywords: [
     'Product Designer',
     'UI UX Designer',
@@ -37,6 +36,7 @@ export const metadata: Metadata = {
     'Mobile Developer',
     'Indie Hacker',
   ],
+  applicationName: 'Nyoman Sunima',
   authors: [{ name: 'Nyoman Sunima' }],
   publisher: 'Nyoman Sunima',
   creator: 'Nyoman Sunima',
@@ -44,13 +44,22 @@ export const metadata: Metadata = {
   verification: {
     google: config.verification.google,
   },
+  category: 'Websites',
+  generator: 'Next.js',
+  pinterest: {
+    richPin: true,
+  },
+  alternates: {
+    canonical: config.app.host,
+  },
+  robots: 'index, follow',
 }
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}): React.ReactElement {
+}) {
   return (
     <html
       lang="en"

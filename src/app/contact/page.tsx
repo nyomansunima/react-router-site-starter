@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function ContactPage(): React.ReactElement {
+export default function ContactPage() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col gap-2 mb-10">

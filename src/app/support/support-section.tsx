@@ -4,7 +4,7 @@ import data from './support-data.json'
 
 const supports = data as SupportData[]
 
-export function SupportSection(): React.ReactElement {
+export function SupportSection() {
   return (
     <section className="flex">
       <div className="flex flex-col gap-10">

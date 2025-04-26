@@ -19,9 +19,7 @@ type ExperienceItemProps = {
   experience: ExperienceItemData
 }
 
-export function ExperienceItem({
-  experience,
-}: ExperienceItemProps): React.ReactElement {
+export function ExperienceItem({ experience }: ExperienceItemProps) {
   const { team, position, timeline, teamUrl, teamLabel } = experience
 
   return (

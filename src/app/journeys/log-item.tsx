@@ -16,7 +16,7 @@ type LogItemProps = {
   log: LogItemData
 }
 
-export function LogItem({ log }: LogItemProps): React.ReactElement {
+export function LogItem({ log }: LogItemProps) {
   const { title, description, date, category, image, url } = log
 
   const readableDate = parseReadableDate(date)

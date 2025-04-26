@@ -4,7 +4,7 @@ import resourcesData from './resources-data.json'
 
 const resources = resourcesData as SourceGroupData[]
 
-export function SourcesSection(): React.ReactElement {
+export function SourcesSection() {
   return (
     <section className="flex flex-col gap-10">
       <div className="flex flex-col gap-2">

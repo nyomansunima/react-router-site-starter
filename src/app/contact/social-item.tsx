@@ -20,7 +20,7 @@ type SocialItemProps = {
   social: SocialData
 }
 
-export function SocialItem({ social }: SocialItemProps): React.ReactElement {
+export function SocialItem({ social }: SocialItemProps) {
   const { href, icon, label, className } = social
 
   return (

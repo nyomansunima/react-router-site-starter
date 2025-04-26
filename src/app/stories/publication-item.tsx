@@ -10,9 +10,7 @@ type PublicationItemProps = {
   publication: PublicationData
 }
 
-export function PublicationItem({
-  publication,
-}: PublicationItemProps): React.ReactElement {
+export function PublicationItem({ publication }: PublicationItemProps) {
   const { title, url } = publication
 
   return (

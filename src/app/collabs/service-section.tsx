@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export function ServiceSection(): React.ReactElement {
+export function ServiceSection() {
   return (
     <section className="mt-24">
       <div className="flex flex-col not-prose">

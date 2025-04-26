@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import * as React from 'react'
 
-export function TeamSection(): React.ReactElement {
+export function TeamSection() {
   return (
     <section className="mt-24">
       <div className="flex flex-col not-prose">

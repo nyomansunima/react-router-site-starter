@@ -30,7 +30,7 @@ type WorkMetadata = Pick<WorkFrontMatter, 'title' | 'description' | 'image'>
 
 type WorkDetail = {
   meta: WorkFrontMatter
-  content: React.ReactElement
+  content
 }
 
 export type WorkData = WorkFrontMatter & {

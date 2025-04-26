@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export function IntroSection(): React.ReactElement {
+export function IntroSection() {
   return (
     <section>
       <div className="flex flex-col not-prose">

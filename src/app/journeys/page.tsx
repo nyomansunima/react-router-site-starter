@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function JourneysPage(): React.ReactElement {
+export default function JourneysPage() {
   return (
     <div className="flex flex-col gap-20">
       <ExperienceSection />

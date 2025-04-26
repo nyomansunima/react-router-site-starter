@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function CraftsPage(): React.ReactElement {
+export default function CraftsPage() {
   return (
     <div className="flex flex-col">
       <CraftListSection />

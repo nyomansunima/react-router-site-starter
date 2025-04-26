@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function HomePage(): React.ReactElement {
+export default function HomePage() {
   return (
     <div className="flex flex-col gap-10">
       <ArticleContent>

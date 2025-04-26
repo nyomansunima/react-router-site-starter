@@ -4,7 +4,7 @@ import experienceData from './experiences-data.json'
 
 const experiences = [...experienceData].reverse() as ExperienceItemData[]
 
-export function ExperienceSection(): React.ReactElement {
+export function ExperienceSection() {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col gap-10">

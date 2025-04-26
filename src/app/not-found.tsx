@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: ' Opps, good luck. You’re missing the pages',
 }
 
-export default function NotFound(): React.ReactElement {
+export default function NotFound() {
   return (
     <div className="flex flex-col">
       <section className="flex flex-col items-center py-20">

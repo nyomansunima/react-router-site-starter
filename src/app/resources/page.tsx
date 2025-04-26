@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function ResourcesPage(): React.ReactElement {
+export default function ResourcesPage() {
   return (
     <div className="flex flex-col">
       <SourcesSection />

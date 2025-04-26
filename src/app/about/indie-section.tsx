@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export function IndieSection(): React.ReactElement {
+export function IndieSection() {
   return (
     <section>
       <br />

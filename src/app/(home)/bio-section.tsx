@@ -4,7 +4,7 @@ import bioData from './bio-data.json'
 
 const bios = bioData as BioItemData[]
 
-export function BioSection(): React.ReactElement {
+export function BioSection() {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col">

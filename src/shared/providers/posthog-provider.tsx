@@ -29,7 +29,7 @@ function PostHogPageView(): null {
   return null
 }
 
-function SuspendedPostHogPageView(): React.ReactElement {
+function SuspendedPostHogPageView() {
   return (
     <React.Suspense fallback={null}>
       <PostHogPageView />
@@ -37,9 +37,7 @@ function SuspendedPostHogPageView(): React.ReactElement {
   )
 }
 
-export function PosthogProvider({
-  children,
-}: PosthogProviderProps): React.ReactElement {
+export function PosthogProvider({ children }: PosthogProviderProps) {
   React.useEffect(() => {
     posthog.init(config.posthog.key, {
       api_host: '/ingest',

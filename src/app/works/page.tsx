@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function WorksPage(): React.ReactElement {
+export default function WorksPage() {
   return (
     <div className="flex flex-col gap-20 tablet:gap-36">
       <WorksListSection />

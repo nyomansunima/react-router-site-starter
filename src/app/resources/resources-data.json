@@ -136,6 +136,21 @@
         "title": "Loops",
         "description": "Best if you need and email for startups, saas products",
         "url": "https://loops.so?ref=nyomansunima"
+      },
+      {
+        "title": "Resend",
+        "description": "Most approachable email for developers",
+        "url": "https://resend.com?ref=nyomansunima"
+      },
+      {
+        "title": "React Email",
+        "description": "Best custom email template using react for startups",
+        "url": "https://react.email?ref=nyomansunima"
+      },
+      {
+        "title": "Danet",
+        "description": "Custom backend framework for scale work on deno",
+        "url": "https://danet.land?ref=nyomansunima"
       }
     ]
   },

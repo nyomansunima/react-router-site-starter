@@ -10,7 +10,7 @@ type LogGroupProps = {
   group: LogGroupData
 }
 
-export function LogGroup({ group }: LogGroupProps): React.ReactElement {
+export function LogGroup({ group }: LogGroupProps) {
   const { title, list } = group
   const reorderList = [...list].reverse()
 

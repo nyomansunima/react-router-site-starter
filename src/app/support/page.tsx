@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function SupportPage(): React.ReactElement {
+export default function SupportPage() {
   return (
     <div className="flex flex-col">
       <SupportSection />

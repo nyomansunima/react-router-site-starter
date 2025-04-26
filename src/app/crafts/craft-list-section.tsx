@@ -4,7 +4,7 @@ import craftsData from './crafts-data.json'
 
 const crafts = craftsData as CraftData[]
 
-export function CraftListSection(): React.ReactElement {
+export function CraftListSection() {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col gap-2">

@@ -19,22 +19,17 @@ type GalleryListImageProps = {
   images: string[]
 }
 
-export function ArticleContent({
-  children,
-  className,
-}: ArticleContentProps): React.ReactElement {
+export function ArticleContent({ children, className }: ArticleContentProps) {
   return (
     <article
-      className={`${mergeClass('prose prose-p:leading-7 prose-li:leading-7', className)}`}
+      className={`${mergeClass('prose prose-p:leading-7 prose-li:leading-7 prose-a:text-link', className)}`}
     >
       {children}
     </article>
   )
 }
 
-export function ProtectedHtmlContent({
-  children,
-}: ProtectedHtmlContentProps): React.ReactElement {
+export function ProtectedHtmlContent({ children }: ProtectedHtmlContentProps) {
   // The content that passed throgh the elements
   const content = { __html: children }
 
@@ -49,13 +44,9 @@ type ContentImageProps = {
   className?: string
 }
 
-export function ContentImage({
-  src,
-  alt,
-  className,
-}: ContentImageProps): React.ReactElement {
+export function ContentImage({ src, alt, className }: ContentImageProps) {
   return (
-    <div
+    <span
       className={`${mergeClass(
         'flex rounded-2xl p-1 border border-border bg-surface cursor-pointer my-4',
         className,
@@ -72,11 +63,11 @@ export function ContentImage({
           className="object-cover transition-all duration-300 hover:scale-105 not-prose"
         />
       </picture>
-    </div>
+    </span>
   )
 }
 
-export function GalleryItem({ image }: GalleryItemProps): React.ReactElement {
+export function GalleryItem({ image }: GalleryItemProps) {
   const imageUrl = image
 
   return (
@@ -96,9 +87,7 @@ export function GalleryItem({ image }: GalleryItemProps): React.ReactElement {
   )
 }
 
-export function GalleryListImage({
-  images,
-}: GalleryListImageProps): React.ReactElement {
+export function GalleryListImage({ images }: GalleryListImageProps) {
   return (
     <div className="grid grid-cols-1 tablet:grid-cols-3 gap-2">
       {images.map((image, index) => (

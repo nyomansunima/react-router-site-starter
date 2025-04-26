@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export function Footer(): React.ReactElement {
+export function Footer() {
   return (
     <footer className="flex flex-col" id="footer">
       <div className="flex flex-col tablet:flex-row tablet:items-center py-7 tablet:justify-between mt-8">

@@ -11,7 +11,7 @@ type RecentItemProps = {
   recent: RecentData
 }
 
-export function RecentItem({ recent }: RecentItemProps): React.ReactElement {
+export function RecentItem({ recent }: RecentItemProps) {
   const { title, timeline, url } = recent
 
   return (

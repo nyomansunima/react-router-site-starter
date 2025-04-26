@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-export function HeroSection(): React.ReactElement {
+export function HeroSection() {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col gap-2">

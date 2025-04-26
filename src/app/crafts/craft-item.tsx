@@ -11,7 +11,7 @@ type CraftItemProps = {
   craft: CraftData
 }
 
-export function CraftItem({ craft }: CraftItemProps): React.ReactElement {
+export function CraftItem({ craft }: CraftItemProps) {
   const { title, description, link } = craft
 
   return (

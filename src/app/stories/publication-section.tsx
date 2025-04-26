@@ -4,7 +4,7 @@ import publicationData from './publication-data.json'
 
 const publications = publicationData as PublicationData[]
 
-export function PublicationSection(): React.ReactElement {
+export function PublicationSection() {
   return (
     <section className="flex flex-col gap-10">
       <div className="flex flex-col gap-2">

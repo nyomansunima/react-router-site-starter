@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import * as React from 'react'
 
-export function EndWordSection(): React.ReactElement {
+export function EndWordSection() {
   return (
     <section>
       <br />

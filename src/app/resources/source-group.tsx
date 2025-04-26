@@ -10,7 +10,7 @@ type SourceGroupProps = {
   group: SourceGroupData
 }
 
-export function SourceGroup({ group }: SourceGroupProps): React.ReactElement {
+export function SourceGroup({ group }: SourceGroupProps) {
   const { title, list } = group
 
   return (

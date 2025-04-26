@@ -4,7 +4,7 @@ import storiesData from './stories-data.json'
 
 const recents = [...storiesData].reverse() as RecentData[]
 
-export function RecentlySection(): React.ReactElement {
+export function RecentlySection() {
   return (
     <section className="flex flex-col gap-10">
       <div className="flex flex-col gap-2">

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { ContentImage } from '@shared/components'
 
-export function ActivitySection(): React.ReactElement {
+export function ActivitySection() {
   return (
     <section>
       <br />

@@ -2,7 +2,7 @@ import { Button } from '@shared/components'
 import Link from 'next/link'
 import * as React from 'react'
 
-export function CTASection(): React.ReactElement {
+export function CTASection() {
   return (
     <section className="mt-24">
       <div className="flex flex-col not-prose">

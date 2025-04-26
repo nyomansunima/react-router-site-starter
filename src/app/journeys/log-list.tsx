@@ -4,7 +4,7 @@ import journeysData from './journeys-data.json'
 
 const logGroups = [...journeysData].reverse() as LogGroupData[]
 
-export function LogListSection(): React.ReactElement {
+export function LogListSection() {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col gap-14">

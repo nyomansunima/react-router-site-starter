@@ -11,7 +11,7 @@ type SourceItemProps = {
   source: SourceData
 }
 
-export function SourceItem({ source }: SourceItemProps): React.ReactElement {
+export function SourceItem({ source }: SourceItemProps) {
   const { title, description, url } = source
 
   return (

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function AboutPage(): React.ReactElement {
+export default function AboutPage() {
   return (
     <div className="flex flex-col">
       <ArticleContent>

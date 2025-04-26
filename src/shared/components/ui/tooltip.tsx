@@ -13,16 +13,20 @@ const TooltipTrigger = TooltipPrimitive.Trigger
 const TooltipContent = React.forwardRef<
   React.ComponentRef<typeof TooltipPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Content>
->(({ className, sideOffset = 4, ...props }, ref) => (
+>(({ className, sideOffset = 4, children, ...props }, ref) => (
   <TooltipPrimitive.Content
     ref={ref}
     sideOffset={sideOffset}
     className={mergeClass(
-      'z-50 overflow-hidden rounded-xl border border-border bg-surface px-3 py-1.5 text-xs text-foreground/70',
+      'z-50 overflow-hidden rounded-2xl p-2 px-1 bg-surface text-xs text-foreground/70',
       className,
     )}
     {...props}
-  />
+  >
+    <span className="px-3 py-1.5 rounded-xl border-2 border-border border-dashed">
+      {children}
+    </span>
+  </TooltipPrimitive.Content>
 ))
 TooltipContent.displayName = TooltipPrimitive.Content.displayName
 

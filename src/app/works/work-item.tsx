@@ -8,7 +8,7 @@ type WorkItemProps = {
   work: WorkData
 }
 
-export function WorkItem({ work }: WorkItemProps): React.ReactElement {
+export function WorkItem({ work }: WorkItemProps) {
   const { slug, title, description, image, date, type, category, status } = work
 
   const readableTimeline = parseReadableDate(date)

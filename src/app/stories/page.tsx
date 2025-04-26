@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function StoriesPage(): React.ReactElement {
+export default function StoriesPage() {
   return (
     <div className="flex flex-col gap-20">
       <PublicationSection />

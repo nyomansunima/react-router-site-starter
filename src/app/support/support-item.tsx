@@ -11,7 +11,7 @@ type SupportItemProps = {
   data: SupportData
 }
 
-export function SupportItem({ data }: SupportItemProps): React.ReactElement {
+export function SupportItem({ data }: SupportItemProps) {
   const { title, description, url } = data
 
   return (
