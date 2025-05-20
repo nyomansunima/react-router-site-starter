@@ -1,8 +1,8 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu'
-import { mergeClass } from '@shared/utils'
+import * as React from "react"
+import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu"
+import { mergeClass } from "@shared/libs"
 
 const DropdownMenu = DropdownMenuPrimitive.Root
 
@@ -25,12 +25,12 @@ const DropdownMenuContent = React.forwardRef<
       ref={ref}
       sideOffset={sideOffset}
       className={mergeClass(
-        'z-50 max-h-[var(--radix-dropdown-menu-content-available-height)] min-w-72 overflow-y-auto overflow-x-hidden rounded-2xl bg-surface p-1 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 origin-[--radix-dropdown-menu-content-transform-origin]',
+        "z-50 max-h-[var(--radix-dropdown-menu-content-available-height)] min-w-72 overflow-y-auto overflow-x-hidden rounded-2xl bg-surface p-1 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 origin-[--radix-dropdown-menu-content-transform-origin] group",
         className,
       )}
       {...props}
     >
-      <div className="p-5 border-2 border-border border-dashed rounded-xl">
+      <div className="p-5 border-2 border-border border-dashed rounded-xl transition-all duration-300 group-hover:border-link">
         {children}
       </div>
     </DropdownMenuPrimitive.Content>
@@ -47,8 +47,8 @@ const DropdownMenuItem = React.forwardRef<
   <DropdownMenuPrimitive.Item
     ref={ref}
     className={mergeClass(
-      'select-none items-center outline-none',
-      inset && 'pl-8',
+      "select-none items-center outline-none",
+      inset && "pl-8",
       className,
     )}
     {...props}
