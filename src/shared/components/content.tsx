@@ -1,3 +1,5 @@
+import * as React from "react"
+import Markdoc from "@markdoc/markdoc"
 import { mergeClass } from "@shared/libs"
 
 type ArticleContentProps = {
@@ -15,6 +17,19 @@ type GalleryItemProps = {
 
 type GalleryListImageProps = {
   images: string[]
+}
+
+type MarkdownContentProps = {
+  content: any
+}
+
+export function MarkdownContent({
+  content,
+}: MarkdownContentProps): React.ReactNode {
+  const parsedContent = Markdoc.parse(content)
+  const transformedContent = Markdoc.transform(parsedContent, {})
+  const renderedContent = Markdoc.renderers.react(transformedContent, React, {})
+  return renderedContent
 }
 
 export function ArticleContent({ children, className }: ArticleContentProps) {
@@ -36,6 +51,7 @@ export function ProtectedHtmlContent({ children }: ProtectedHtmlContentProps) {
 type ContentImageProps = {
   src: string
   alt: string
+  title?: string
   height?: number
   width?: number
   className?: string
