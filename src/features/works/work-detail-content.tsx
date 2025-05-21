@@ -1,5 +1,6 @@
 import {
   ArticleContent,
+  MarkdownContent,
   Tooltip,
   TooltipContent,
   TooltipProvider,
@@ -60,7 +61,7 @@ export function WorkDetailContent({ work }: WorkDetailContentProps) {
       </div>
 
       <ArticleContent className="mt-10 prose-p:text-foreground/70 prose-ul:text-foreground/70">
-        {work.content}
+        <MarkdownContent content={work.content} />
       </ArticleContent>
     </div>
   )
