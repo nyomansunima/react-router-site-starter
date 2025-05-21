@@ -27,7 +27,7 @@
     },
     {
       "label": "See on Threads",
-      "href": "https://threads.net/@nyomansunima?ref=nyomansunima",
+      "href": "https://threads.net/@bynyomansunima?ref=nyomansunima",
       "icon": "fi fi-rr-comments",
       "className": "tablet:w-28"
     },
@@ -43,7 +43,7 @@
     },
     {
       "label": "See the gallery",
-      "href": "https://instagram.com/nyomansunima?ref=nyomansunima",
+      "href": "https://instagram.com/bynyomansunima?ref=nyomansunima",
       "icon": "fi fi-brands-instagram"
     },
     {
@@ -73,6 +73,11 @@
       "label": "Connect on Peerlist",
       "href": "https://peerlist.io/nyomansunima?ref=nyomansunima",
       "icon": "fi fi-rr-circle-p"
+    },
+    {
+      "label": "Find on algora",
+      "href": "https://algora.io/nyomansunima",
+      "icon": "fi fi-rr-bug"
     }
   ]
 }
