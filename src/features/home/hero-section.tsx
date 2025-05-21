@@ -1,3 +1,4 @@
+import { NewsletterForm } from "@features/newsletter"
 import avatarImg from "./avatar.png"
 
 export function HeroSection() {
@@ -55,6 +56,10 @@ export function HeroSection() {
           Build {"->"} ship {"->"}{" "}
           <span className="text-foreground">launch</span>.
         </p>
+
+        <div className="flex flex-col">
+          <NewsletterForm />
+        </div>
       </div>
     </section>
   )
