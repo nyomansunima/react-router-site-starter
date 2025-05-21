@@ -1,4 +1,4 @@
-import { SourcesSection } from "@features/resources"
+import { SourceSection } from "@features/resources"
 import { generatedMetadata } from "@shared/libs"
 
 export function meta() {
@@ -10,8 +10,8 @@ export function meta() {
 
 export default function ResourcesPage() {
   return (
-    <div className="flex flex-col">
-      <SourcesSection />
-    </div>
+    <main className="flex flex-col">
+      <SourceSection />
+    </main>
   )
 }

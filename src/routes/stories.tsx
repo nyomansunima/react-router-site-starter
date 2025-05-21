@@ -11,9 +11,9 @@ export function meta() {
 
 export default function StoriesPage() {
   return (
-    <div className="flex flex-col gap-20">
+    <main className="flex flex-col gap-20">
       <PublicationSection />
       <RecentlySection />
-    </div>
+    </main>
   )
 }

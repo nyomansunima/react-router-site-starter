@@ -10,8 +10,8 @@ export function meta() {
 
 export default function SupportPage() {
   return (
-    <div className="flex flex-col">
+    <main className="flex flex-col">
       <SupportSection />
-    </div>
+    </main>
   )
 }

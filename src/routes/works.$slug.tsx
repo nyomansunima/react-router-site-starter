@@ -1,5 +1,5 @@
+import type { Route } from "./+types/works.$slug"
 import { generatedMetadata } from "@shared/libs"
-import type { Route } from "./+types/work-detail"
 import {
   getWorkDetail,
   WorkDetailContent,
@@ -28,8 +28,8 @@ export default function WorkDetailPage({ loaderData }: Route.ComponentProps) {
   const parsedWork = work as WorkDetail
 
   return (
-    <div className="flex flex-col gap-20 tablet:gap-36">
+    <main className="flex flex-col gap-20 tablet:gap-36">
       <WorkDetailContent work={parsedWork} />
-    </div>
+    </main>
   )
 }

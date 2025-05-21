@@ -19,7 +19,7 @@ export function meta() {
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col">
+    <main className="flex flex-col">
       <ArticleContent>
         <DetailSection />
         <ActivitySection />
@@ -28,6 +28,6 @@ export default function AboutPage() {
         <AchievementSection />
         <EndWordSection />
       </ArticleContent>
-    </div>
+    </main>
   )
 }

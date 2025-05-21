@@ -10,9 +10,9 @@ export function meta() {
 
 export default function JourneysPage() {
   return (
-    <div className="flex flex-col gap-20">
+    <main className="flex flex-col gap-20">
       <ExperienceSection />
       <LogSection />
-    </div>
+    </main>
   )
 }
