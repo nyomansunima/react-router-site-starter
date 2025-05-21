@@ -5,6 +5,7 @@ image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1733990991229/49886a
 
 date: "2024-12-12"
 status: "Completed"
+isFeatured: true
 
 type: "Hacking"
 category: "Branding, product design & development"

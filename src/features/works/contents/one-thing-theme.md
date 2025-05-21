@@ -1,11 +1,11 @@
 ---
-title: "Brook code theme"
+title: "One Thing Theme"
 description: "The best simple and elegant code editor theme with minimal looks and simple styles code editor themes for light & dark environments for perfect developer productivity"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1733491606862/875c0d92-370d-4dd2-84e4-dbe2f6a89d1b.png"
 
 date: "2024-11-28"
 status: "Completed"
-isFeatured: false
+isFeatured: true
 
 type: "Hacking"
 category: "Code Editor Theme"

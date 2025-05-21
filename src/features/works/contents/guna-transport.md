@@ -5,7 +5,7 @@ image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1733393555028/63b0c2
 
 date: "2024-12-05"
 status: "Completed"
-isFeatured: false
+isFeatured: true
 
 type: "Hacking"
 category: "Branding"
