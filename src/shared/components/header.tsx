@@ -10,7 +10,7 @@ export function Brand() {
   return (
     <Link
       to={"/"}
-      className="flex items-center text-sm font-medium transition-all duration-300 text-foreground/60 hover:text-link"
+      className="flex items-center text-sm font-medium transition-all duration-300 text-link"
     >
       nyomansunima.one
     </Link>
