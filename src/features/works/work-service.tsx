@@ -25,7 +25,7 @@ type WorkMetadata = Pick<WorkFrontMatter, "title" | "description" | "image">
 
 export type WorkDetail = {
   meta: WorkFrontMatter
-  content: React.ReactNode
+  content: any
 }
 
 export type WorkData = WorkFrontMatter & {
@@ -34,13 +34,17 @@ export type WorkData = WorkFrontMatter & {
 
 export async function getWorkDetail(slug: string): Promise<WorkDetail> {
   const filePath = path.join(process.cwd(), WORK_CONTENT_PATH, `${slug}.md`)
-  const file = await fs.readFile(filePath, "utf-8")
-  const ast = Markdoc.parse(file)
-  const content = Markdoc.transform(ast)
-  const renderedContent = Markdoc.renderers.react(content, React)
-  const frontMatter = parseMarkdocFrontmatter(ast)
+  const file = await fs.readFile(filePath, "utf-8").catch((e) => {
+    throw new Response("No work found", {
+      status: 404,
+      statusText:
+        "Opps, the work that you looking is not found. You can find another else",
+    })
+  })
+  const parsedContent = Markdoc.parse(file)
+  const frontMatter = parseMarkdocFrontmatter(parsedContent)
 
-  return { meta: frontMatter, content: renderedContent }
+  return { meta: frontMatter, content: file }
 }
 
 export async function getWorkPaths(): Promise<string[]> {
