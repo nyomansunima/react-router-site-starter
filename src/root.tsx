@@ -1,5 +1,6 @@
 import {
   isRouteErrorResponse,
+  Link,
   Links,
   Meta,
   Outlet,
@@ -8,11 +9,43 @@ import {
 } from "react-router"
 import type { Route } from "./+types/root"
 import "@shared/globals.css"
-import { CenteredLayout, Footer, Header } from "@shared/components"
+import { Button, CenteredLayout, Footer, Header } from "@shared/components"
 import { loadConfig } from "@shared/libs"
+import { subscribeToNewsletter } from "@features/newsletter"
 
 type LayoutProps = {
   children: React.ReactNode
+}
+
+export async function action({ request }: Route.ActionArgs) {
+  const formData = await request.formData()
+  const action = formData.get("action")
+
+  if (action === "subscribe-to-newsletter") {
+    const email = formData.get("email")
+
+    if (!email) {
+      return {
+        errors: {
+          email: "Please add your email",
+        },
+      }
+    }
+
+    if (email && !email.toString().includes("@")) {
+      return {
+        errors: {
+          email: "Opps, your email looks weird",
+        },
+      }
+    }
+
+    await subscribeToNewsletter({ email: email.toString() })
+
+    return { status: "ok" }
+  }
+
+  return {}
 }
 
 export function links() {
@@ -82,6 +115,12 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
           <code>{stack}</code>
         </pre>
       )}
+
+      <div className="flex justify-center items-center mt-16">
+        <Button asChild>
+          <Link to={"/"}>Back to home</Link>
+        </Button>
+      </div>
     </main>
   )
 }
