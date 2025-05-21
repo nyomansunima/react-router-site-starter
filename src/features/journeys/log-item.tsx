@@ -10,26 +10,26 @@ export type LogItemData = {
   url?: string
 }
 
-type LogItemProps = {
+type Props = {
   log: LogItemData
 }
 
-export function LogItem({ log }: LogItemProps) {
+export function LogItem({ log }: Props) {
   const { title, description, date, category, image, url } = log
 
   const readableDate = parseReadableDate(date)
 
   return (
     <div className="flex bg-surface p-1 rounded-2xl cursor-pointer group transition-all duration-300 hover:-translate-y-1">
-      <div className="flex flex-col border-2 border-border border-dashed rounded-xl p-3 h-full w-full">
+      <div className="flex flex-col border-2 border-border border-dashed rounded-xl p-3 h-full w-full transition-all duration-300 group-hover:border-link">
         <div className="flex flex-col tablet:flex-row gap-2 tablet:items-center">
           <h3 className="flex items-center gap-2 font-medium text-sm leading-tight! text-pretty grow flex-1">
-            <i className="fi fi-br-circle-small text-foreground/60" />
+            <i className="fi fi-br-circle-small text-foreground/60 group-hover:text-link" />
             {title}
           </h3>
 
           <div className="flex items-center gap-2">
-            <span className="text-foreground/60 text-sm transition-all duration-300">
+            <span className="text-foreground/60 text-sm transition-all duration-300 group-hover:text-link">
               {readableDate}
             </span>
           </div>

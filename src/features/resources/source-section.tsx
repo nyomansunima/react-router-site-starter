@@ -1,13 +1,13 @@
-import { SourceGroup, type SourceGroupData } from "./source-group"
-import resourcesData from "./resources-data.json"
+import { SourceGroup } from "./source-group"
+import resources from "./resources-data.json"
 
-const resources = resourcesData as SourceGroupData[]
-
-export function SourcesSection() {
+export function SourceSection() {
   return (
     <section className="flex flex-col gap-10">
       <div className="flex flex-col gap-2">
-        <span className="text-sm text-foreground/60 font-mono">Resources.</span>
+        <span className="text-sm font-mono tracking-tight text-link">
+          Resources.
+        </span>
         <h2 className="text-lg font-medium">Find goodies & things.</h2>
       </div>
 

@@ -1,1 +1,2 @@
-export * from "./craft-section"
+export * from "./domain-section"
+export * from "./product-section"

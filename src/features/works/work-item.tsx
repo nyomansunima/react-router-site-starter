@@ -3,11 +3,11 @@ import type { WorkData } from "./work-service"
 import { mergeClass, parseReadableDate } from "@shared/libs"
 import { Link } from "react-router"
 
-type WorkItemProps = {
+type Props = {
   work: WorkData
 }
 
-export function WorkItem({ work }: WorkItemProps) {
+export function WorkItem({ work }: Props) {
   const { slug, title, description, image, date, type, category, status } = work
 
   const readableTimeline = parseReadableDate(date)
@@ -20,14 +20,16 @@ export function WorkItem({ work }: WorkItemProps) {
         "flex group rounded-2xl bg-surface p-1 transition-all duration-300 hover:-translate-y-1 relative",
       )}
     >
-      <div className="flex flex-col p-3 border-2 border-border border-dashed rounded-xl">
+      <div className="flex flex-col p-3 border-2 border-border border-dashed rounded-xl transition-all duration-300 group-hover:border-link">
         <div className="flex flex-col tablet:flex-row tablet:items-center gap-2 justify-between">
           <h3 className="flex items-center gap-2 text-sm font-medium flex-1 leading-tight!">
-            <i className="fi fi-br-circle-small text-foreground/60" />
+            <i className="fi fi-br-circle-small text-foreground/60 group-hover:text-link" />
             {title}
           </h3>
 
-          <span className="text-sm text-foreground/60">{readableTimeline}</span>
+          <span className="text-sm text-foreground/60 group-hover:text-link">
+            {readableTimeline}
+          </span>
         </div>
 
         <p className="text-foreground/60 text-sm line-clamp-2 text-pretty mt-3 leading-relaxed">

@@ -31,7 +31,7 @@ export function WorkDetailContent({ work }: WorkDetailContentProps) {
                 <Link
                   to={team.url}
                   target="_blank"
-                  className="flex items-center gap-2 leading-none! text-sm text-link"
+                  className="flex items-center gap-2 leading-none! text-sm text-link font-mono tracking-tight"
                 >
                   {team.name}
                 </Link>
@@ -43,17 +43,17 @@ export function WorkDetailContent({ work }: WorkDetailContentProps) {
       </div>
 
       <div className="flex flex-wrap items-center gap-4 mt-6">
-        <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
+        <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-link text-sm text-foreground/60 font-mono tracking-tight">
           <i className="fi fi-rr-circle-small" />
           {status}
         </span>
 
-        <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
+        <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-link text-sm text-foreground/60 font-mono tracking-tight">
           <i className="fi fi-rr-circle-small" />
           {type}
         </span>
 
-        <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-foreground text-sm text-foreground/60">
+        <span className="flex items-center gap-2 leading-none! cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:text-link text-sm text-foreground/60 font-mono tracking-tight">
           <i className="fi fi-rr-circle-small" />
           {category}
         </span>

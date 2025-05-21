@@ -15,11 +15,11 @@ export type SocialData = {
   className?: string
 }
 
-type SocialItemProps = {
+type Props = {
   social: SocialData
 }
 
-export function SocialItem({ social }: SocialItemProps) {
+export function SocialItem({ social }: Props) {
   const { href, icon, label, className } = social
 
   return (
@@ -32,7 +32,7 @@ export function SocialItem({ social }: SocialItemProps) {
               size={"icon"}
               asChild
               className={mergeClass(
-                `h-12 w-12 transition-all duration-300 hover:-translate-y-1`,
+                `h-12 w-12 transition-all duration-300 hover:-translate-y-1 border-2 border-dashed hover:border-link`,
                 className,
               )}
             >

@@ -6,32 +6,28 @@ export type SupportData = {
   url: string
 }
 
-type SupportItemProps = {
-  data: SupportData
+type Props = {
+  support: SupportData
 }
 
-export function SupportItem({ data }: SupportItemProps) {
-  const { title, description, url } = data
+export function SupportItem({ support }: Props) {
+  const { title, description, url } = support
 
   return (
     <Link
       to={url}
       target="_blank"
-      className="flex bg-surface p-1 rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer relative group"
+      className="flex bg-surface p-1 rounded-2xl transition-all duration-300 hover:-translate-y-1 cursor-pointer group"
     >
-      <div className="flex flex-col h-full w-full border-2 border-border border-dashed rounded-xl p-3">
+      <div className="flex flex-col h-full w-full border-2 border-border border-dashed rounded-xl p-3 transition-all duration-300 group-hover:border-link">
         <div className="flex items-center gap-2">
-          <i className="fi fi-br-circle-small text-foreground/60" />
+          <i className="fi fi-br-circle-small text-foreground/60 group-hover:text-link" />
           <h3 className="text-sm font-medium text-wrap">{title}</h3>
         </div>
 
         <p className="text-sm text-foreground/60 mt-3 text-pretty line-clamp-2 leading-relaxed">
           {description}
         </p>
-
-        <div className="hidden w-7 h-7 rounded-lg bg-secondary/30 text-foreground/60 border border-border group-hover:flex justify-center items-center absolute top-3 right-3">
-          <i className="fi fi-br-arrow-small-right -rotate-45" />
-        </div>
       </div>
     </Link>
   )

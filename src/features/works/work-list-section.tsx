@@ -9,7 +9,9 @@ export function WorksListSection({ works }: Props) {
   return (
     <section className="flex flex-col">
       <div className="flex flex-col gap-2">
-        <span className="text-sm text-foreground/60 font-mono">Works.</span>
+        <span className="text-sm text-link font-mono tracking-tight">
+          Works.
+        </span>
         <h2 className="text-lg font-medium">Top built & hacking.</h2>
       </div>
 

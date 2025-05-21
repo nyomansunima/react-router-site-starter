@@ -1,13 +1,11 @@
 import { type PublicationData, PublicationItem } from "./publication-item"
-import publicationData from "./publication-data.json"
-
-const publications = publicationData as PublicationData[]
+import publications from "./publication-data.json"
 
 export function PublicationSection() {
   return (
     <section className="flex flex-col gap-10">
       <div className="flex flex-col gap-2">
-        <span className="text-sm text-foreground/60 font-mono">
+        <span className="text-sm text-link font-mono tracking-tight">
           Publications.
         </span>
         <h2 className="text-lg font-medium">Where's the stories?</h2>

@@ -2,7 +2,7 @@ export function IntroSection() {
   return (
     <section>
       <div className="flex flex-col not-prose">
-        <span className="text-sm font-mono text-foreground/60">
+        <span className="text-sm font-mono text-link tracking-tight">
           Collabs & crafting.
         </span>
         <h2 className="py-2">Crafting for better impact.</h2>
@@ -32,7 +32,7 @@ export function IntroSection() {
 
       <div className="flex flex-col not-prose">
         <h4 className="py-2">Nyoman Sunima</h4>
-        <span className="text-sm font-mono text-foreground/60 italic">
+        <span className="text-sm font-mono text-link">
           Trusted business & work partner.
         </span>
       </div>

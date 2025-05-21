@@ -1,7 +1,7 @@
-import { LogGroup, type LogGroupData } from "./log-group"
+import { LogGroup } from "./log-group"
 import journeysData from "./journeys-data.json"
 
-const logGroups = [...journeysData].reverse() as LogGroupData[]
+const logGroups = [...journeysData].reverse()
 
 export function LogSection() {
   return (

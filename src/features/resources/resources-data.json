@@ -176,6 +176,26 @@
         "title": "Mobbin",
         "description": "Best for designers, i love use this for inspirations and concept design.",
         "url": "https://mobbin.design?ref=nyomansunima"
+      },
+      {
+        "title": "Curated.design",
+        "description": "Most minimal and clean design inspiration for websites, apps, and saas",
+        "url": "https://curated.design?ref=nyomansunima"
+      },
+      {
+        "title": "Landings.dev",
+        "description": "Best for designers, i love use this for inspirations and concept design.",
+        "url": "https://landings.dev?ref=nyomansunima"
+      },
+      {
+        "title": "Minimal.gallery",
+        "description": "For minimal purpose style websites. Best for looking simple inspirations",
+        "url": "https://minimal.gallery?ref=nyomansunima"
+      },
+      {
+        "title": "Ecomm.design",
+        "description": "Curated eccommerce website design inspirations that combine with different styles",
+        "url": "https://ecomm.design?ref=nyomansunima"
       }
     ]
   },
@@ -296,6 +316,41 @@
         "title": "Stripe",
         "description": "Best for create and manage the subscriptions.",
         "url": "https://stripe.com?ref=nyomansunima"
+      }
+    ]
+  },
+  {
+    "title": "Publications",
+    "list": [
+      {
+        "title": "Hashnode",
+        "description": "Best for dev content blog, articles with wide global dev audiences",
+        "url": "https://hashnode.com?ref=nyomansunima"
+      },
+      {
+        "title": "Medium",
+        "description": "Best for general purpose publication with wide audiences",
+        "url": "https://medium.com?ref=nyomansunima"
+      },
+      {
+        "title": "Dev.to",
+        "description": "Another one of developer community content",
+        "url": "https://dev.to?ref=nyomansunima"
+      },
+      {
+        "title": "Hackernoon",
+        "description": "Another payment gateway for the business",
+        "url": "https://hackernoon.com?ref=nyomansunima"
+      },
+      {
+        "title": "Substack",
+        "description": "Best for community driven content with newsletter, post feature",
+        "url": "https://substack.com?ref=nyomansunima"
+      },
+      {
+        "title": "Kit",
+        "description": "Best creator tools for publication, newsletter, emails and paid content",
+        "url": "https://kit.com?ref=nyomansunima"
       }
     ]
   }

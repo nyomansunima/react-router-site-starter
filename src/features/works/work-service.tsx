@@ -83,3 +83,9 @@ export async function getWorks(): Promise<WorkData[]> {
 
   return works ?? []
 }
+
+export async function getFeaturedWorks(): Promise<WorkData[]> {
+  const works = await getWorks()
+  const featuredWorks = works.filter((work) => work.isFeatured)
+  return featuredWorks ?? []
+}

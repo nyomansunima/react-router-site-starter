@@ -18,17 +18,21 @@ export function RecentItem({ recent }: RecentItemProps) {
       to={url}
       target="_blank"
       className="
-        flex items-start tablet:items-center flex-col tablet:flex-row px-3 py-3 gap-2 rounded-2xl group transition-all duration-300 hover:-translate-y-1"
+        flex p-1 rounded-2xl group transition-all duration-300 hover:-translate-y-1 bg-surface group"
     >
-      <div className="flex items-center gap-2 grow">
-        <i className="fi fi-br-circle-small text-foreground/60" />
+      <div className="flex items-start tablet:items-center flex-col tablet:flex-row border-2 border-border border-dashed p-3 rounded-xl h-full w-full transition-all duration-300 group-hover:border-link">
+        <div className="flex items-center gap-2 grow">
+          <i className="fi fi-br-circle-small text-foreground/60 group-hover:text-link" />
 
-        <h3 className="text-sm font-medium text-pretty leading-tight! line-clamp-1 grow">
-          {title}
-        </h3>
-      </div>
-      <div className="flex gap-2 text-sm text-foreground/60">
-        <span className="transition-all duration-300">{timeline}</span>
+          <h3 className="text-sm font-medium text-pretty leading-tight! line-clamp-1 grow">
+            {title}
+          </h3>
+        </div>
+        <div className="flex gap-2 text-sm text-foreground/60">
+          <span className="transition-all duration-300 group-hover:text-link">
+            {timeline}
+          </span>
+        </div>
       </div>
     </Link>
   )

@@ -6,7 +6,7 @@ export function ActivitySection() {
       <br />
 
       <div className="flex flex-col gap-2 not-prose mt-10">
-        <span className="text-sm text-foreground/60 font-mono">
+        <span className="text-sm text-link font-mono tracking-tight">
           Activities.
         </span>
         <h2>
