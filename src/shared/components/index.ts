@@ -1,9 +1,11 @@
 export * from "./ui/accordion"
 export * from "./ui/button"
 export * from "./ui/tooltip"
-export * from "./ui/dropdown"
+export * from "./ui/popover"
+export * from "./ui/input"
 
 export * from "./content"
 export * from "./centered-layout"
 export * from "./footer"
 export * from "./header"
+export * from "./menu"
