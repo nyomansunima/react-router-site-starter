@@ -1,8 +1,6 @@
 import fs from "fs/promises"
 import path from "path"
-import Markdoc from "@markdoc/markdoc"
-import { parseMarkdocFrontmatter } from "@shared/libs"
-import React from "react"
+import { parseMarkdown } from "@shared/libs"
 
 const WORK_CONTENT_PATH = "./src/features/works/contents"
 
@@ -20,8 +18,6 @@ export type WorkFrontMatter = {
     url: string
   }
 }
-
-type WorkMetadata = Pick<WorkFrontMatter, "title" | "description" | "image">
 
 export type WorkDetail = {
   meta: WorkFrontMatter
@@ -41,10 +37,9 @@ export async function getWorkDetail(slug: string): Promise<WorkDetail> {
         "Opps, the work that you looking is not found. You can find another else",
     })
   })
-  const parsedContent = Markdoc.parse(file)
-  const frontMatter = parseMarkdocFrontmatter(parsedContent)
+  const { content, data } = parseMarkdown(file)
 
-  return { meta: frontMatter, content: file }
+  return { meta: data as WorkFrontMatter, content: content }
 }
 
 export async function getWorkPaths(): Promise<string[]> {
@@ -75,12 +70,11 @@ export async function getWorks(): Promise<WorkData[]> {
 
       const fileContent = await fs.readFile(filePath, "utf-8")
       const slug = file.replace(/\.(mdx|md)$/, "")
-      const ast = Markdoc.parse(fileContent)
-      const frontMatter = parseMarkdocFrontmatter<WorkFrontMatter>(ast)
+      const { data } = parseMarkdown(fileContent)
 
       return {
         slug,
-        ...frontMatter,
+        ...data,
       } as any
     }),
   )
