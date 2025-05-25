@@ -13,16 +13,16 @@ export function loadConfig() {
 
   return {
     app: {
-      host: ENV.VITE_APP_HOST || "http://localhost:5173",
+      host: ENV.APP_HOST || "http://localhost:5173",
     },
     posthog: {
-      key: ENV.VITE_POSTHOG_KEY,
+      key: ENV.POSTHOG_KEY,
     },
     verification: {
-      google: ENV.VITE_GOOGLE_VERIFICATION,
+      google: ENV.GOOGLE_VERIFICATION,
     },
     kit: {
-      key: ENV.VITE_KIT_API_KEY,
+      key: ENV.KIT_API_KEY,
     },
   } as const
 }
