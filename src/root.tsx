@@ -10,42 +10,16 @@ import {
 import type { Route } from "./+types/root"
 import "@shared/globals.css"
 import { Button, CenteredLayout, Footer, Header } from "@shared/components"
-import { loadConfig } from "@shared/libs"
-import { subscribeToNewsletter } from "@features/newsletter"
+import { loadConfig, loadServerEnv } from "@shared/libs"
 
 type LayoutProps = {
   children: React.ReactNode
 }
 
-export async function action({ request }: Route.ActionArgs) {
-  const formData = await request.formData()
-  const action = formData.get("action")
+export function loader() {
+  const ENV = loadServerEnv()
 
-  if (action === "subscribe-to-newsletter") {
-    const email = formData.get("email")
-
-    if (!email) {
-      return {
-        errors: {
-          email: "Please add your email",
-        },
-      }
-    }
-
-    if (email && !email.toString().includes("@")) {
-      return {
-        errors: {
-          email: "Opps, your email looks weird",
-        },
-      }
-    }
-
-    await subscribeToNewsletter({ email: email.toString() })
-
-    return { status: "ok" }
-  }
-
-  return {}
+  return { ENV }
 }
 
 export function links() {
@@ -125,6 +99,17 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   )
 }
 
-export default function App() {
-  return <Outlet />
+export default function App({ loaderData }: Route.ComponentProps) {
+  const { ENV } = loaderData
+
+  return (
+    <>
+      <Outlet />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `window.__ENV__ = ${JSON.stringify(ENV)}`,
+        }}
+      />
+    </>
+  )
 }
