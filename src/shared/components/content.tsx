@@ -1,22 +1,12 @@
 import * as React from "react"
-import Markdoc from "@markdoc/markdoc"
 import { mergeClass } from "@shared/libs"
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
+import rehypeRaw from "rehype-raw"
 
 type ArticleContentProps = {
   children: React.ReactNode
   className?: string
-}
-
-type ProtectedHtmlContentProps = {
-  children: string
-}
-
-type GalleryItemProps = {
-  image: string
-}
-
-type GalleryListImageProps = {
-  images: string[]
 }
 
 type MarkdownContentProps = {
@@ -26,10 +16,19 @@ type MarkdownContentProps = {
 export function MarkdownContent({
   content,
 }: MarkdownContentProps): React.ReactNode {
-  const parsedContent = Markdoc.parse(content)
-  const transformedContent = Markdoc.transform(parsedContent, {})
-  const renderedContent = Markdoc.renderers.react(transformedContent, React, {})
-  return renderedContent
+  return (
+    <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
+      rehypePlugins={[rehypeRaw]}
+      components={{
+        img: ({ ...props }) => {
+          return <ContentImage {...props} />
+        },
+      }}
+    >
+      {content}
+    </ReactMarkdown>
+  )
 }
 
 export function ArticleContent({ children, className }: ArticleContentProps) {
@@ -42,22 +41,14 @@ export function ArticleContent({ children, className }: ArticleContentProps) {
   )
 }
 
-export function ProtectedHtmlContent({ children }: ProtectedHtmlContentProps) {
-  const content = { __html: children }
+type ContentImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {}
 
-  return <div dangerouslySetInnerHTML={content}></div>
-}
-
-type ContentImageProps = {
-  src: string
-  alt: string
-  title?: string
-  height?: number
-  width?: number
-  className?: string
-}
-
-export function ContentImage({ src, alt, className }: ContentImageProps) {
+export function ContentImage({
+  src,
+  alt,
+  className,
+  ...props
+}: ContentImageProps) {
   return (
     <span
       className={`${mergeClass(
@@ -65,14 +56,15 @@ export function ContentImage({ src, alt, className }: ContentImageProps) {
         className,
       )}`}
     >
-      <picture className="relative w-full overflow-hidden rounded-xl not-prose">
+      <div className="relative w-full overflow-hidden rounded-xl not-prose">
         <img
           src={src}
           alt={alt}
+          {...props}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-all duration-300 hover:scale-105 not-prose"
         />
-      </picture>
+      </div>
     </span>
   )
 }
