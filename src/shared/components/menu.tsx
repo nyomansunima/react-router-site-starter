@@ -1,5 +1,7 @@
+import * as React from "react"
 import { Link } from "react-router"
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
+import { useLocation } from "react-router"
 
 type NavMenuItemProps = {
   children: React.ReactNode
@@ -20,8 +22,15 @@ export function NavMenuItem({ children, href }: NavMenuItemProps) {
 }
 
 export function Menu() {
+  const [open, setOpen] = React.useState(false)
+  const location = useLocation()
+
+  React.useEffect(() => {
+    setOpen(false)
+  }, [location.pathname])
+
   return (
-    <Popover>
+    <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger
         className="flex justify-center items-center cursor-pointer group relative h-10 w-10"
         aria-label="Menu Button"
