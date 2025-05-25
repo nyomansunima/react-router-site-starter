@@ -16,7 +16,7 @@ export function HeroSection() {
         </div>
         <div className="flex flex-col gap-1">
           <h2 className="text-lg font-medium">Nyoman Sunima</h2>
-          <span className="text-sm text-foreground/60 font-mono tracking-tight transition-all duration-300 group-hover:text-link">
+          <span className="text-sm font-mono tracking-tight transition-all duration-300 text-link">
             Product designer, software engineer & creator
           </span>
         </div>
