@@ -1,44 +1,64 @@
-import { Button, Input } from "@shared/components"
-import { useEffect, useRef } from "react"
-import { useFetcher } from "react-router"
+import {
+  Button,
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage,
+  Input,
+} from "@shared/components"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from "react-hook-form"
+import { z } from "zod"
+import { subscribeToNewsletter } from "./newsletter-service"
+
+const formSchema = z.object({
+  email: z
+    .string()
+    .min(5, "Please add your email address")
+    .email("Opps, your email looks weird"),
+})
 
 export function NewsletterForm() {
-  const ref = useRef<HTMLFormElement>(null)
-  const fetcher = useFetcher()
-  const data = fetcher.data
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      email: "",
+    },
+  })
 
-  useEffect(() => {
-    if (
-      ref &&
-      fetcher.formData?.get("action") == "subscribe-to-newsletter" &&
-      data.status &&
-      data.status == "ok"
-    ) {
-      ref.current?.reset()
-    }
-  }, [data])
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    subscribeToNewsletter({ email: values.email })
+      .then(() => {
+        form.reset()
+      })
+      .catch(() => {
+        form.setError("email", { message: "Opps, something happen" })
+      })
+  }
 
   return (
-    <div className="flex w-full">
-      <fetcher.Form
-        method="POST"
-        action="/"
-        ref={ref}
-        className="flex flex-col tablet:flex-row gap-3 w-full"
-      >
-        <Input name="action" defaultValue="subscribe-to-newsletter" hidden />
-        <Input
-          name="email"
-          placeholder="Your email address"
-          type="email"
-          required
-        />
-        <Button type="submit" disabled={fetcher.state == "submitting"}>
-          {fetcher.state === "submitting"
-            ? "Subcribing"
-            : "Subscribe to newsletter"}
-        </Button>
-      </fetcher.Form>
-    </div>
+    <Form {...form}>
+      <div className="w-full">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="flex flex-col tablet:flex-row gap-3 w-full"
+        >
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem className="w-full">
+                <FormControl>
+                  <Input placeholder="Your email address" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button type="submit">Subscribe to newsletter</Button>
+        </form>
+      </div>
+    </Form>
   )
 }
