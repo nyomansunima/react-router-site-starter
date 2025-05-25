@@ -1,16 +1,34 @@
+function isBrowser() {
+  return typeof window !== "undefined" ? true : false
+}
+
+export function loadServerEnv() {
+  const env = process.env
+  return env
+}
+
 export function loadConfig() {
+  const isOnBrowser = isBrowser()
+  const ENV = isOnBrowser ? window.__ENV__ : process.env
+
   return {
     app: {
-      host: import.meta.env.VITE_APP_HOST || "http://localhost:5173",
+      host: ENV.VITE_APP_HOST || "http://localhost:5173",
     },
     posthog: {
-      key: import.meta.env.VITE_POSTHOG_KEY,
+      key: ENV.VITE_POSTHOG_KEY,
     },
     verification: {
-      google: import.meta.env.VITE_GOOGLE_VERIFICATION,
+      google: ENV.VITE_GOOGLE_VERIFICATION,
     },
     kit: {
-      key: import.meta.env.VITE_KIT_API_KEY,
+      key: ENV.VITE_KIT_API_KEY,
     },
   } as const
+}
+
+declare global {
+  interface Window {
+    __ENV__: any
+  }
 }
