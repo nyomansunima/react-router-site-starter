@@ -4,6 +4,7 @@ export * from "./ui/tooltip"
 export * from "./ui/popover"
 export * from "./ui/input"
 export * from "./ui/form"
+export * from "./ui/dialog"
 
 export * from "./content"
 export * from "./centered-layout"
