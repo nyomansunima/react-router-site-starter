@@ -1,38 +1,24 @@
-import {
-  BioSection,
-  HeroSection,
-  PublicationSection,
-  StatusSection,
-  WorkSection,
-} from "@features/home"
-import { getFeaturedWorks } from "@features/works"
 import { generatedMetadata } from "@shared/libs"
-import type { Route } from "./+types/_index"
-
-export async function loader() {
-  const featuredWorks = await getFeaturedWorks()
-
-  return { featuredWorks }
-}
 
 export function meta() {
   return generatedMetadata({
-    title: "Product Designer, Software Developer & Creator | Nyoman Sunima",
-    description:
-      "Focused on crafting digital products, website, web app, mobile app to help business",
+    title: "YOUR_TITLE | YOUR_SITE",
+    description: "YOUR_SITE_DESCRIPTION",
   })
 }
 
-export default function HomePage({ loaderData }: Route.ComponentProps) {
-  const { featuredWorks } = loaderData
-
+export default function HomePage() {
   return (
     <main className="flex flex-col gap-20">
-      <HeroSection />
-      <StatusSection />
-      <WorkSection works={featuredWorks} />
-      <PublicationSection />
-      <BioSection />
+      <div className="flex flex-col text-center justify-center">
+        <p className="font-mono tracking-tight">__Starter site__</p>
+        <p className="mt-6 leading-relaxed text-foreground/60">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          repellat qui vitae laboriosam. A, quae nostrum. Ut aut dicta deleniti
+          praesentium nesciunt, laboriosam, mollitia, exercitationem vitae
+          asperiores reprehenderit ullam repellat.
+        </p>
+      </div>
     </main>
   )
 }

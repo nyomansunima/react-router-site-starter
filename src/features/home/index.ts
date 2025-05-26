@@ -1,5 +1,0 @@
-export * from "./hero-section"
-export * from "./status-section"
-export * from "./bio-section"
-export * from "./work-section"
-export * from "./publication-section"

@@ -7,7 +7,7 @@ export function Brand() {
       to={"/"}
       className="flex items-center text-sm font-medium transition-all duration-300 text-link"
     >
-      nyomansunima.one
+      your_brand.domain
     </Link>
   )
 }
