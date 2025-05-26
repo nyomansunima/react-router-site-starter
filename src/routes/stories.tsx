@@ -1,4 +1,8 @@
-import { PublicationSection, RecentlySection } from "@features/stories"
+import {
+  NewsletterSection,
+  PublicationSection,
+  RecentlySection,
+} from "@features/stories"
 import { generatedMetadata } from "@shared/libs"
 
 export function meta() {
@@ -13,6 +17,7 @@ export default function StoriesPage() {
   return (
     <main className="flex flex-col gap-20">
       <PublicationSection />
+      <NewsletterSection />
       <RecentlySection />
     </main>
   )
