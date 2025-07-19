@@ -36,12 +36,13 @@ This project is contain buch of feature included to help me support my workflow
 
 Since building this project here are list about stack, site, tech and any library in this project
 
-- [Next.js](https://nextjs.org)
+- [React router](https://nextjs.org)
 - [Tailwincss](https://tailwindcss.com)
-- [Lenis Scroll Smoother](https://lenis.studiofreight.com)
 - [Vercel](https://vercel.com)
 - [Shadcn UI](https://ui.shadcn.com)
 - [Radix UI](https://radix-ui.com)
+- [Flaticon UI](https://www.flaticon.com/search?type=uicon)
+- [Google Fonts](https://fonts.google.com)
 
 ## License
 
