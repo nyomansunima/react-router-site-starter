@@ -1,9 +1,8 @@
 import * as React from "react"
-import { Link } from "react-router"
+import { Link, useLocation } from "react-router"
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
-import { useLocation } from "react-router"
 
-type NavMenuItemProps = {
+interface NavMenuItemProps {
   children: React.ReactNode
   href: string
 }
