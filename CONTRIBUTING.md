@@ -10,7 +10,7 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-     git clone https://github.com/nyomansunima/personal-portfolio-website.git
+     git clone https://github.com/nyomansunima/react-router-site-starter.git
    ```
 2. Install the dependencies by run
    ```bash
@@ -20,7 +20,7 @@ To set up the project locally, follow these steps:
    ```bash
      npm run dev
    ```
-4. Open the application in your browser `http://localhost:3000` and studio in `http://localhost:3333`
+4. Open the application in your browser.
 
 ## Issues and Pull Requests
 
