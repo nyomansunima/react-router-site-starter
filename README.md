@@ -59,6 +59,13 @@ In this template already prepared with configs, workflows and settings. But some
 - Enable release workflow by remove `.example` file extension
 - Enable lighthouse workflow by remove `.example` file extensions
 
+## More starter template
+
+Here are another starter template i created for website using another stacks and frameworks that currently iam using
+
+- [astro-site-starter](https://github.com/nyomansunima/astro-site-starter)
+- [nextjs-site-starter](https://github.com/nyomansunima/nextjs-site-starter)
+
 ## License
 
 This project is maintain under the [MIT License](./LICENSE).
