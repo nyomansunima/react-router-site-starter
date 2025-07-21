@@ -22,7 +22,6 @@ jobs:
   publish:
     name: Publish
     runs-on: ubuntu-latest
-    if: secrets.VERCEL_TOKEN !== ''
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
