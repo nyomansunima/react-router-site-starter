@@ -1,36 +1,21 @@
-# Personal Site
+# React router site starter
 
-![Github View](https://github.com/user-attachments/assets/7a86d44c-69d8-4144-a922-c36a93982d5b)
+_"Minimal react router site starter template for building landing page, marketing sites, and portfolios"_
 
-_"My personal website to connect and share something with client and audience"_
-
-## About
-
-This project is contain my personal site apps, including the backend and the frontend.
-The concept of this site is simple, powerful, creative, and clean.
-
-You can access this site on [https://nyomansunima.one](https://nyomansunima.one)
-
-## Motivation
-
-When one to connect and cengage with my skill i realize that need a website that can communicate and cover all ide need to my client, audience, friends, and also the collages. That's why i building this project. I want to make website that look cool, fast and modern with simplicity.
-
-I also need include most of my managed project, explorations, status, blog and other. So when i connect with people i can start by sharing my website, and they can explore me what iam doing on.
-
-## Features
-
-This project is contain buch of feature included to help me support my workflow
-
-- Project Showcase
-- Target and Status
-- Explorations into stack and project
-- Service to offer with client
-- Personal bio link profile
-- About me
-- FAQs
-- Newsletter
-- Many other includeds
-- Changelog history and works
+- Always up to date with latest packages supports
+- Following the screaming architecture, easy to scale
+- Minimal configurations
+- Predefine scripts for format, lint, clean
+- Minimal global styles with dark mode support
+- Minimal configured eslint using `@antfu/eslint-config`
+- Prerender by default
+- Automatic github workflows predefined
+  - Beautify (typecheck, lint, format)
+  - Release (publish site - vercel, cloudflare, etc.)
+  - Lighthouse (lighthouse testing)
+- Github issue template
+  - Feature request
+  - Bug report
 
 ## Stacks
 
@@ -38,11 +23,41 @@ Since building this project here are list about stack, site, tech and any librar
 
 - [React router](https://nextjs.org)
 - [Tailwincss](https://tailwindcss.com)
-- [Vercel](https://vercel.com)
 - [Shadcn UI](https://ui.shadcn.com)
-- [Radix UI](https://radix-ui.com)
 - [Flaticon UI](https://www.flaticon.com/search?type=uicon)
 - [Google Fonts](https://fonts.google.com)
+- [@antfu/eslint](https://github.com/antfu/eslint-config)
+
+## Usage
+
+### Get started
+
+To use this starter template, you can follow this steps
+
+Run this command to clone the starter template
+
+```bash
+git clone git@github.com:nyomansunima/react-router-site-starter.git
+```
+
+if you're not using ssh, you can clone using http
+
+```bash
+git clone https://github.com/nyomansunima/react-router-site-starter.git
+```
+
+Next, you can open the project using your favorite code editor. eg, vscode, zed, nvim, or helix.
+
+Install the packages by run `bun i` or `npm i`
+
+Next, you can run the apps by run `bun run dev` for dev.
+
+### Enable the featured
+
+In this template already prepared with configs, workflows and settings. But some of them by default is disabled. You can enable the feature manually.
+
+- Enable release workflow by remove `.example` file extension
+- Enable lighthouse workflow by remove `.example` file extensions
 
 ## License
 
